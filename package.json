@@ -8,7 +8,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cryptolink/cryptolink-contracts.git"
+    "url": "git+https://github.com/cryptolink/npm.git"
   },
   "keywords": [
     "solidity",
@@ -32,7 +32,7 @@
   "author": "CryptoLink.Tech <atlas@cryptolink.tech>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CryptoLink/cryptolink-contracts/issues"
+    "url": "https://github.com/CryptoLink/npm/issues"
   },
   "homepage": "https://docs.cryptolink.tech/",
   "dependencies": {
