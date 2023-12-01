@@ -1,0 +1,43 @@
+{
+  "name": "@cryptolink/contracts",
+  "description": "Decentralized Cross-Chain Crypto Messaging System",
+  "version": "0.3.0",
+  "files": [
+    "**/*.sol"
+  ],
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cryptolink/cryptolink-contracts.git"
+  },
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "bridge",
+    "messaging",
+    "crosschain",
+    "smart",
+    "contracts",
+    "avalanche",
+    "pulsechain",
+    "base",
+    "fantom",
+    "binance",
+    "cronos",
+    "harmony",
+    "oasis",
+    "arbitrum",
+    "gauss"
+  ],
+  "author": "CryptoLink.Tech <atlas@cryptolink.tech>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CryptoLink/cryptolink-contracts/issues"
+  },
+  "homepage": "https://docs.cryptolink.tech/",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3"
+  },
+  "main": "index.js",
+  "devDependencies": {}
+}
