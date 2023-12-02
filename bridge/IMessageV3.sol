@@ -7,7 +7,7 @@ interface IMessageV3 {
     function chainsig() external view returns (address signer);
     function weth() external view returns (address wethTokenAddress);
     function feeToken() external view returns (address feeToken);
-    function feeTokenDecimals() external view returns (address feeTokenDecimals);
+    function feeTokenDecimals() external view returns (uint feeTokenDecimals);
     function minFee() external view returns (uint minFee);
     function bridgeEnabled() external view returns (bool bridgeEnabled);
     function takeFeesOffline() external view returns (bool takeFeesOffline);
