@@ -87,11 +87,20 @@ abstract contract MessageV3Client is Ownable {
             else if(block.chainid == 137)       _bridge = address(0); // Polygon
             else if(block.chainid == 369)       _bridge = address(0); // Pulsechain
 
-            else if(block.chainid == 97)        _bridge = address(0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F); // Binance Testnet
-            else if(block.chainid == 4002)      _bridge = address(0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F); // Fantom Testnet
-            else if(block.chainid == 1452)      _bridge = address(0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F); // Gauss Testnet
-            else if(block.chainid == 43313)     _bridge = address(0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F); // Avalanche Testnet
-            else if(block.chainid == 80001)     _bridge = address(0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F); // Polygon Testnet
+            else if(block.chainid == 421614)     _bridge = address(0xbd9F6E783a2872f703953F0db1d6D60912F86af4); // Arbitrum Testnet (sepolia)
+            else if(block.chainid == 43113)      _bridge = address(0x950F4E9a06b2Cd3049B4A57B9DD9B83D16a26EFc); // Avalanche Testnet
+            else if(block.chainid == 97)         _bridge = address(0x714853D6197e560013ee161fC259b87E8B3cA7E9); // Binance Testnet
+            else if(block.chainid == 44787)      _bridge = address(0x33b965Bcbdfa7367178304A8517eB725CD244f65); // Celo Testnet
+            else if(block.chainid == 338)        _bridge = address(0x33b965Bcbdfa7367178304A8517eB725CD244f65); // Cronos Testnet
+            else if(block.chainid == 4002)       _bridge = address(0x9A148b374500B710c6215a131eE55E6E13fC8284); // Fantom Testnet
+            else if(block.chainid == 1452)       _bridge = address(0x714853D6197e560013ee161fC259b87E8B3cA7E9); // Gauss Testnet
+            else if(block.chainid == 1666700000) _bridge = address(0x0135c25Bd3e88b1aac5FDC6f16FEe2C63d967f9d); // Harmony Testnet
+            else if(block.chainid == 599)        _bridge = address(0x0135c25Bd3e88b1aac5FDC6f16FEe2C63d967f9d); // Metis Testnet
+            else if(block.chainid == 11155420)   _bridge = address(0x33b965Bcbdfa7367178304A8517eB725CD244f65); // Optimism Testnet
+            else if(block.chainid == 80001)      _bridge = address(0xd04CfEC7ff7EdBC09BB3461Ea95C7ECBCfC61bd5); // Polygon Testnet
+            else if(block.chainid == 1442)       _bridge = address(0x33b965Bcbdfa7367178304A8517eB725CD244f65); // Polygon zkEVM Testnet
+            else if(block.chainid == 940)        _bridge = address(0x33b965Bcbdfa7367178304A8517eB725CD244f65); // Pulse Testnet
+            else if(block.chainid == 195)        _bridge = address(0x33b965Bcbdfa7367178304A8517eB725CD244f65); // X1 Testnet
         }
 
         BRIDGE    = IMessageV3(_bridge);
