@@ -27,4 +27,5 @@ interface IMessageV3 {
 
     function setExsig(address signer) external;
     function setMaxgas(uint maxgas) external;
+    function setMaxfee(uint maxfee) external;
 }

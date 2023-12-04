@@ -132,4 +132,8 @@ abstract contract MessageV3Client is Ownable {
     function setMaxgas(uint _maxGas) external onlyOwner {
         BRIDGE.setMaxgas(_maxGas);
     }
+
+    function setMaxfee(uint _maxFee) external onlyOwner {
+        BRIDGE.setMaxfee(_maxFee);
+    }
 }
