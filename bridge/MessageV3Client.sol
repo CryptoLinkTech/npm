@@ -102,9 +102,10 @@ abstract contract MessageV3Client is Ownable {
             else if(block.chainid == 11155420)   _bridge = address(0x2Ba3070E0FF0fd46BC300FB071b6771FF094a2d1); // Optimism Testnet
             else if(block.chainid == 80001)      _bridge = address(0xa4F33Ae2D9A72091cF0fd2B6D142D9d6DE3E8bcA); // Polygon Testnet
             else if(block.chainid == 1442)       _bridge = address(0x990033C63B9c270af8315F7f8dB3aFC9b0E408DD); // Polygon zkEVM Testnet
-            else if(block.chainid == 940)        _bridge = address(0xc864D304F9238ef4788DA60d743589a31BF8A843); // Pulse Testnet
+            else if(block.chainid == 943)        _bridge = address(0xc864D304F9238ef4788DA60d743589a31BF8A843); // Pulse Testnet
             else if(block.chainid == 534351)     _bridge = address(0xA648df7adFa847Cf0149083857ddA1680926899F); // Scroll Testnet (sepolia)
             else if(block.chainid == 195)        _bridge = address(0x79FeD6ab7D2b277a415d0D58dbCBBcBe06D4D23D); // X1 Testnet
+            require(_bridge != address(0), "invalid chain in list");
         }
 
         BRIDGE    = IMessageV3(_bridge);
