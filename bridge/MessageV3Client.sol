@@ -17,7 +17,7 @@ abstract contract MessageV3Client is Ownable {
     IERC20 public FEE_TOKEN;
 
     struct ChainData {
-        uint fee; // MIN FEE in ether in "feeToken" normalized to 18 decimals (fees taken out, change delivered to dest contract)
+        uint fee; // MIN FEE in ether in "feeToken" normalized to 18 decimals
         uint price; // fee for us (you) to charge on source when sending to this dest
         address endpoint; // dest chain contract address
         uint16 confirmations; // source confirmations
@@ -103,7 +103,7 @@ abstract contract MessageV3Client is Ownable {
             else if(block.chainid == 80001)      _bridge = address(0xAfA6622B2Be450aC6752A6a5e6955B7D73E206B9); // Polygon Testnet
             else if(block.chainid == 1442)       _bridge = address(0xc5f8fbE61aF2b5f0DB8A51e10133062e54F77947); // Polygon zkEVM Testnet
             else if(block.chainid == 940)        _bridge = address(0xae65E2211c4119cf92ee85D1a8c4ec20AdaE8aFE); // Pulse Testnet
-            else if(block.chainid == 534351)     _bridge = address(0x2f3bc26eFE51bBe209E0afD2Da29616cF3755E03); // Scroll Testnet
+            else if(block.chainid == 534351)     _bridge = address(0x2f3bc26eFE51bBe209E0afD2Da29616cF3755E03); // Scroll Testnet (sepolia)
             else if(block.chainid == 195)        _bridge = address(0xc5f8fbE61aF2b5f0DB8A51e10133062e54F77947); // X1 Testnet
         }
 
@@ -118,11 +118,15 @@ abstract contract MessageV3Client is Ownable {
             CHAINS[_chains[x]].price = _prices[x];
         }
 
-        // approve bridge for source chain fees
-        FEE_TOKEN.approve(address(BRIDGE), type(uint).max);
+        // approve bridge for source chain fees (limited per transaction with setMaxfee)
+        if(address(FEE_TOKEN) != address(0)) {
+            FEE_TOKEN.approve(address(BRIDGE), type(uint).max);
+        }
 
         // approve bridge for destination gas fees (limited per transaction with setMaxgas)
-        IERC20(BRIDGE.weth()).approve(address(BRIDGE), type(uint).max);    
+        if(address(BRIDGE.weth()) != address(0)) {
+            IERC20(BRIDGE.weth()).approve(address(BRIDGE), type(uint).max);
+        }
     }
 
     function setExsig(address _signer) external onlyOwner {
