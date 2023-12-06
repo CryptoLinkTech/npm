@@ -87,24 +87,24 @@ abstract contract MessageV3Client is Ownable {
             else if(block.chainid == 137)       _bridge = address(0); // Polygon
             else if(block.chainid == 369)       _bridge = address(0); // Pulsechain
 
-            else if(block.chainid == 421614)     _bridge = address(0x09137471942530BF2BEe56a8753745D2C8fc0560); // Arbitrum Testnet (sepolia)
-            else if(block.chainid == 43113)      _bridge = address(0x38DE8d52544D60adA3d5FEFD548528FdeeccF334); // Avalanche Testnet
-            else if(block.chainid == 84532)      _bridge = address(0x9A148b374500B710c6215a131eE55E6E13fC8284); // Base Testnet (sepolia)
-            else if(block.chainid == 97)         _bridge = address(0x06EF0100f5CA88E6F1F5742BD3a913D29Db39505); // Binance Testnet
-            else if(block.chainid == 44787)      _bridge = address(0x9Ca377D441B01A44fEab8D75B992ab2e4f710BA9); // Celo Testnet
-            else if(block.chainid == 338)        _bridge = address(0x9c90eC23162C818A79B46C79Bb6EBC07C6733919); // Cronos Testnet
-            else if(block.chainid == 4002)       _bridge = address(0xd8786BCED05F38a0bDdFb14711872E045931878E); // Fantom Testnet
-            else if(block.chainid == 1452)       _bridge = address(0x5d0693Fd8AB0046c944e7618451A16FF2248Cc6F); // Gauss Testnet
-            else if(block.chainid == 10200)      _bridge = address(0xCdc7D21D3F75809ec8CC3030AB8018A98AD0b296); // Gnosis Testnet
-            else if(block.chainid == 1666700000) _bridge = address(0x5d0693Fd8AB0046c944e7618451A16FF2248Cc6F); // Harmony Testnet
-            else if(block.chainid == 599)        _bridge = address(0xc5f8fbE61aF2b5f0DB8A51e10133062e54F77947); // Metis Testnet
-            else if(block.chainid == 65)         _bridge = address(0x2f3bc26eFE51bBe209E0afD2Da29616cF3755E03); // OKEx Testnet
-            else if(block.chainid == 11155420)   _bridge = address(0x9Ca377D441B01A44fEab8D75B992ab2e4f710BA9); // Optimism Testnet
-            else if(block.chainid == 80001)      _bridge = address(0xAfA6622B2Be450aC6752A6a5e6955B7D73E206B9); // Polygon Testnet
-            else if(block.chainid == 1442)       _bridge = address(0xc5f8fbE61aF2b5f0DB8A51e10133062e54F77947); // Polygon zkEVM Testnet
-            else if(block.chainid == 940)        _bridge = address(0xae65E2211c4119cf92ee85D1a8c4ec20AdaE8aFE); // Pulse Testnet
-            else if(block.chainid == 534351)     _bridge = address(0x2f3bc26eFE51bBe209E0afD2Da29616cF3755E03); // Scroll Testnet (sepolia)
-            else if(block.chainid == 195)        _bridge = address(0xc5f8fbE61aF2b5f0DB8A51e10133062e54F77947); // X1 Testnet
+            else if(block.chainid == 421614)     _bridge = address(0x05730dAC0b9cd39f37F0415EB4E503Ea7A8bBa1B); // Arbitrum Testnet (sepolia)
+            else if(block.chainid == 43113)      _bridge = address(0x665B3D012b8Ead9FdB7AA973bb79Af3C035D7c1b); // Avalanche Testnet
+            else if(block.chainid == 84532)      _bridge = address(0x558c52b67594faf5Fdb0cAACAa906d05Ae1F3c4F); // Base Testnet (sepolia)
+            else if(block.chainid == 97)         _bridge = address(0xa143a4d139b85959B20c8c50E52B4845E5c16bD4); // Binance Testnet
+            else if(block.chainid == 44787)      _bridge = address(0x6732F9F60C764159a50B84DD6F9ACff631D9a42f); // Celo Testnet
+            else if(block.chainid == 338)        _bridge = address(0x9a535F991620615f2a24ba28949b056aFe6bd1dA); // Cronos Testnet
+            else if(block.chainid == 4002)       _bridge = address(0x491F2495D20B81F9674386FB698b15e99A206deA); // Fantom Testnet
+            else if(block.chainid == 1452)       _bridge = address(0x8683C7031E38577c720CA97874698B2A2E05Bdc1); // Gauss Testnet
+            else if(block.chainid == 10200)      _bridge = address(0xf0B8DfCdDC9587d00F3ace2d123FD1F04DDB6211); // Gnosis Testnet
+            else if(block.chainid == 1666700000) _bridge = address(0x5eB3c4f89d76C05b81714d6126642EF6EA86C9aE); // Harmony Testnet
+            else if(block.chainid == 599)        _bridge = address(0x292A4A28f143B951fBE8bBa32d176c33674286Ad); // Metis Testnet
+            else if(block.chainid == 65)         _bridge = address(0xdD15300544b66ffACD50EA5917194142f04a0b9a); // OKEx Testnet
+            else if(block.chainid == 11155420)   _bridge = address(0x2Ba3070E0FF0fd46BC300FB071b6771FF094a2d1); // Optimism Testnet
+            else if(block.chainid == 80001)      _bridge = address(0xa4F33Ae2D9A72091cF0fd2B6D142D9d6DE3E8bcA); // Polygon Testnet
+            else if(block.chainid == 1442)       _bridge = address(0x990033C63B9c270af8315F7f8dB3aFC9b0E408DD); // Polygon zkEVM Testnet
+            else if(block.chainid == 940)        _bridge = address(0xc864D304F9238ef4788DA60d743589a31BF8A843); // Pulse Testnet
+            else if(block.chainid == 534351)     _bridge = address(0xA648df7adFa847Cf0149083857ddA1680926899F); // Scroll Testnet (sepolia)
+            else if(block.chainid == 195)        _bridge = address(0x79FeD6ab7D2b277a415d0D58dbCBBcBe06D4D23D); // X1 Testnet
         }
 
         BRIDGE    = IMessageV3(_bridge);
