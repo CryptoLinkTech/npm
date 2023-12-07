@@ -16,7 +16,7 @@ abstract contract MessageV3Client is Ownable {
     IERC20 public FEE_TOKEN;
 
     struct ChainData {
-        uint fee; // MIN FEE in ether in "feeToken" normalized to 18 decimals
+        uint fee; // MIN FEE with 6 decimals of allowed max precision
         uint price; // fee for us (you) to charge on source when sending to this dest
         address endpoint; // dest chain contract address
         uint16 confirmations; // source confirmations
