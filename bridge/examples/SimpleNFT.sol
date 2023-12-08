@@ -14,8 +14,8 @@ contract SimpleNFT is ERC721Enumerable, Ownable, MessageV3Client {
 
     string public BASE_URI  = "https://example.com/metadata/";
     uint   public BUY_PRICE = 10 ether;
+    uint   public BRIDGE_PRICE = 0;
     IERC20 public BUY_TOKEN = IERC20(address(0)); // todo: update with wanted token address for deployed chain!
-    mapping(uint => uint) public BRIDGE_PRICE;
 
     constructor() ERC721("Simple Cross Chain NFT", "sNFT") {}
 
@@ -40,10 +40,10 @@ contract SimpleNFT is ERC721Enumerable, Ownable, MessageV3Client {
         require(_ownerOf(_nftId) == msg.sender, "you do not own this nft");
 
         // take fee for bridging
-        SafeERC20.safeTransferFrom(BUY_TOKEN, msg.sender, address(this), BRIDGE_PRICE[_chainId]);
+        SafeERC20.safeTransferFrom(BUY_TOKEN, msg.sender, address(this), BRIDGE_PRICE);
 
         // burn the nft from source chain
-        transferFrom(msg.sender, address(0), _nftId);
+        _burn(_nftId);
 
         // data package to send across chain
         bytes memory _data = abi.encode(
@@ -66,14 +66,6 @@ contract SimpleNFT is ERC721Enumerable, Ownable, MessageV3Client {
 
         // mint/send nft
         _safeMint(_to, _nftId);
-    }
-
-    /** OWNER */
-    function configure(uint[] calldata _chains, uint[] calldata _bridgePrices) external onlyOwner {
-        uint _chainCount = _chains.length;
-        for(uint x=0; x < _chainCount; x++) {
-            BRIDGE_PRICE[_chains[x]] = _bridgePrices[x];
-        }        
     }
 
     /** VIEWS */
