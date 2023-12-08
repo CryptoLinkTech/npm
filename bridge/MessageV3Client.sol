@@ -102,7 +102,7 @@ abstract contract MessageV3Client is Ownable {
             else if(block.chainid == 59140)      _bridge = address(0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F); // Linea Testnet
             else if(block.chainid == 599)        _bridge = address(0x4f313cB864BD7138Fdb35337182D5b0E78d9fB33); // Metis Testnet
             else if(block.chainid == 42261)      _bridge = address(0x566B40Dd59A868c244E1353368e08ddaD1C1d74f); // Oasis Emerald Testnet
-            else if(block.chainid == 23294)      _bridge = address(0); // Oasis Sapphire Testnet
+            else if(block.chainid == 23295)      _bridge = address(0x566B40Dd59A868c244E1353368e08ddaD1C1d74f); // Oasis Sapphire Testnet
             else if(block.chainid == 65)         _bridge = address(0xF1FBB3E9977dAcF3909Ab541792cB2Bba10FFD5E); // OKEx Testnet
             else if(block.chainid == 11155420)   _bridge = address(0xB4245BFEA4AfE63c7F7863D090166890e9FEf1b2); // Optimism Testnet
             else if(block.chainid == 80001)      _bridge = address(0x08A2d304547A4B93B254d906502A3fc778D78412); // Polygon Testnet
