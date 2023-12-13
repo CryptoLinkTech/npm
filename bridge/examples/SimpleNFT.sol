@@ -4,20 +4,18 @@
 pragma solidity ^0.8.9;
 
 import "../MessageV3Client.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 
-contract SimpleNFT is ERC721Enumerable, Ownable, MessageV3Client {
-    using Counters for Counters.Counter;
-    Counters.Counter private COUNTER;
+contract SimpleNFT is ERC721, ERC721Enumerable, Ownable, MessageV3Client {
+    uint public COUNTER;
 
     string public BASE_URI  = "https://example.com/metadata/";
     uint   public BUY_PRICE = 10 ether;
     uint   public BRIDGE_PRICE = 0;
     IERC20 public BUY_TOKEN = IERC20(address(0)); // todo: update with wanted token address for deployed chain!
 
-    constructor() ERC721("Simple Cross Chain NFT", "sNFT") {}
+    constructor() ERC721("Simple Cross Chain NFT", "sNFT") Ownable(msg.sender) {}
 
     /** USER */
     function mint() external returns (uint _nftId) {
@@ -27,13 +25,13 @@ contract SimpleNFT is ERC721Enumerable, Ownable, MessageV3Client {
     }
 
     function _mint(address _to) private returns (uint _nftId) {
-        uint _currId = COUNTER.current();
+        uint _currId = COUNTER;
         require(_currId < 1000, "mint at max capacity");
 
         _nftId = (block.chainid * 10**7) + _currId;
         _safeMint(_to, _nftId);
 
-        COUNTER.increment();
+        COUNTER++;
     }
 
     function bridge(address _to, uint _chainId, uint _nftId) public onlyActiveBridge(_chainId) returns (uint _txId) {
@@ -81,4 +79,16 @@ contract SimpleNFT is ERC721Enumerable, Ownable, MessageV3Client {
     function tokenURI(uint _nftId) public view override returns (string memory _uri) {
         return string(abi.encodePacked(BASE_URI, _nftId, ".json"));
     }
+
+    function _update(address _to, uint256 _tokenId, address _auth) internal override(ERC721, ERC721Enumerable) returns (address) {
+        return super._update(_to, _tokenId, _auth);
+    }
+
+    function _increaseBalance(address _account, uint128 _value) internal override(ERC721, ERC721Enumerable) {
+        super._increaseBalance(_account, _value);
+    }
+
+    function supportsInterface(bytes4 _interfaceId) public view override(ERC721, ERC721Enumerable) returns (bool) {
+        return super.supportsInterface(_interfaceId);
+    }    
 }
