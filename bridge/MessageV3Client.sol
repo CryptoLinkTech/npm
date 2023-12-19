@@ -90,8 +90,10 @@ abstract contract MessageV3Client is Ownable {
             else if(block.chainid == 1452)       _bridge = address(0x6c83DC6C5128ff3E073E737523D2176aAeB08525); // Gauss Testnet
             else if(block.chainid == 10200)      _bridge = address(0x146449fb27e4A4B4721a9c5742f3baB1e34eb31f); // Gnosis Testnet
             else if(block.chainid == 1666700000) _bridge = address(0xE0a5cBb1f15a84C4a4A0f7E98F9721997182deD6); // Harmony Testnet
+            else if(block.chainid == 13473)      _bridge = address(0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F); // Immutable Testnet
             else if(block.chainid == 2221)       _bridge = address(0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F); // Kava Testnet
             else if(block.chainid == 1001)       _bridge = address(0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F); // Klaytn Testnet
+            else if(block.chainid == 1998)       _bridge = address(0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F); // Kyoto Testnet
             else if(block.chainid == 59140)      _bridge = address(0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F); // Linea Testnet
             else if(block.chainid == 9768)       _bridge = address(0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F); // Mainnetz Testnet
             else if(block.chainid == 5001)       _bridge = address(0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F); // Mantle Testnet
