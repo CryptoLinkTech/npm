@@ -83,7 +83,7 @@ contract MyCrossChainContract is MessageClient {
     }
 
     // Function to send a message using express mode
-    function sendMessageExpress(uint destinationChainId, bytes memory data) public {
+    function sendExpressMessageToAnotherChain(uint destinationChainId, bytes memory data) public {
         // Sending a message using express mode
         uint txId = _sendMessageExpress(destinationChainId, data);
         // Additional logic after sending the message (if needed)
