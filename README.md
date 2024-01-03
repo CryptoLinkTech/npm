@@ -9,7 +9,6 @@
   - [Implementing MessageV3Client](#implementing-messagev3client)
   - [Contract Function Details](#contract-function-details)
   - [Example Implementation and Explanation](#example-implementation-and-explanation)
-    - [Expanded Solidity Contract Example](#expanded-solidity-contract-example)
     - [Notes on the Example Code](#notes-on-the-example-code)
     - [Breakdown of Key Components](#breakdown-of-key-components)
   - [Configuration Script](#configuration-script)
@@ -63,11 +62,6 @@ npm install @cryptolink/contracts
 
 ## Example Implementation and Explanation
 
-Here's an expanded breakdown of the `MessageClient` implementation as per the provided Solidity source code:
-
-Certainly! To complete the example code, I'll create a more fleshed-out version of the `MyCrossChainContract` contract that aligns with the provided Solidity source code. This example will include implementations of key functions such as `_sendMessage`, `_sendMessageExpress`, and `messageProcess`.
-
-### Expanded Solidity Contract Example
 
 ```solidity
 // SPDX-License-Identifier: MIT
