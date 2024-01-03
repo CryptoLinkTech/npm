@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
 // (c)2021-2023 Atlas
 // security-contact: atlas@cryptolink.tech
-pragma solidity ^0.8.9;
+pragma solidity ^0.8.20;
 
-import "../MessageV3Client.sol";
+import "../MessageClient.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
-contract SimpleToken is ERC20, ERC20Burnable, MessageV3Client {
+contract SimpleToken is ERC20, ERC20Burnable, MessageClient {
     mapping(uint => uint) public BRIDGE_PRICE;
 
     constructor() ERC20("Simple Cross Chain Token", "xTOKE") Ownable(msg.sender) {
@@ -23,7 +23,7 @@ contract SimpleToken is ERC20, ERC20Burnable, MessageV3Client {
         bytes memory _data = abi.encode(_to, _amount);
 
         // send bridge request
-        return _sendMessage(_chainId, address(0), _data);
+        return _sendMessage(_chainId, _data);
     }
 
     /** BRIDGE RECEIVER */

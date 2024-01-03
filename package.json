@@ -1,14 +1,14 @@
 {
   "name": "@cryptolink/contracts",
   "description": "Decentralized Cross-Chain Crypto Messaging System",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "files": [
     "**/*.sol"
   ],
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cryptolink/npm.git"
+    "url": "git+https://github.com/cryptolinktech/npm.git"
   },
   "keywords": [
     "solidity",

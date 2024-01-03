@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
 // (c)2021-2023 Atlas
 // security-contact: atlas@cryptolink.tech
-pragma solidity ^0.8.9;
+pragma solidity ^0.8.20;
 
-import "../MessageV3Client.sol";
+import "../MessageClient.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 
-contract SimpleNFT is ERC721, ERC721Enumerable, Ownable, MessageV3Client {
+contract SimpleNFT is ERC721, ERC721Enumerable, Ownable, MessageClient {
     uint public COUNTER;
 
     string public BASE_URI  = "https://example.com/metadata/";
@@ -52,7 +52,6 @@ contract SimpleNFT is ERC721, ERC721Enumerable, Ownable, MessageV3Client {
         // send cross chain message
         return _sendMessage(
             _chainId,      // id of the destination chain
-            address(0),    // referrer (optional)
             _data          // arbitrary data package to send
         );
     }
