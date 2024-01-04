@@ -32,7 +32,7 @@
   "author": "CryptoLink.Tech <atlas@cryptolink.tech>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CryptoLink/npm/issues"
+    "url": "https://github.com/CryptoLinkTech/npm/issues"
   },
   "homepage": "https://docs.cryptolink.tech/",
   "dependencies": {
