@@ -12,6 +12,12 @@
     - [Notes on the Example Code](#notes-on-the-example-code)
     - [Breakdown of Key Components](#breakdown-of-key-components)
   - [Configuration Script](#configuration-script)
+  - [Fee Management](#fee-management)
+    - [Handling Gas Fees on Destination Chain](#handling-gas-fees-on-destination-chain)
+    - [Managing Source Fees on Origin Chain](#managing-source-fees-on-origin-chain)
+    - [Automatic Fee Approval](#automatic-fee-approval)
+    - [Ensuring Funds for Fees](#ensuring-funds-for-fees)
+    - [Fee Limits for Protection](#fee-limits-for-protection)
   - [Supported Chains](#supported-chains)
     - [Example Use Cases](#example-use-cases)
   - [Full Contract Documentation](#full-contract-documentation)
@@ -192,6 +198,26 @@ async function configureChains() {
 // Execute the configuration
 configureChains();
 ```
+
+## Fee Management
+
+The fee management in cross-chain messaging involves two main types of fees: gas fees on the destination chain and source fees on the origin chain. Gas fees are paid in the wrapped native gas token of the respective blockchain, such as WETH on Ethereum, WMATIC on Polygon, and WBNB on Binance Smart Chain. Source fees are paid in FEE_TOKEN. The NPM package facilitates automatic approval for these tokens, ensuring that fees are deducted during transaction processing. Developers are responsible for ensuring their contracts have sufficient funds in both the wrapped native gas token and FEE_TOKEN. They also have the option to set limits on these fees using `setMaxgas` and `setMaxFee` functions for added protection against unexpected fee increases.
+
+### Handling Gas Fees on Destination Chain
+- Gas fees are paid in the wrapped native gas token of the respective blockchain (e.g., WETH on Ethereum, WMATIC on Polygon, WBNB on Binance Smart Chain).
+
+### Managing Source Fees on Origin Chain
+- Source chain fees are paid in FEE_TOKEN.
+
+### Automatic Fee Approval
+- The NPM package automatically approves the wrapped native gas token (like WETH, WMATIC) and FEE_TOKEN, enabling the Message system to automatically deduct fees during transaction processing.
+
+### Ensuring Funds for Fees
+- Developers must ensure their contracts have sufficient funds in the wrapped native gas token and FEE_TOKEN for fees. This can be achieved either by depositing funds or designing the contract to collect these from users.
+
+### Fee Limits for Protection
+- Functions `setMaxgas` and `setMaxFee` allow developers to set limits on gas and message fees, offering protection against high or unexpected fees. 
+
 
 ## Supported Chains
 
