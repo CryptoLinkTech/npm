@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 // (c)2021-2024 Atlas
 // security-contact: atlas@cryptolink.tech
-pragma solidity >=0.8.9;
+pragma solidity ^0.8.9;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -16,8 +16,7 @@ abstract contract MessageClient is Ownable {
     IERC20 public FEE_TOKEN;
 
     struct ChainData {
-        uint fee; // MIN FEE with 6 decimals of allowed max precision
-        address endpoint; // dest chain contract address
+        address endpoint; // address of this contract on specified chain
         uint16 confirmations; // source confirmations
     }
     mapping(uint => ChainData) public CHAINS;
@@ -79,7 +78,6 @@ abstract contract MessageClient is Ownable {
 
         uint _chainsLength = _chains.length;
         for(uint x=0; x < _chainsLength; x++) {
-            CHAINS[_chains[x]].fee = MESSAGEv3.minTokenForChain(_chains[x]);
             CHAINS[_chains[x]].confirmations = _confirmations[x];
             CHAINS[_chains[x]].endpoint = _endpoints[x];
         }

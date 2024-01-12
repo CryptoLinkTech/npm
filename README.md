@@ -73,7 +73,7 @@ npm install @cryptolink/contracts
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
-import "@cryptolink/contracts/MessageClient.sol"; // Ensure this path matches your actual import path
+import "@cryptolink/contracts/message/MessageClient.sol"; // Ensure this path matches your actual import path
 
 contract MyCrossChainContract is MessageClient {
     // Constructor to set up the MessageV3 bridge
@@ -123,7 +123,7 @@ contract MyCrossChainContract is MessageClient {
 
 1. **Contract Declaration and Inheritance**
    - `pragma solidity ^0.8.9;`: Specifies the Solidity compiler version for compatibility.
-   - `import "@cryptolink/contracts/MessageClient.sol";`: Imports the `MessageClient` abstract contract.
+   - `import "@cryptolink/contracts/message/MessageClient.sol";`: Imports the `MessageClient` abstract contract.
    - `contract MyCrossChainContract is MessageClient`: Declares a new contract `MyCrossChainContract` that inherits the functionalities of `MessageClient`.
 
 2. **Function: messageProcess**

@@ -1,7 +1,7 @@
 {
   "name": "@cryptolink/contracts",
   "description": "Decentralized Cross-Chain Crypto Messaging System",
-  "version": "0.3.2",
+  "version": "0.3.5",
   "files": [
     "**/*.sol"
   ],
@@ -39,5 +39,7 @@
     "@openzeppelin/contracts": "^5.0.1"
   },
   "main": "index.js",
-  "devDependencies": {}
+  "devDependencies": {
+    "hardhat": "^2.19.4"
+  }
 }
