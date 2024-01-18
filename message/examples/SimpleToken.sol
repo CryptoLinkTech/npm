@@ -11,7 +11,7 @@ import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 contract SimpleToken is ERC20, ERC20Burnable, MessageClient {
     mapping(uint => uint) public BRIDGE_PRICE;
 
-    constructor() ERC20("Simple Cross Chain Token", "xTOKE") Ownable(msg.sender) {
+    constructor() ERC20("Simple Cross Chain Token", "xTOKE") {
         _mint(msg.sender, 100_000_000 ether);
     }
 

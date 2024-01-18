@@ -7,7 +7,7 @@ import "../MessageClient.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 
-contract SimpleNFT is ERC721, ERC721Enumerable, Ownable, MessageClient {
+contract SimpleNFT is ERC721Enumerable, Ownable, MessageClient {
     uint public COUNTER;
 
     string public BASE_URI  = "https://example.com/metadata/";
@@ -15,7 +15,7 @@ contract SimpleNFT is ERC721, ERC721Enumerable, Ownable, MessageClient {
     uint   public BRIDGE_PRICE = 0;
     IERC20 public BUY_TOKEN = IERC20(address(0)); // todo: update with wanted token address for deployed chain!
 
-    constructor() ERC721("Simple Cross Chain NFT", "sNFT") Ownable(msg.sender) {}
+    constructor() ERC721("Simple Cross Chain NFT", "sNFT") {}
 
     /** USER */
     function mint() external returns (uint _nftId) {
@@ -79,15 +79,7 @@ contract SimpleNFT is ERC721, ERC721Enumerable, Ownable, MessageClient {
         return string(abi.encodePacked(BASE_URI, _nftId, ".json"));
     }
 
-    function _update(address _to, uint256 _tokenId, address _auth) internal override(ERC721, ERC721Enumerable) returns (address) {
-        return super._update(_to, _tokenId, _auth);
-    }
-
-    function _increaseBalance(address _account, uint128 _value) internal override(ERC721, ERC721Enumerable) {
-        super._increaseBalance(_account, _value);
-    }
-
-    function supportsInterface(bytes4 _interfaceId) public view override(ERC721, ERC721Enumerable) returns (bool) {
+    function supportsInterface(bytes4 _interfaceId) public view override(ERC721Enumerable) returns (bool) {
         return super.supportsInterface(_interfaceId);
     }    
 }
