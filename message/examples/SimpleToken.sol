@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 // (c)2021-2023 Atlas
 // security-contact: atlas@cryptolink.tech
-pragma solidity ^0.8.20;
+pragma solidity ^0.8.19;
 
 import "../MessageClient.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
