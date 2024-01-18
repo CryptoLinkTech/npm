@@ -34,7 +34,7 @@ contract SimpleNFT is ERC721, ERC721Enumerable, Ownable, MessageClient {
         COUNTER++;
     }
 
-    function bridge(address _to, uint _chainId, uint _nftId) public onlyActiveBridge(_chainId) returns (uint _txId) {
+    function bridge(address _to, uint _chainId, uint _nftId) public onlyActiveChain(_chainId) returns (uint _txId) {
         require(_ownerOf(_nftId) == msg.sender, "you do not own this nft");
 
         // take fee for bridging
@@ -57,7 +57,7 @@ contract SimpleNFT is ERC721, ERC721Enumerable, Ownable, MessageClient {
     }
 
     /** BRIDGE RECEIVER */
-    function messageProcess(uint, uint _sourceChainId, address _sender, address, uint, bytes calldata _data) external override onlySelfBridge(_sender, _sourceChainId) {
+    function messageProcess(uint, uint _sourceChainId, address _sender, address, uint, bytes calldata _data) external override onlySelf(_sender, _sourceChainId) {
         // process data package from source chain
         (address _to, uint _nftId) = abi.decode(_data, (address, uint));
 

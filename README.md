@@ -30,8 +30,8 @@
       - [6. setMaxgas](#6-setmaxgas)
       - [7. setMaxfee](#7-setmaxfee)
     - [Modifiers](#modifiers)
-      - [1. onlySelfBridge](#1-onlyselfbridge)
-      - [2. onlyActiveBridge](#2-onlyactivebridge)
+      - [1. onlySelf](#1-onlyself)
+      - [2. onlyActiveChain](#2-onlyactivechain)
       - [3. onlyOwner](#3-onlyowner)
     - [Functions from OpenZeppelin's `Ownable`](#functions-from-openzeppelins-ownable)
     - [Event](#event)
@@ -99,7 +99,7 @@ contract MyCrossChainContract is MessageClient {
     function messageProcess(
         uint _txId, uint _sourceChainId, address _sender, address _reference, 
         uint _amount, bytes calldata _data
-    ) external override onlySelfBridge(_sender, _sourceChainId) {
+    ) external override onlySelf(_sender, _sourceChainId) {
         // Decode the incoming message and process it
         // Example: (address from, uint256 value) = abi.decode(_data, (address, uint256));
         // Process the message as required
@@ -115,7 +115,7 @@ contract MyCrossChainContract is MessageClient {
 - **Initialization**: The contract is initialized with the address of the Message bridge, which is crucial for enabling cross-chain messaging.
 - **Sending Messages**: The `sendMessageToAnotherChain` and `sendMessageExpress` functions illustrate how to send standard and express messages to other chains.
 - **Processing Incoming Messages**: The `messageProcess` function is overridden to handle messages received from other chains. This function should be customized based on how you want to process incoming messages.
-- **Security**: The `onlySelfBridge` modifier ensures that only messages sent through the established bridge and configured remote contracts are processed.
+- **Security**: The `onlySelf` modifier ensures that only messages sent through the established bridge and configured remote contracts are processed.
 - **Customization**: This example provides a basic structure. You should customize the logic within these functions to fit your specific application requirements.
 
 
@@ -130,7 +130,7 @@ contract MyCrossChainContract is MessageClient {
    - **Purpose**: Processes incoming messages from other chains.
    - **Declaration**: 
      ```solidity
-     function messageProcess(uint _txId, uint _sourceChainId, address _sender, address _reference, uint _amount, bytes calldata _data) external virtual onlySelfBridge(_sender, _sourceChainId) {}
+     function messageProcess(uint _txId, uint _sourceChainId, address _sender, address _reference, uint _amount, bytes calldata _data) external virtual onlySelf(_sender, _sourceChainId) {}
      ```
    - **Implementation**: Override this function in your contract to define how incoming messages should be processed.
 
@@ -225,9 +225,10 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 |-----------------------------|------------|------------------------------------------|
 | Arbitrum Testnet (Sepolia)  | 421614     | 0x207CbCa48258591CD1e953739c663184A02bB320 |
 | Aurora Testnet              | 1313161555 | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
+| Autonity Testnet            | 65010001   | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Avalanche Testnet           | 43113      | 0x24BEFF24327C8E956d5FC74a5C502038683cDc0A |
 | Base Testnet (Sepolia)      | 84532      | 0x18716F6E46a66919deacD3c6fd4fa6Da02fa30b2 |
-| Boba Testnet                | 2888       | 0xAF1f0C79cc043AD4a263dfe7715ca657F9bDeced |
+| Boba Testnet                | 2888       | 0xe20B995917eb334093EA1974CDa9971B102C5aff |
 | Binance Testnet             | 97         | 0x535CCeD6C471eE907eEB3bBECf1C8223208Ca5e0 |
 | Canto Testnet               | 7701       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Celo Testnet                | 44787      | 0x6e658066340C7cae09dB68F5339Ddc4b806d3598 |
@@ -241,6 +242,8 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 | Gauss Testnet               | 1452       | 0x6c83DC6C5128ff3E073E737523D2176aAeB08525 |
 | Gnosis Testnet              | 10200      | 0x146449fb27e4A4B4721a9c5742f3baB1e34eb31f |
 | Harmony Testnet             | 1666700000 | 0xE0a5cBb1f15a84C4a4A0f7E98F9721997182deD6 |
+| Horizen Testnet             | 1663       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
+| Katla Testnet               | 167008     | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Kava Testnet                | 2221       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Klaytn Testnet              | 1001       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Linea Testnet               | 59140      | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
@@ -251,11 +254,13 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 | Oasis Sapphire Testnet      | 23295      | 0x566B40Dd59A868c244E1353368e08ddaD1C1d74f |
 | OKEx Testnet                | 65         | 0xF1FBB3E9977dAcF3909Ab541792cB2Bba10FFD5E |
 | Onus Testnet                | 1945       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
+| opBNB                       | 5611       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Optimism Testnet            | 11155420   | 0xB4245BFEA4AfE63c7F7863D090166890e9FEf1b2 |
 | Polygon Testnet             | 80001      | 0x08A2d304547A4B93B254d906502A3fc778D78412 |
 | Polygon zkEVM Testnet       | 1442       | 0xcA877c797D599bE2Bf8C897a3B9eba6bA4113332 |
 | Pulse Testnet               | 943        | 0x4f313cB864BD7138Fdb35337182D5b0E78d9fB33 |
 | Redstone Testnet            | 17001      | 0x9d75f706b986F0075b3778a12153390273dE95eC |
+| Rollux Testnet              | 57000      | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Scroll Testnet (Sepolia)    | 534351     | 0x23E2CE1fF48cF21239f8c5eb783CE89df02B6f35 |
 | Telos Testnet               | 41         | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | X1 Testnet                  | 195        | 0x4f313cB864BD7138Fdb35337182D5b0E78d9fB33 |
@@ -288,7 +293,7 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 #### 1. messageProcess
 - **Purpose**: Processes incoming messages from other chains.
 - **Visibility**: External
-- **Modifiers**: `onlySelfBridge`
+- **Modifiers**: `onlySelf`
 - **Parameters**:
   - `_txId` (uint): Transaction ID.
   - `_sourceChainId` (uint): Source chain ID.
@@ -353,10 +358,10 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 
 ### Modifiers
 
-#### 1. onlySelfBridge
-- **Purpose**: Ensures that the function is called only by the authorized `MessageClient` contract from the source chain.
+#### 1. onlySelf
+- **Purpose**: Ensures that the function is called only by the authorized `MessageClient` contract from the source chain. This modifier will pass if the message originated from any deployment of this contract on any chain.
 
-#### 2. onlyActiveBridge
+#### 2. onlyActiveChain
 - **Purpose**: Ensures that the destination chain is active before sending a message.
 
 #### 3. onlyOwner

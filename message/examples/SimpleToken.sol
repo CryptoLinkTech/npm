@@ -15,7 +15,7 @@ contract SimpleToken is ERC20, ERC20Burnable, MessageClient {
         _mint(msg.sender, 100_000_000 ether);
     }
 
-    function bridge(address _to, uint _chainId, uint _amount) external onlyActiveBridge(_chainId) returns (uint _txId) {
+    function bridge(address _to, uint _chainId, uint _amount) external onlyActiveChain(_chainId) returns (uint _txId) {
         // burn tokens
         _burn(msg.sender, _amount);
 
@@ -27,7 +27,7 @@ contract SimpleToken is ERC20, ERC20Burnable, MessageClient {
     }
 
     /** BRIDGE RECEIVER */
-    function messageProcess(uint, uint _sourceChainId, address _sender, address, uint, bytes calldata _data) external override onlySelfBridge(_sender, _sourceChainId) {
+    function messageProcess(uint, uint _sourceChainId, address _sender, address, uint, bytes calldata _data) external override onlySelf(_sender, _sourceChainId) {
         // process data package
         (address _to, uint _amount) = abi.decode(_data, (address, uint));
 

@@ -21,13 +21,13 @@ abstract contract MessageClient is Ownable {
     }
     mapping(uint => ChainData) public CHAINS;
 
-    modifier onlySelfBridge(address _sender, uint _sourceChainId) {
+    modifier onlySelf(address _sender, uint _sourceChainId) {
         require(msg.sender == address(MESSAGEv3), "MessageClient: not authorized");
         require(_sender == CHAINS[_sourceChainId].endpoint, "MessageClient: not authorized");
         _;
     }
 
-    modifier onlyActiveBridge(uint _destinationChainId) {
+    modifier onlyActiveChain(uint _destinationChainId) {
         require(CHAINS[_destinationChainId].endpoint != address(0), "MessageClient: destination chain not active");
         _;
     }
@@ -40,7 +40,7 @@ abstract contract MessageClient is Ownable {
         address _reference,  // (optional source reference address)
         uint _amount,        // (not used for messages, always 0)
         bytes calldata _data // encoded message from source chain
-    ) external virtual onlySelfBridge (_sender, _sourceChainId) {
+    ) external virtual onlySelf (_sender, _sourceChainId) {
     }
 
     /** BRIDGE SENDER */
