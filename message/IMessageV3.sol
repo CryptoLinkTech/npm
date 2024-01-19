@@ -4,6 +4,14 @@
 pragma solidity ^0.8.9;
 
 interface IMessageV3 {
+    event SendRequested(uint txId, address sender, address recipient, uint chain, bool express, bytes data, uint16 confirmations);
+    event SendProcessed(uint txId, uint sourceChainId, address sender, address recipient);
+    event Success(uint txId, uint sourceChainId, address sender, address recipient, uint amount);
+    event ErrorLog(uint txId, string message);
+    event SetExsig(address caller, address signer);
+    event SetMaxgas(address caller, uint maxGas);
+    event SetMaxfee(address caller, uint maxFee);
+
     function chainsig() external view returns (address signer);
     function weth() external view returns (address wethTokenAddress);
     function feeToken() external view returns (address feeToken);
