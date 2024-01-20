@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5",                          
+    "module": "commonjs",                     
+    "strict": true,                           
+    "esModuleInterop": true,                  
+    "skipLibCheck": true,                     
+    "forceConsistentCasingInFileNames": true,  
+    "outDir": "./dist",                       
+    "allowJs": true,                          
+    "resolveJsonModule": true
+  },
+  "include": [
+    "./config/**/*",                         
+    "./message/**/*",                        
+  ],
+  "exclude": [
+    "node_modules",                          
+    "**/*.test.ts"
+  ]
+}
