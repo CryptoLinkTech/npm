@@ -11,7 +11,7 @@
   - [Example Implementation and Explanation](#example-implementation-and-explanation)
     - [Notes on the Example Code](#notes-on-the-example-code)
     - [Breakdown of Key Components](#breakdown-of-key-components)
-  - [Configuration Script](#configuration-script)
+    - [Using Chain Configuration from the Package](#using-chain-configuration-from-the-package)
   - [Fee Management](#fee-management)
     - [Handling Gas Fees on Destination Chain](#handling-gas-fees-on-destination-chain)
     - [Managing Source Fees on Origin Chain](#managing-source-fees-on-origin-chain)
@@ -19,6 +19,8 @@
     - [Ensuring Funds for Fees](#ensuring-funds-for-fees)
     - [Fee Limits for Protection](#fee-limits-for-protection)
   - [Supported Chains](#supported-chains)
+    - [Mainnets](#mainnets)
+    - [Testnets](#testnets)
     - [Example Use Cases](#example-use-cases)
   - [Full Contract Documentation](#full-contract-documentation)
     - [Functions](#functions)
@@ -151,40 +153,43 @@ contract MyCrossChainContract is MessageClient {
    - **Implementation**: Similar to `_sendMessage` but sends the message in express mode.
 
 
-## Configuration Script
-
-Here's the revised Ethers.js configuration script. This script should be configured for and ran on every chain deployed AFTER all contracts have been deployed on each chain.
+### Using Chain Configuration from the Package
+To use the chain configuration stored in the npm package, import the configuration and use it to configure your client. Here is an example of how to set up your contract with the appropriate chain configuration:
 
 ```javascript
 const { ethers } = require('ethers');
+const chainsConfig = require('@cryptolink/contracts/config/chains');
 
-// Configuration Parameters
-const rpcUrl = 'https://mainnet.infura.io/v3/YOUR_INFURA_API_KEY'; // Example Ethereum RPC URL
-const privateKey = '0xYOUR_PRIVATE_KEY'; // Example private key
-const messageV3Address = '0x1234...abcd'; // Example MessageV3 contract address for Ethereum
-const contractAddress = '0xabcd...1234'; // Example deployed contract address on Ethereum
+async function configureContract() {
+    // Configuration Parameters
+    const rpcUrl = 'https://mainnet.infura.io/v3/YOUR_INFURA_API_KEY'; // Example Ethereum RPC URL
+    const privateKey = '0xYOUR_PRIVATE_KEY'; // Example private key
+    const contractAddress = '0xabcd...1234'; // Example deployed contract address on Ethereum
 
-// Chain configuration data
-const chains = [1, 3, 4]; // Example chain IDs for Ethereum, Ropsten, Rinkeby
-const endpoints = ['0x1111...2222', '0x3333...4444', '0x5555...6666']; // Example corresponding MessageClient addresses on each chain
-const confirmations = [12, 6, 6]; // Example confirmation counts for each chain
+    // Initialize ethers with provider and signer
+    const provider = new ethers.providers.JsonRpcProvider(rpcUrl);
+    const signer = new ethers.Wallet(privateKey, provider);
 
-// Initialize ethers with provider and signer
-const provider = new ethers.providers.JsonRpcProvider(rpcUrl);
-const signer = new ethers.Wallet(privateKey, provider);
+    // Define the ABI of the contract's configureClient function
+    const contractAbi = [
+        "function configureClient(address _messageV3, uint[] calldata _chains, address[] calldata _endpoints, uint16[] calldata _confirmations) external"
+    ];
 
-const contractAbi = [
-    "function configureClient(address _messageV3, uint[] calldata _chains, address[] calldata _endpoints, uint16[] calldata _confirmations) external"
-];
+    // Instantiate the contract
+    const myContract = new ethers.Contract(contractAddress, contractAbi, signer);
 
-// Instantiate the contract
-const myContract = new ethers.Contract(contractAddress, contractAbi, signer);
-
-async function configureChains() {
     try {
+        // Define additional configuration parameters
+        const chains = [1, 3, 4]; // Example chain IDs for Ethereum, Ropsten, Rinkeby
+        const endpoints = chains.map(chainId => chainsConfig[chainId].message); // Map chain IDs to corresponding MessageClient addresses
+        const confirmations = [12, 6, 6]; // Example confirmation counts for each chain
+
         // Configure the client with MessageV3 bridge and chain data
         const tx = await myContract.configureClient(
-            messageV3Address, chains, endpoints, confirmations
+            chainsConfig[hre.network.config.chainId].message, // Use the message contract address of the current network
+            chains, 
+            endpoints, 
+            confirmations
         );
 
         console.log('Transaction sent:', tx.hash);
@@ -196,7 +201,7 @@ async function configureChains() {
 }
 
 // Execute the configuration
-configureChains();
+configureContract();
 ```
 
 ## Fee Management
@@ -221,8 +226,29 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 
 ## Supported Chains
 
-| Chain Name                  | Chain ID   | Contract Address                         |
-|-----------------------------|------------|------------------------------------------|
+### Mainnets
+
+| Chain Name                  | Chain ID   | Contract Address                           |
+|-----------------------------|------------|--------------------------------------------|
+| Arbitrum Mainnet            | 42161      | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Avalanche Mainnet           | 43114      | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Base Mainnet                | 8453       | 0xf8B8656Ce65Ecf334AcCe299e24E97fB5069c2C8 |
+| Binance Mainnet             | 56         | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Celo Mainnet                | 42220      | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Cronos Mainnet              | 25         | 0x4f3ad39a5dfe09ef9d95cc546a60ee5ad2c75eec |
+| Ethereum Mainnet            | 1          | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Fantom Mainnet              | 250        | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Harmony Mainnet             | 1666600000 | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Metis Mainnet               | 1088       | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Oasis Emerald Mainnet       | 42262      | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Polygon Mainnet             | 137        | 0x916d26564fe2b96a063cfae5f5768274b1334b27 |
+| Pulse Mainnet               | 369        | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+
+
+### Testnets
+
+| Chain Name                  | Chain ID   | Contract Address                           |
+|-----------------------------|------------|--------------------------------------------|
 | Arbitrum Testnet (Sepolia)  | 421614     | 0x207CbCa48258591CD1e953739c663184A02bB320 |
 | Aurora Testnet              | 1313161555 | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Autonity Testnet            | 65010001   | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
@@ -233,10 +259,10 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 | Canto Testnet               | 7701       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Celo Testnet                | 44787      | 0x6e658066340C7cae09dB68F5339Ddc4b806d3598 |
 | Cronos Testnet              | 338        | 0x8eb10FC1793094113E7f52bA159A6AeB54CaB92c |
-| Fantom Testnet              | 4002       | 0x7d474aA4DbDBc276b67abcc5f54262978b369cEC |
 | Ethereum Goerli             | 5          | 0x566B40Dd59A868c244E1353368e08ddaD1C1d74f |
 | Ethereum Holesky            | 17000      | 0x9d75f706b986F0075b3778a12153390273dE95eC |
 | Ethereum Sepolia            | 11155111   | 0x8DE416ABd87307f966a5655701F2f78012585225 |
+| Fantom Testnet              | 4002       | 0x7d474aA4DbDBc276b67abcc5f54262978b369cEC |
 | Forest Testnet              | 377        | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Frame Testnet               | 68840142   | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Gauss Testnet               | 1452       | 0x6c83DC6C5128ff3E073E737523D2176aAeB08525 |
@@ -254,7 +280,7 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 | Oasis Sapphire Testnet      | 23295      | 0x566B40Dd59A868c244E1353368e08ddaD1C1d74f |
 | OKEx Testnet                | 65         | 0xF1FBB3E9977dAcF3909Ab541792cB2Bba10FFD5E |
 | Onus Testnet                | 1945       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
-| opBNB                       | 5611       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
+| opBNB Testnet               | 5611       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Optimism Testnet            | 11155420   | 0xB4245BFEA4AfE63c7F7863D090166890e9FEf1b2 |
 | Polygon Testnet             | 80001      | 0x08A2d304547A4B93B254d906502A3fc778D78412 |
 | Polygon zkEVM Testnet       | 1442       | 0xcA877c797D599bE2Bf8C897a3B9eba6bA4113332 |
