@@ -172,7 +172,7 @@ To use the chain configuration stored in the npm package, import the configurati
 ```javascript
 const { ethers } = require('ethers');
 const chainsConfig = require('@cryptolink/contracts/config/chains');
-const { MessageClientABI } = require('@cryptolink/contracts/abis');
+const { MessageClientABI } = require('@cryptolink/contracts/message/abi');
 
 async function configureContract() {
     // Configuration Parameters
