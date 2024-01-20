@@ -11,6 +11,7 @@
   - [Example Implementation and Explanation](#example-implementation-and-explanation)
     - [Notes on the Example Code](#notes-on-the-example-code)
     - [Breakdown of Key Components](#breakdown-of-key-components)
+  - [Using the MessageClient ABI](#using-the-messageclient-abi)
     - [Using Chain Configuration from the Package](#using-chain-configuration-from-the-package)
   - [Fee Management](#fee-management)
     - [Handling Gas Fees on Destination Chain](#handling-gas-fees-on-destination-chain)
@@ -152,13 +153,26 @@ contract MyCrossChainContract is MessageClient {
      ```
    - **Implementation**: Similar to `_sendMessage` but sends the message in express mode.
 
+## Using the MessageClient ABI
+
+You can import the ABI for the `MessageClient` contract directly from the package:
+
+```javascript
+// Using CommonJS
+const { MessageClientABI } = require('@cryptolink/contracts/abis');
+
+// Using ES6 imports
+import { MessageClientABI } from '@cryptolink/contracts/abis';
+```
 
 ### Using Chain Configuration from the Package
+
 To use the chain configuration stored in the npm package, import the configuration and use it to configure your client. Here is an example of how to set up your contract with the appropriate chain configuration:
 
 ```javascript
 const { ethers } = require('ethers');
 const chainsConfig = require('@cryptolink/contracts/config/chains');
+const { MessageClientABI } = require('@cryptolink/contracts/abis');
 
 async function configureContract() {
     // Configuration Parameters
@@ -170,19 +184,13 @@ async function configureContract() {
     const provider = new ethers.providers.JsonRpcProvider(rpcUrl);
     const signer = new ethers.Wallet(privateKey, provider);
 
-    // Define the ABI of the contract's configureClient function
-    const contractAbi = [
-        "function configureClient(address _messageV3, uint[] calldata _chains, address[] calldata _endpoints, uint16[] calldata _confirmations) external"
-    ];
-
     // Instantiate the contract
-    const myContract = new ethers.Contract(contractAddress, contractAbi, signer);
+    const myContract = new ethers.Contract(contractAddress, MessageClientABI, signer);
 
     try {
-        // Define additional configuration parameters
-        const chains = [1, 3, 4]; // Example chain IDs for Ethereum, Ropsten, Rinkeby
-        const endpoints = chains.map(chainId => chainsConfig[chainId].message); // Map chain IDs to corresponding MessageClient addresses
-        const confirmations = [12, 6, 6]; // Example confirmation counts for each chain
+        const chains = [5, 11155111, 17000]; // Desired chain IDs
+        const endpoints = ['0x000000','0x000000','0x000000']; // YOUR deployed instances of ATWTest on each chain
+        const confirmations = [12, 6, 6]; // Desired confirmation counts for each chain
 
         // Configure the client with MessageV3 bridge and chain data
         const tx = await myContract.configureClient(
