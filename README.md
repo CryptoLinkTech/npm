@@ -12,7 +12,8 @@
     - [Notes on the Example Code](#notes-on-the-example-code)
     - [Breakdown of Key Components](#breakdown-of-key-components)
   - [Using the MessageClient ABI](#using-the-messageclient-abi)
-    - [Using Chain Configuration from the Package](#using-chain-configuration-from-the-package)
+  - [Using the MessageClient Configuration](#using-the-messageclient-configuration)
+    - [After Deployment Configuration Script](#after-deployment-configuration-script)
   - [Fee Management](#fee-management)
     - [Handling Gas Fees on Destination Chain](#handling-gas-fees-on-destination-chain)
     - [Managing Source Fees on Origin Chain](#managing-source-fees-on-origin-chain)
@@ -165,9 +166,34 @@ const { MessageClientABI } = require('@cryptolink/contracts/abis');
 import { MessageClientABI } from '@cryptolink/contracts/abis';
 ```
 
-### Using Chain Configuration from the Package
+You can then load contracts using this ABI:
 
-To use the chain configuration stored in the npm package, import the configuration and use it to configure your client. Here is an example of how to set up your contract with the appropriate chain configuration:
+```javascript
+const myContract = new ethers.Contract(contractAddress, MessageClientABI, signer);
+```
+
+## Using the MessageClient Configuration
+
+You can import common addresses and configuration for the `MessageClient` contract directly from the package:
+
+```javascript
+// Using CommonJS
+const chainsConfig = require('@cryptolink/contracts/config/chains');
+
+// Using ES6 imports
+import chainsConfig from '@cryptolink/contracts/config/chains';
+```
+
+You can then reference values from chains by using the chainId as an index:
+
+```javascript
+// Get the message contract address of the current network
+const messageAddress = chainsConfig[hre.network.config.chainId].message; 
+```
+
+### After Deployment Configuration Script
+
+This script is an example to be ran after all of the corresponding Client contracts have been deployed and addresses collected. This script is used to enable all of the desired chains and configure each of the contracts to accept messages from each other utilizing the ```configureClient()``` function in the package.
 
 ```javascript
 const { ethers } = require('ethers');
