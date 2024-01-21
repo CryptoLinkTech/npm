@@ -36,7 +36,7 @@
       - [1. onlySelf](#1-onlyself)
       - [2. onlyActiveChain](#2-onlyactivechain)
       - [3. onlyOwner](#3-onlyowner)
-    - [Functions from OpenZeppelin's `Ownable`](#functions-from-openzeppelins-ownable)
+    - [Functions based off OpenZeppelin's `Ownable`](#functions-based-off-openzeppelins-ownable)
     - [Event](#event)
 
 ## Introduction
@@ -401,22 +401,14 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 #### 3. onlyOwner
 - **Purpose**: Restricts function access to the contract owner.
 
-### Functions from OpenZeppelin's `Ownable`
+### Functions based off OpenZeppelin's `Ownable`
 
-1. **owner()**
-   - **Purpose**: Returns the address of the current owner.
-   - **Visibility**: Public
-
-2. **isOwner()**
-   - **Purpose**: Checks if the caller is the current owner.
-   - **Visibility**: Public
-
-3. **renounceOwnership()**
+1. **renounceMessageOwnership()**
    - **Purpose**: Leaves the contract without an owner, making it impossible to call `onlyOwner` functions.
    - **Visibility**: Public
    - **Important Note**: Use with caution as it removes any functionality only available to the owner.
 
-4. **transferOwnership(newOwner)**
+2. **transferMessageOwnership(newOwner)**
    - **Purpose**: Transfers ownership of the contract to a new account (`newOwner`).
    - **Visibility**: Public
    - **Parameters**:
@@ -429,5 +421,3 @@ The fee management in cross-chain messaging involves two main types of fees: gas
    - **Parameters**:
      - `previousOwner` (address): Address of the previous owner.
      - `newOwner` (address): Address of the new owner.
-
-For more detailed information, please refer to the [OpenZeppelin Documentation](https://docs.openzeppelin.com/contracts/2.x/api/ownership).
