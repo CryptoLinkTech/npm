@@ -296,6 +296,7 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 | Redstone Testnet            | 17001      | 0x9d75f706b986F0075b3778a12153390273dE95eC |
 | Rollux Testnet              | 57000      | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Scroll Testnet (Sepolia)    | 534351     | 0x23E2CE1fF48cF21239f8c5eb783CE89df02B6f35 |
+| Sonic Testnet               | 64165      | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Telos Testnet               | 41         | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | X1 Testnet                  | 195        | 0x4f313cB864BD7138Fdb35337182D5b0E78d9fB33 |
 | XDC Testnet                 | 51         | 0x0EFafca24E5BbC1C01587B659226B9d600fd671f |
