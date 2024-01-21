@@ -63,7 +63,7 @@ npm install @cryptolink/contracts
 *See [Examples](#example-implementation-and-explanation) for detailed use cases.*
 
 ## Contract Function Details
-- **configureBridge**: Sets chain-specific bridge configurations.
+- **configureClient**: Sets chain-specific configurations and enables/disables chains.
 - **setMaxgas**: Defines maximum gas refund allowed per transaction.
 - **setMaxfee**: Sets a cap on transaction fees that the system can charge per message.
 - **setExsig**: Assigns external signatures for security enhancement.
@@ -77,10 +77,10 @@ npm install @cryptolink/contracts
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
-import "@cryptolink/contracts/message/MessageClient.sol"; // Ensure this path matches your actual import path
+import "@cryptolink/contracts/message/MessageClient.sol";
 
 contract MyCrossChainContract is MessageClient {
-    // Constructor to set up the MessageV3 bridge
+    // Constructor to set up the MessageV3 Client
     constructor(address messageV3Address) {
         MESSAGEv3 = IMessageV3(messageV3Address);
     }
@@ -116,10 +116,10 @@ contract MyCrossChainContract is MessageClient {
 
 ### Notes on the Example Code
 
-- **Initialization**: The contract is initialized with the address of the Message bridge, which is crucial for enabling cross-chain messaging.
+- **Initialization**: The contract is initialized with the address of the Message system, which is crucial for enabling cross-chain messaging.
 - **Sending Messages**: The `sendMessageToAnotherChain` and `sendMessageExpress` functions illustrate how to send standard and express messages to other chains.
 - **Processing Incoming Messages**: The `messageProcess` function is overridden to handle messages received from other chains. This function should be customized based on how you want to process incoming messages.
-- **Security**: The `onlySelf` modifier ensures that only messages sent through the established bridge and configured remote contracts are processed.
+- **Security**: The `onlySelf` modifier ensures that only messages sent through the established Message system and configured remote contracts are processed.
 - **Customization**: This example provides a basic structure. You should customize the logic within these functions to fit your specific application requirements.
 
 
@@ -218,7 +218,7 @@ async function configureContract() {
         const endpoints = ['0x000000','0x000000','0x000000']; // YOUR deployed instances of ATWTest on each chain
         const confirmations = [12, 6, 6]; // Desired confirmation counts for each chain
 
-        // Configure the client with MessageV3 bridge and chain data
+        // Configure the client with MessageV3 address and chain data
         const tx = await myContract.configureClient(
             chainsConfig[hre.network.config.chainId].message, // Use the message contract address of the current network
             chains, 
@@ -383,11 +383,11 @@ The fee management in cross-chain messaging involves two main types of fees: gas
   - `_txId` (uint): Transaction ID of the sent message.
 
 #### 4. configureClient
-- **Purpose**: Configures the client with MessageV3 bridge and chain data.
+- **Purpose**: Configures the client with MessageV3 address and chain data.
 - **Visibility**: External
 - **Modifiers**: `onlyOwner`
 - **Parameters**:
-  - `_messageV3` (address): MessageV3 bridge address.
+  - `_messageV3` (address): MessageV3 address.
   - `_chains` (uint[]): List of chain IDs to accept as valid destinations.
   - `_endpoints` (address[]): List of corresponding `MessageClient` addresses on each chain.
   - `_confirmations` (uint16[]): Confirmations required on each chain before processing.
