@@ -38,6 +38,8 @@ abstract contract MessageClient {
     }
 
     event OwnershipTransferred(address previousOwner, address newOwner);
+    event RecoverFeeToken(address owner, uint amount);
+    event RecoverGasToken(address owner, uint amount);
     event SetMaxgas(address owner, uint maxGas);
     event SetMaxfee(address owner, uint maxfee);
     event SetExsig(address owner, address exsig);
@@ -126,4 +128,14 @@ abstract contract MessageClient {
         MESSAGEv3.setMaxfee(_maxFee);
         emit SetMaxfee(msg.sender, _maxFee);
     }
+
+    function recoverFeeToken(uint _amount) external onlyMessageOwner {
+        FEE_TOKEN.transfer(msg.sender, _amount);
+        emit RecoverFeeToken(msg.sender, _amount);
+    }
+    
+    function recoverGasToken(uint _amount) external onlyMessageOwner {
+        IERC20(MESSAGEv3.weth()).transfer(msg.sender, _amount);
+        emit RecoverGasToken(msg.sender, _amount);
+    }    
 }

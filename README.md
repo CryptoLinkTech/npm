@@ -20,6 +20,7 @@
     - [Automatic Fee Approval](#automatic-fee-approval)
     - [Ensuring Funds for Fees](#ensuring-funds-for-fees)
     - [Fee Limits for Protection](#fee-limits-for-protection)
+    - [Recovering Fee and Gas Tokens](#recovering-fee-and-gas-tokens)
   - [Supported Chains](#supported-chains)
     - [Mainnets](#mainnets)
     - [Testnets](#testnets)
@@ -33,6 +34,8 @@
       - [5. setExsig](#5-setexsig)
       - [6. setMaxgas](#6-setmaxgas)
       - [7. setMaxfee](#7-setmaxfee)
+      - [8. recoverFeeToken](#8-recoverfeetoken)
+      - [9. recoverGasToken](#9-recovergastoken)
     - [Modifiers](#modifiers)
       - [1. onlySelf](#1-onlyself)
       - [2. onlyActiveChain](#2-onlyactivechain)
@@ -257,7 +260,9 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 ### Fee Limits for Protection
 - Functions `setMaxgas` and `setMaxFee` allow developers to set limits on gas and message fees, offering protection against high or unexpected fees. 
 
-
+### Recovering Fee and Gas Tokens
+- Functions `recoverGasToken` and `recoverFeeToken` allow the contract owner to recover funds sent to it for fees.
+  
 ## Supported Chains
 
 ### Mainnets
@@ -415,6 +420,22 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 - **Modifiers**: `onlyOwner`
 - **Parameters**:
   - `_maxFee` (uint): Maximum fee amount.
+- **Returns**: None
+
+#### 8. recoverFeeToken
+- **Purpose**: Recovers Fee Tokens from the contract.
+- **Visibility**: External
+- **Modifiers**: `onlyOwner`
+- **Parameters**:
+  - `_amount` (uint): Amount of tokens to recover.
+- **Returns**: None
+
+#### 9. recoverGasToken
+- **Purpose**: Recovers Gas Tokens (WETH) from the contract.
+- **Visibility**: External
+- **Modifiers**: `onlyOwner`
+- **Parameters**:
+  - `_amount` (uint): Amount of tokens to recover.
 - **Returns**: None
 
 ### Modifiers
