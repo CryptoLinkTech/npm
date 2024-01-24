@@ -137,5 +137,8 @@ abstract contract MessageClient {
     function recoverGasToken(uint _amount) external onlyMessageOwner {
         IERC20(MESSAGEv3.weth()).transfer(msg.sender, _amount);
         emit RecoverGasToken(msg.sender, _amount);
-    }    
+    } 
+
+    receive() external payable {}
+    fallback() external payable {}
 }
