@@ -1,42 +1,68 @@
 const chainsConfig = {
     "42161": { // Arbitrum Mainnet
-      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A"
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      feeToken: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      weth: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"
     },
     "43114": { // Avalanche Mainnet
-      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A"
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      feeToken: "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+      weth: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7"
     },
     "8453": { // Base Mainnet
-      message: "0xf8B8656Ce65Ecf334AcCe299e24E97fB5069c2C8"
+      message: "0xf8B8656Ce65Ecf334AcCe299e24E97fB5069c2C8",
+      feeToken: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      weth: "0x4200000000000000000000000000000000000006"
     },
     "56": { // Binance Mainnet
-      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A"
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      feeToken: "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+      weth: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
     },
     "42220": { // Celo Mainnet
-      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A"
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      feeToken: "0x37f750B7cC259A2f741AF45294f6a16572CF5cAd",
+      weth: "0x471EcE3750Da237f93B8E339c536989b8978a438"
     },
     "25": { // Cronos Mainnet
-      message: "0x4f3ad39a5dfe09ef9d95cc546a60ee5ad2c75eec"
+      message: "0x4f3ad39a5dfe09ef9d95cc546a60ee5ad2c75eec",
+      feeToken: "0xc21223249CA28397B4B6541dfFaEcC539BfF0c59",
+      weth: "0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23"
     },
     "1": { // Ethereum Mainnet
-      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A"
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      feeToken: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      weth: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
     },
     "250": { // Fantom Mainnet
-      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A"
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      feeToken: "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
+      weth: "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83"
     },
     "1666600000": { // Harmony Mainnet
-      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A"
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      feeToken: "0x985458E523dB3d53125813eD68c274899e9DfAb4",
+      weth: "0xcF664087a5bB0237a0BAd6742852ec6c8d69A27a"
     },
     "1088": { // Metis Mainnet
-      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A"
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      feeToken: "0xEA32A96608495e54156Ae48931A7c20f0dcc1a21",
+      weth: "0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000"
     },
     "42262": { // Oasis Emerald Mainnet
-      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A"
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      feeToken: "0x81ECac0D6Be0550A00FF064a4f9dd2400585FE9c",
+      weth: "0x21C718C22D52d0F3a789b752D4c2fD5908a8A733"
     },
     "137": { // Polygon Mainnet
-      message: "0x916d26564fe2b96a063cfae5f5768274b1334b27"
+      message: "0x916d26564fe2b96a063cfae5f5768274b1334b27",
+      feeToken: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+      weth: "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270"
     },
     "369": { // Pulse Mainnet
-      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A"
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      feeToken: "0x15d38573d2feeb82e7ad5187ab8c1d52810b1f07",
+      weth: "0xa1077a294dde1b09bb078844df40758a5d0f9a27"
     },
 
 
