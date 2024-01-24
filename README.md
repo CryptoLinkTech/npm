@@ -277,6 +277,7 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 | Cronos Mainnet              | 25         | 0x4f3ad39a5dfe09ef9d95cc546a60ee5ad2c75eec |
 | Ethereum Mainnet            | 1          | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
 | Fantom Mainnet              | 250        | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Gauss Mainnet               | 1777       | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
 | Harmony Mainnet             | 1666600000 | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
 | Metis Mainnet               | 1088       | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
 | Oasis Emerald Mainnet       | 42262      | 0x15AC559DA4951c796DB6620fAb286B96840D039A |

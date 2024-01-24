@@ -39,6 +39,11 @@ const chainsConfig = {
       feeToken: "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
       weth: "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83"
     },
+    "1777": { // Gauss Mainnet
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      weth: "0x26497607aAC75F1fFD7372FEDf6dBE5CFD8Ad92b",
+      feeToken: "0x26497607aAC75F1fFD7372FEDf6dBE5CFD8Ad92b" // no stablecoin on network ..
+    },
     "1666600000": { // Harmony Mainnet
       message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
       feeToken: "0x985458E523dB3d53125813eD68c274899e9DfAb4",
