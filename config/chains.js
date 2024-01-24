@@ -44,10 +44,25 @@ const chainsConfig = {
       weth: "0xb45fC65405B1a28Bb24AF49fe2caa278525Fe977",
       feeToken: "0x26497607aAC75F1fFD7372FEDf6dBE5CFD8Ad92b" // no stablecoin on network ..
     },
+    "100": { // Gnosis Mainnet
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      feeToken: "0x0000000000000000000000000000000000000000",
+      weth: "0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1"
+    },    
     "1666600000": { // Harmony Mainnet
       message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
       feeToken: "0x985458E523dB3d53125813eD68c274899e9DfAb4",
       weth: "0xcF664087a5bB0237a0BAd6742852ec6c8d69A27a"
+    },
+    "2222": { // Kava Mainnet
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      feeToken: "0x0000000000000000000000000000000000000000",
+      weth: "0xc86c7C0eFbd6A49B35E8714C5f59D99De09A225b"
+    },
+    "59144": { // Linea Mainnet
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      feeToken: "0x0000000000000000000000000000000000000000",
+      weth: "0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f"
     },
     "1088": { // Metis Mainnet
       message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
@@ -64,10 +79,20 @@ const chainsConfig = {
       feeToken: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
       weth: "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270"
     },
+    "1101": { // PolygonZK Mainnet
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      feeToken: "0x0000000000000000000000000000000000000000",
+      weth: "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9"
+    },
     "369": { // Pulse Mainnet
       message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
       feeToken: "0x15d38573d2feeb82e7ad5187ab8c1d52810b1f07",
       weth: "0xa1077a294dde1b09bb078844df40758a5d0f9a27"
+    },
+    "570": { // Rollux Mainnet
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      feeToken: "0x0000000000000000000000000000000000000000",
+      weth: "0x4200000000000000000000000000000000000006"
     },
 
 

@@ -267,22 +267,27 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 
 ### Mainnets
 
-| Chain Name                  | Chain ID   | Contract Address                           |
-|-----------------------------|------------|--------------------------------------------|
-| Arbitrum Mainnet            | 42161      | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
-| Avalanche Mainnet           | 43114      | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
-| Base Mainnet                | 8453       | 0xf8B8656Ce65Ecf334AcCe299e24E97fB5069c2C8 |
-| Binance Mainnet             | 56         | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
-| Celo Mainnet                | 42220      | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
-| Cronos Mainnet              | 25         | 0x4f3ad39a5dfe09ef9d95cc546a60ee5ad2c75eec |
-| Ethereum Mainnet            | 1          | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
-| Fantom Mainnet              | 250        | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
-| Gauss Mainnet               | 1777       | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
-| Harmony Mainnet             | 1666600000 | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
-| Metis Mainnet               | 1088       | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
-| Oasis Emerald Mainnet       | 42262      | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
-| Polygon Mainnet             | 137        | 0x916d26564fe2b96a063cfae5f5768274b1334b27 |
-| Pulse Mainnet               | 369        | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Chain Name              | Chain ID    | Contract Address                           |
+|-------------------------|-------------|--------------------------------------------|
+| Arbitrum Mainnet        | 42161       | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Avalanche Mainnet       | 43114       | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Base Mainnet            | 8453        | 0xf8B8656Ce65Ecf334AcCe299e24E97fB5069c2C8 |
+| Binance Mainnet         | 56          | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Celo Mainnet            | 42220       | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Cronos Mainnet          | 25          | 0x4f3ad39a5dfe09ef9d95cc546a60ee5ad2c75eec |
+| Ethereum Mainnet        | 1           | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Fantom Mainnet          | 250         | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Gauss Mainnet           | 1777        | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Gnosis Mainnet          | 100         | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Harmony Mainnet         | 1666600000  | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Kava Mainnet            | 2222        | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Linea Mainnet           | 59144       | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Metis Mainnet           | 1088        | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Oasis Emerald Mainnet   | 42262       | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Polygon Mainnet         | 137         | 0x916d26564fe2b96a063cfae5f5768274b1334b27 |
+| PolygonZK Mainnet       | 1101        | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Pulse Mainnet           | 369         | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Rollux Mainnet          | 570         | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
 
 
 ### Testnets
