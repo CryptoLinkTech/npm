@@ -4,6 +4,11 @@ const chainsConfig = {
       feeToken: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
       weth: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"
     },
+    "1313161554": { // Auroura Mainnet
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      feeToken: "0xB12BFcA5A55806AaF64E99521918A4bf0fC40802",
+      weth: "0xC9BdeEd33CD01541e1eeD10f90519d2C06Fe3feB"
+    },
     "43114": { // Avalanche Mainnet
       message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
       feeToken: "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
@@ -18,6 +23,16 @@ const chainsConfig = {
       message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
       feeToken: "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
       weth: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
+    },
+    "288": { // Boba Mainnet
+      message: "",
+      feeToken: "0x66a2A913e447d6b4BF33EFbec43aAeF87890FBbc",
+      weth: "0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000"
+    },
+    "7700": { // Canto Mainnet
+      message: "",
+      feeToken: "0x80b5a32E4F032B2a058b4F29EC95EEfEEB87aDcd",
+      weth: "0x5FD55A1B9FC24967C4dB09C513C3BA0DFa7FF687"
     },
     "42220": { // Celo Mainnet
       message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
@@ -39,6 +54,11 @@ const chainsConfig = {
       feeToken: "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
       weth: "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83"
     },
+    "14": { // Flare Mainnet 
+      message: "",
+      feeToken: "0x8eB8435456d5187796eF00e9ab94544F9666D82A",
+      weth: "0x135cB19AcdE9fFB4654caCE4189A0E0Fb4B6954e"
+    },
     "1777": { // Gauss Mainnet
       message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
       weth: "0xb45fC65405B1a28Bb24AF49fe2caa278525Fe977",
@@ -53,6 +73,11 @@ const chainsConfig = {
       message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
       feeToken: "0x985458E523dB3d53125813eD68c274899e9DfAb4",
       weth: "0xcF664087a5bB0237a0BAd6742852ec6c8d69A27a"
+    },
+    "13371": { // Immutable Mainnet
+      message: "",
+      feeToken: "0x6de8aCC0D406837030CE4dd28e7c08C5a96a30d2",
+      weth: "0x52A6c53869Ce09a731CD772f245b97A4401d3348"
     },
     "2222": { // Kava Mainnet
       message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
@@ -155,6 +180,9 @@ const chainsConfig = {
     },
     "1663": { // Horizen Testnet
       message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F"
+    },
+    "13473": { // Immutable Testnet
+      message: ""
     },
     "167008": { // Katla Testnet
       message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F"
