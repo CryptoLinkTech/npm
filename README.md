@@ -299,6 +299,7 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 | Autonity Testnet            | 65010001   | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Avalanche Testnet           | 43113      | 0x24BEFF24327C8E956d5FC74a5C502038683cDc0A |
 | Base Testnet (Sepolia)      | 84532      | 0x18716F6E46a66919deacD3c6fd4fa6Da02fa30b2 |
+| Blast Testnet (Sepolia)     | 168587773  | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F | 
 | Boba Testnet                | 2888       | 0xe20B995917eb334093EA1974CDa9971B102C5aff |
 | Binance Testnet             | 97         | 0x535CCeD6C471eE907eEB3bBECf1C8223208Ca5e0 |
 | Canto Testnet               | 7701       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |

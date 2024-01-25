@@ -181,6 +181,12 @@ const chainsConfig = {
       weth: "",
       rpc: "https://97.rpc.cryptolink.tech/",
     },
+    "168587773": { // Blast Testnet
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0x566B40Dd59A868c244E1353368e08ddaD1C1d74f",
+      weth: "",
+      rpc: "https://168587773.rpc.cryptolink.tech/",
+    },
     "2888": { // Boba Testnet
       message: "0xe20B995917eb334093EA1974CDa9971B102C5aff",
       feeToken: "0x8cd2556e02f5A136167aE123e313a17481f51904",
