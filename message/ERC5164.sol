@@ -46,12 +46,8 @@ abstract contract ERC5164 is MessageClient, ISingleMessageDispatcher, ISingleMes
             false
         );
 
-        bytes memory _tmp = new bytes(32);
-        assembly { mstore(add(_tmp, 32), _txId) }
-
-        emit MessageDispatched(bytes32(_tmp), address(this), _toChainId, _to, _data);
-        
-        return bytes32(_tmp);
+        _messageId = bytes32(abi.encodePacked(_txId));
+        emit MessageDispatched(_messageId, address(this), _toChainId, _to, _data);        
     }
     
     function getMessageExecutorAddress(uint256 _toChainId) external view returns (address) {
@@ -66,11 +62,10 @@ abstract contract ERC5164 is MessageClient, ISingleMessageDispatcher, ISingleMes
         uint,                // (not used for messages, always 0)
         bytes calldata _data // encoded message from source chain
     ) external override onlySelf (_sender, _sourceChainId) {
-        bytes memory _tmp = new bytes(32);
-        assembly { mstore(add(_tmp, 32), _txId) }
+        bytes32 _messageId = bytes32(abi.encodePacked(_txId));
         
-        executeMessage(address(this), _data, bytes32(_tmp), _sourceChainId, _sender);
+        executeMessage(address(this), _data, bytes32(_messageId), _sourceChainId, _sender);
 
-        emit MessageIdExecuted(_sourceChainId, bytes32(_tmp));
+        emit MessageIdExecuted(_sourceChainId, bytes32(_messageId));
     }
 }
