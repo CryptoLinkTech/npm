@@ -311,6 +311,9 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 | Forest Testnet              | 377        | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Frame Testnet               | 68840142   | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Gauss Testnet               | 1452       | 0x6c83DC6C5128ff3E073E737523D2176aAeB08525 |
+| Gelato OP Celestia Testnet  | 123420111  | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
+| Gelato OP Testnet           | 42069      | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
+| Gelato ZKatana Testnet      | 1261120    | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Gnosis Testnet              | 10200      | 0x146449fb27e4A4B4721a9c5742f3baB1e34eb31f |
 | Harmony Testnet             | 1666700000 | 0xE0a5cBb1f15a84C4a4A0f7E98F9721997182deD6 |
 | Horizen Testnet             | 1663       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |

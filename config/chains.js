@@ -247,6 +247,24 @@ const chainsConfig = {
       weth: "",
       rpc: "https://1452.rpc.cryptolink.tech/",
     },
+    "123420111": { // Gelato OP Celestia Testnet
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0xc45c3cEc0C800fCB95636D1FB6ec0AE3d42b58e2",
+      weth: "",
+      rpc: "https://123420111.rpc.cryptolink.tech/",
+    },
+    "42069": { // Gelato OP Testnet 
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0xc45c3cEc0C800fCB95636D1FB6ec0AE3d42b58e2",
+      weth: "",
+      rpc: "https://42069.rpc.cryptolink.tech/",
+    },
+    "1261120": { // Gelato ZKatana Testnet
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0xc45c3cEc0C800fCB95636D1FB6ec0AE3d42b58e2",
+      weth: "",
+      rpc: "https://1261120.rpc.cryptolink.tech/",
+    },
     "10200": { // Gnosis Testnet
       message: "0x146449fb27e4A4B4721a9c5742f3baB1e34eb31f",
       feeToken: "0x3ecDbd62D72917b4D22b638E0a550cA516cfe139",
