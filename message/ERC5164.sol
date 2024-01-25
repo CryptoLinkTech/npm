@@ -32,8 +32,13 @@ interface ISingleMessageExecutor {
     ) external;
 }
 
+/**
+ * @title ERC5164 implementation of MessageClient
+ * @notice https://eips.ethereum.org/EIPS/eip-5164
+ */
 abstract contract ERC5164 is MessageClient, ISingleMessageDispatcher, ISingleMessageExecutor {
-    function executeMessage(address _to, bytes calldata _data, bytes32 _messageId, uint256 _fromChainId, address _from) public virtual onlySelf(_from, _fromChainId) {
+    // @dev: this must only be executed by the contract itself as msg.sender and only if it is configured for the message client: onlySelf(address(this), block.chainid)
+    function executeMessage(address _to, bytes calldata _data, bytes32 _messageId, uint256 _fromChainId, address _from) public virtual onlySelf(address(this), block.chainid) {
     }
 
     function dispatchMessage(uint256 _toChainId, address _to, bytes calldata _data) external payable returns (bytes32 _messageId) {
@@ -61,11 +66,13 @@ abstract contract ERC5164 is MessageClient, ISingleMessageDispatcher, ISingleMes
         address,             // (optional source reference address)
         uint,                // (not used for messages, always 0)
         bytes calldata _data // encoded message from source chain
-    ) external override onlySelf (_sender, _sourceChainId) {
+    ) external override onlySelf(_sender, _sourceChainId) {
         bytes32 _messageId = bytes32(abi.encodePacked(_txId));
         
-        executeMessage(address(this), _data, _messageId, _sourceChainId, _sender);
-
-        emit MessageIdExecuted(_sourceChainId, _messageId);
+        try this.executeMessage(address(this), _data, _messageId, _sourceChainId, _sender) {
+            emit MessageIdExecuted(_sourceChainId, _messageId);
+        } catch Error(string memory _reason) {
+            revert MessageFailure(bytes32(_messageId), abi.encodePacked(_reason));
+        }
     }
 }
