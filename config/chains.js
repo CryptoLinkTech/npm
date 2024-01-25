@@ -143,7 +143,12 @@ const chainsConfig = {
       weth: "0x4200000000000000000000000000000000000006",
       rpc: "https://570.rpc.cryptolink.tech/"
     },
-
+    "99999999991": { // Solana Mainnet
+      message: "",
+      feeToken: "",
+      weth: "",
+      rpc: ""
+    },
 
     "421614": { // Arbitrum Testnet (Sepolia)
       message: "0x207CbCa48258591CD1e953739c663184A02bB320",
@@ -400,6 +405,12 @@ const chainsConfig = {
       feeToken: "0x08f0A528dC83f4Db2C7B05478ED3B098eCE94fCB",
       weth: "",
       rpc: "https://534351.rpc.cryptolink.tech/",
+    },
+    "19999999991": { // Solana Testnet
+      message: "",
+      feeToken: "",
+      weth: "",
+      rpc: ""
     },
     "64165": { // Sonic Testnet
       message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",

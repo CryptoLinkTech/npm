@@ -14,13 +14,11 @@ abstract contract MessageClient {
     IMessageV3 public MESSAGEv3;
     IERC20 public FEE_TOKEN;
 
-    uint constant SOLANA_CHAIN_ID = 99999999991;
-    uint constant CARDANO_CHAIN_ID = 99999999992;
-
     struct ChainData {
         address endpoint; // address of this contract on specified chain
-        bytes32 endpointSolana; // address of this contract on Solana
+        bytes endpointExtended; // address of this contract on non EVM
         uint16 confirmations; // source confirmations
+        bool extended; // are we using extended endpoint? (addresses larger than uint256)
     }
     mapping(uint => ChainData) public CHAINS;
     address public MESSAGE_OWNER;
@@ -71,9 +69,8 @@ abstract contract MessageClient {
     /** BRIDGE SENDER */
     function _sendMessage(uint _destinationChainId, bytes memory _data) internal returns (uint _txId) {
         ChainData memory _chain = CHAINS[_destinationChainId];
-        if(_destinationChainId == SOLANA_CHAIN_ID) { // Solana
-            // @dev wrap data in envelope to pass solana address since it will not fit in uint256 - vlaidator will handle unrwapping
-            _data = abi.encode(_data, _chain.endpointSolana);
+        if(_chain.extended) { // non-evm addresses larger than uint256
+            _data = abi.encode(_data, _chain.endpointExtended);
         }
         return IMessageV3(MESSAGEv3).sendMessage(
             _chain.endpoint,      // corresponding MessageClient contract address on destination chain
@@ -86,9 +83,8 @@ abstract contract MessageClient {
 
     function _sendMessageExpress(uint _destinationChainId, bytes memory _data) internal returns (uint _txId) {
         ChainData memory _chain = CHAINS[_destinationChainId];
-        if(_destinationChainId == SOLANA_CHAIN_ID) { // Solana
-            // @dev wrap data in envelope to pass solana address since it will not fit in uint256
-            _data = abi.encode(_data, _chain.endpointSolana);
+        if(_chain.extended) { // non-evm addresses larger than uint256
+            _data = abi.encode(_data, _chain.endpointExtended);
         }
         return IMessageV3(MESSAGEv3).sendMessage(
             _chain.endpoint,      // corresponding MessageV3Client contract address on destination chain
@@ -100,12 +96,17 @@ abstract contract MessageClient {
     }
 
     /** OWNER */
-    function configureClientSolana(
-        bytes32 _endpointSolana,
-        uint16 _confirmations
+    function configureClientExtended(
+        uint[] calldata _chains, // list of chains to accept as valid destinations
+        bytes[] calldata _endpoints, // list of corresponding MessageV3Client addresses on each chain
+        uint16[] calldata _confirmations // confirmations required on each chain before processing
     ) external onlyMessageOwner {
-        CHAINS[SOLANA_CHAIN_ID].confirmations = _confirmations;
-        CHAINS[SOLANA_CHAIN_ID].endpointSolana = _endpointSolana;
+        uint _chainsLength = _chains.length;
+        for(uint x=0; x < _chainsLength; x++) {
+            CHAINS[_chains[x]].confirmations = _confirmations[x];
+            CHAINS[_chains[x]].endpointExtended = _endpoints[x];
+            CHAINS[_chains[x]].extended = true;
+        }
     }
 
     function configureClient(
