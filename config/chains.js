@@ -122,73 +122,96 @@ const chainsConfig = {
 
 
     "421614": { // Arbitrum Testnet (Sepolia)
-      message: "0x207CbCa48258591CD1e953739c663184A02bB320"
+      message: "0x207CbCa48258591CD1e953739c663184A02bB320",
+      feeToken: "0x6dc9C1599C52e8EC4f1389Cb466Df7A799E85136"
     },
     "1313161555": { // Aurora Testnet
-      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F"
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0x1D006355e6778d06a40296eE510bbc09f60c9e1c"
     },
     "65010001": { // Autonity Testnet
-      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F"
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0x17C84459367f9787356b01d7f624Ef0e7E6cA11F"
     },
     "43113": { // Avalanche Testnet
-      message: "0x24BEFF24327C8E956d5FC74a5C502038683cDc0A"
+      message: "0x24BEFF24327C8E956d5FC74a5C502038683cDc0A",
+      feeToken: "0x3E445B8fB6ef183Eb32bc1492f379afDAf2b7209"
     },
     "84532": { // Base Testnet (Sepolia)
-      message: "0x18716F6E46a66919deacD3c6fd4fa6Da02fa30b2"
-    },
-    "2888": { // Boba Testnet
-      message: "0xe20B995917eb334093EA1974CDa9971B102C5aff"
+      message: "0x18716F6E46a66919deacD3c6fd4fa6Da02fa30b2",
+      feeToken: "0x8dF0A6d3826B9D99c9694c079A10dBb333a9Bb6C"
     },
     "97": { // Binance Testnet
-      message: "0x535CCeD6C471eE907eEB3bBECf1C8223208Ca5e0"
+      message: "0x535CCeD6C471eE907eEB3bBECf1C8223208Ca5e0",
+      feeToken: "0xD430d3cDFb411810f5E1355C1Be41CF8CCA7e428"
+    },
+    "2888": { // Boba Testnet
+      message: "0xe20B995917eb334093EA1974CDa9971B102C5aff",
+      feeToken: "0x8cd2556e02f5A136167aE123e313a17481f51904"
     },
     "7701": { // Canto Testnet
-      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F"
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0xeDCfb3038d4a262Aef3735CFa64146C35196CC51"
     },
     "44787": { // Celo Testnet
-      message: "0x6e658066340C7cae09dB68F5339Ddc4b806d3598"
+      message: "0x6e658066340C7cae09dB68F5339Ddc4b806d3598",
+      feeToken: "0x2A07454Bc8177b944fBdB4575a4b0bd040a70e95"
     },
     "338": { // Cronos Testnet
-      message: "0x8eb10FC1793094113E7f52bA159A6AeB54CaB92c"
+      message: "0x8eb10FC1793094113E7f52bA159A6AeB54CaB92c",
+      feeToken: "0xa7fBeDA5DF050bC6c0518A13BE6A2e3A4A2c2175"
     },
     "5": { // Ethereum Goerli
-      message: "0x566B40Dd59A868c244E1353368e08ddaD1C1d74f"
+      message: "0x566B40Dd59A868c244E1353368e08ddaD1C1d74f",
+      feeToken: "0x2f3bc26eFE51bBe209E0afD2Da29616cF3755E03"
     },
     "17000": { // Ethereum Holesky
-      message: "0x9d75f706b986F0075b3778a12153390273dE95eC"
+      message: "0x9d75f706b986F0075b3778a12153390273dE95eC",
+      feeToken: "0x6900384BA33f8C635DeE2C3BD7d46A0626FfB096"
     },
     "11155111": { // Ethereum Sepolia
-      message: "0x8DE416ABd87307f966a5655701F2f78012585225"
+      message: "0x8DE416ABd87307f966a5655701F2f78012585225",
+      feeToken: "0x4B5b1163525A6Cebd9a06F4C386976F2B41A4Bdf"
     },
     "4002": { // Fantom Testnet
-      message: "0x7d474aA4DbDBc276b67abcc5f54262978b369cEC"
+      message: "0x7d474aA4DbDBc276b67abcc5f54262978b369cEC",
+      feeToken: "0xAC78952AD62A468ac21f43DfA8B14f2c8Be87582"
     },
     "377": { // Forest Testnet
-      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F"
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: ""
     },
     "68840142": { // Frame Testnet
-      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F"
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0x71311899492757cD512a11855C150EA219bB3A42"
     },
     "1452": { // Gauss Testnet
-      message: "0x6c83DC6C5128ff3E073E737523D2176aAeB08525"
+      message: "0x6c83DC6C5128ff3E073E737523D2176aAeB08525",
+      feeToken: "0x5C3293Ff66E77F6FCEefAC24c4766BDcE060B260"
     },
     "10200": { // Gnosis Testnet
-      message: "0x146449fb27e4A4B4721a9c5742f3baB1e34eb31f"
+      message: "0x146449fb27e4A4B4721a9c5742f3baB1e34eb31f",
+      feeToken: "0x3ecDbd62D72917b4D22b638E0a550cA516cfe139"
     },
     "1666700000": { // Harmony Testnet
-      message: "0xE0a5cBb1f15a84C4a4A0f7E98F9721997182deD6"
+      message: "0xE0a5cBb1f15a84C4a4A0f7E98F9721997182deD6",
+      feeToken: "0x3574311D950E04A48289DA64759016c26725B180"
     },
     "1663": { // Horizen Testnet
-      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F"
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0x17C84459367f9787356b01d7f624Ef0e7E6cA11F"
     },
     "13473": { // Immutable Testnet
-      message: ""
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0xDb126ef7666c97db7D9F70FFbCfFdC567b3B25A5"
     },
     "167008": { // Katla Testnet
-      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F"
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0x17C84459367f9787356b01d7f624Ef0e7E6cA11F"
     },
     "2221": { // Kava Testnet
-      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F"
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0x1Ec7Dfbc9e310768A17145f03f3451f562cEc773"
     },
     "1001": { // Klaytn Testnet
       message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F"
@@ -197,61 +220,80 @@ const chainsConfig = {
       message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F"
     },
     "9768": { // Mainnetz Testnet
-      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F"
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0x714853D6197e560013ee161fC259b87E8B3cA7E9"
     },
     "5001": { // Mantle Testnet
-      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F"
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0x0135c25Bd3e88b1aac5FDC6f16FEe2C63d967f9d"
     },
     "599": { // Metis Testnet
-      message: "0x4f313cB864BD7138Fdb35337182D5b0E78d9fB33"
+      message: "0x4f313cB864BD7138Fdb35337182D5b0E78d9fB33",
+      feeToken: "0xd4Bb993ec7c9beE84930064C691cFd8603138551"
     },
     "42261": { // Oasis Emerald Testnet
-      message: "0x566B40Dd59A868c244E1353368e08ddaD1C1d74f"
+      message: "0x566B40Dd59A868c244E1353368e08ddaD1C1d74f",
+      feeToken: "0x73Db0a9a3aB2098B57E6A0f1F8Ff497e4adaa412"
     },
     "23295": { // Oasis Sapphire Testnet
-      message: "0x566B40Dd59A868c244E1353368e08ddaD1C1d74f"
+      message: "0x566B40Dd59A868c244E1353368e08ddaD1C1d74f",
+      feeToken: "0x4B5b1163525A6Cebd9a06F4C386976F2B41A4Bdf"
     },
     "65": { // OKEx Testnet
-      message: "0xF1FBB3E9977dAcF3909Ab541792cB2Bba10FFD5E"
+      message: "0xF1FBB3E9977dAcF3909Ab541792cB2Bba10FFD5E",
+      feeToken: "0x2a91b800903BDcC230312C7F96ACF089e6592cBA"
     },
     "1945": { // Onus Testnet
-      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F"
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0x5f4d59B985959b1dd5da23C574228e9161D34845"
     },
     "5611": { // opBNB Testnet
-      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F"
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0x17C84459367f9787356b01d7f624Ef0e7E6cA11F"
     },
     "11155420": { // Optimism Testnet
-      message: "0xB4245BFEA4AfE63c7F7863D090166890e9FEf1b2"
+      message: "0xB4245BFEA4AfE63c7F7863D090166890e9FEf1b2",
+      feeToken: "0x3aBc0c7aC53935025d40F60e4235BB6Bd83B78f0"
     },
     "80001": { // Polygon Testnet
-      message: "0x08A2d304547A4B93B254d906502A3fc778D78412"
+      message: "0x08A2d304547A4B93B254d906502A3fc778D78412",
+      feeToken: "0x489B21556865712b1AaCF04Df8197488d940aB18"
     },
     "1442": { // Polygon zkEVM Testnet
-      message: "0xcA877c797D599bE2Bf8C897a3B9eba6bA4113332"
+      message: "0xcA877c797D599bE2Bf8C897a3B9eba6bA4113332",
+      feeToken: "0x9B14EA7C553F92cfC782951d06Cf1d48fF33E429"
     },
     "943": { // Pulse Testnet
-      message: "0x4f313cB864BD7138Fdb35337182D5b0E78d9fB33"
+      message: "0x4f313cB864BD7138Fdb35337182D5b0E78d9fB33",
+      feeToken: "0xa0179a4Aa2818ff63Ee6e40b5C27A33BD59e4815"
     },
     "17001": { // Redstone Testnet
-      message: "0x9d75f706b986F0075b3778a12153390273dE95eC"
+      message: "0x9d75f706b986F0075b3778a12153390273dE95eC",
+      feeToken: "0xA95c0BC77Ab8a8EfA3dF00366FFAe5CB1A2cba15"
     },
     "57000": { // Rollux Testnet
-      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F"
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0x17C84459367f9787356b01d7f624Ef0e7E6cA11F"
     },
     "534351": { // Scroll Testnet (Sepolia)
-      message: "0x23E2CE1fF48cF21239f8c5eb783CE89df02B6f35"
+      message: "0x23E2CE1fF48cF21239f8c5eb783CE89df02B6f35",
+      feeToken: "0x08f0A528dC83f4Db2C7B05478ED3B098eCE94fCB"
     },
     "64165": { // Sonic Testnet
-      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F"
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0x566B40Dd59A868c244E1353368e08ddaD1C1d74f"
     },
     "41": { // Telos Testnet
-      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F"
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0x5f4d59B985959b1dd5da23C574228e9161D34845"
     },
     "195": { // X1 Testnet
-      message: "0x4f313cB864BD7138Fdb35337182D5b0E78d9fB33"
+      message: "0x4f313cB864BD7138Fdb35337182D5b0E78d9fB33",
+      feeToken: "0xD07129F94934757A1653de9cb076910de39Fba6F"
     },
     "51": { // XDC Testnet
-      message: "0x0EFafca24E5BbC1C01587B659226B9d600fd671f"
+      message: "0x0EFafca24E5BbC1C01587B659226B9d600fd671f",
+      feeToken: "0x743E00433c33fec5DCF6B9f2cF72d471cd0AB027"
     },
     "7001": { // ZetaChain Testnet
       message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F"
