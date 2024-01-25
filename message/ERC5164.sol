@@ -64,8 +64,8 @@ abstract contract ERC5164 is MessageClient, ISingleMessageDispatcher, ISingleMes
     ) external override onlySelf (_sender, _sourceChainId) {
         bytes32 _messageId = bytes32(abi.encodePacked(_txId));
         
-        executeMessage(address(this), _data, bytes32(_messageId), _sourceChainId, _sender);
+        executeMessage(address(this), _data, _messageId, _sourceChainId, _sender);
 
-        emit MessageIdExecuted(_sourceChainId, bytes32(_messageId));
+        emit MessageIdExecuted(_sourceChainId, _messageId);
     }
 }
