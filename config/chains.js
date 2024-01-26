@@ -449,7 +449,7 @@ const chainsConfig = {
       rpc: "https://51.rpc.cryptolink.tech/",
     },
     "7001": { // ZetaChain Testnet
-      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      message: "0xeFaDc14c2DD95D0E6969d0B25EA6e4F830150493",
       weth: "",
       rpc: "https://7001.rpc.cryptolink.tech/",
     },    
