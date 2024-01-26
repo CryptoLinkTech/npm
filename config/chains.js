@@ -453,6 +453,11 @@ const chainsConfig = {
       weth: "",
       rpc: "https://7001.rpc.cryptolink.tech/",
     },    
+    "280": { // zkSync Testnet
+      message: "0xB0A4e1Cb4009292Bde2F3282A242FE0eF5C99f03",
+      "weth": "",
+      rpc: "https://280.rpc.cryptolink.tech/",
+    }
   };
   
   module.exports = chainsConfig;

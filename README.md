@@ -343,6 +343,7 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 | X1 Testnet                  | 195        | 0x4f313cB864BD7138Fdb35337182D5b0E78d9fB33 |
 | XDC Testnet                 | 51         | 0x0EFafca24E5BbC1C01587B659226B9d600fd671f |
 | ZetaChain Testnet           | 7001       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
+| zkSync Testnet              | 280        | 0xB0A4e1Cb4009292Bde2F3282A242FE0eF5C99f03 |
 
 
 
