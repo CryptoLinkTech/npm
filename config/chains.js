@@ -323,6 +323,12 @@ const chainsConfig = {
       weth: "",
       rpc: "https://1001.rpc.cryptolink.tech/",
     },
+    "1998": { // Kyoto Testnet
+      message: "0x289992562cba9EB7447C0579d626ABb7960802cb",
+      feeToken: "0x289992562cba9EB7447C0579d626ABb7960802cb",
+      weth: "",
+      rpc: "https://1998.rpc.cryptolink.tech/",
+    },        
     "59140": { // Linea Testnet
       message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
       weth: "",
@@ -430,6 +436,18 @@ const chainsConfig = {
       weth: "",
       rpc: "https://64165.rpc.cryptolink.tech/",
     },
+    "534351": { // Starknet Testnet
+      message: "",
+      feeToken: "",
+      weth: "",
+      rpc: "https://534351.rpc.cryptolink.tech/",
+    },        
+    "2047": { // Stratos Testnet
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0x566B40Dd59A868c244E1353368e08ddaD1C1d74f",
+      weth: "",
+      rpc: "https://2047.rpc.cryptolink.tech/",
+    },    
     "41": { // Telos Testnet
       message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
       feeToken: "0x5f4d59B985959b1dd5da23C574228e9161D34845",

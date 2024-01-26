@@ -322,6 +322,7 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 | Katla Testnet               | 167008     | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Kava Testnet                | 2221       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Klaytn Testnet              | 1001       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
+| Kyoto Testnet               | 1998       | 0x289992562cba9EB7447C0579d626ABb7960802cb |
 | Linea Testnet               | 59140      | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Mainnetz Testnet            | 9768       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Mantle Testnet              | 5001       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
@@ -339,6 +340,7 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 | Rollux Testnet              | 57000      | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Scroll Testnet (Sepolia)    | 534351     | 0x23E2CE1fF48cF21239f8c5eb783CE89df02B6f35 |
 | Sonic Testnet               | 64165      | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
+| Stratos Testnet             | 2047       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Telos Testnet               | 41         | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | X1 Testnet                  | 195        | 0x4f313cB864BD7138Fdb35337182D5b0E78d9fB33 |
 | XDC Testnet                 | 51         | 0x0EFafca24E5BbC1C01587B659226B9d600fd671f |
