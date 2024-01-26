@@ -304,6 +304,7 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 | Canto Testnet               | 7701       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Celo Testnet                | 44787      | 0x6e658066340C7cae09dB68F5339Ddc4b806d3598 |
 | Cronos Testnet              | 338        | 0x8eb10FC1793094113E7f52bA159A6AeB54CaB92c |
+| CronosZK Testnet            | 282        | 0xB0A4e1Cb4009292Bde2F3282A242FE0eF5C99f03 |
 | Ethereum Goerli             | 5          | 0x566B40Dd59A868c244E1353368e08ddaD1C1d74f |
 | Ethereum Holesky            | 17000      | 0x9d75f706b986F0075b3778a12153390273dE95eC |
 | Ethereum Sepolia            | 11155111   | 0x8DE416ABd87307f966a5655701F2f78012585225 |

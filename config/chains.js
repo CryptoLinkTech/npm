@@ -210,6 +210,12 @@ const chainsConfig = {
       weth: "",
       rpc: "https://338.rpc.cryptolink.tech/",
     },
+    "282": { // CronosZK Testnet
+      message: "0xB0A4e1Cb4009292Bde2F3282A242FE0eF5C99f03",
+      feeToken: "0xf6799eCdeCD7F96EA13bc3259852a3a4C47d859E",
+      weth: "",
+      rpc: "https://282.rpc.cryptolink.tech/",
+    },
     "5": { // Ethereum Goerli
       message: "0x566B40Dd59A868c244E1353368e08ddaD1C1d74f",
       feeToken: "0x2f3bc26eFE51bBe209E0afD2Da29616cF3755E03",
