@@ -294,54 +294,55 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 
 | Chain Name                  | Chain ID   | Contract Address                           |
 |-----------------------------|------------|--------------------------------------------|
-| Arbitrum Testnet (Sepolia)  | 421614     | 0x207CbCa48258591CD1e953739c663184A02bB320 |
+| Arbitrum Testnet (Sepolia)  | 421614     | 0x720E0c8fE320aA463DCe4fDEb1Af7B0a30131CCD |
 | Aurora Testnet              | 1313161555 | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Autonity Testnet            | 65010001   | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
-| Avalanche Testnet           | 43113      | 0x24BEFF24327C8E956d5FC74a5C502038683cDc0A |
-| Base Testnet (Sepolia)      | 84532      | 0x18716F6E46a66919deacD3c6fd4fa6Da02fa30b2 |
+| Avalanche Testnet           | 43113      | 0x0E45834E2736f81eAe27254758D5079998FdD7E8 |
+| Base Testnet (Sepolia)      | 84532      | 0x558a0549819d4017a77362325B0BA22ACc5A8C76 |
 | Blast Testnet (Sepolia)     | 168587773  | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F | 
 | Boba Testnet                | 2888       | 0xe20B995917eb334093EA1974CDa9971B102C5aff |
-| Binance Testnet             | 97         | 0x535CCeD6C471eE907eEB3bBECf1C8223208Ca5e0 |
-| Canto Testnet               | 7701       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
-| Celo Testnet                | 44787      | 0x6e658066340C7cae09dB68F5339Ddc4b806d3598 |
-| Cronos Testnet              | 338        | 0x8eb10FC1793094113E7f52bA159A6AeB54CaB92c |
+| Binance Testnet             | 97         | 0x91e26475016B923527B5Ef15789A9768EBA979e6 |
+| Canto Testnet               | 7701       | 0x9Ca377D441B01A44fEab8D75B992ab2e4f710BA9 |
+| Celo Testnet                | 44787      | 0x14507de444445A8e254c7FB8106F5B13AeAdA206 |
+| Cronos Testnet              | 338        | 0x0E45834E2736f81eAe27254758D5079998FdD7E8 |
 | CronosZK Testnet            | 282        | 0xB0A4e1Cb4009292Bde2F3282A242FE0eF5C99f03 |
-| Ethereum Goerli             | 5          | 0x566B40Dd59A868c244E1353368e08ddaD1C1d74f |
-| Ethereum Holesky            | 17000      | 0x9d75f706b986F0075b3778a12153390273dE95eC |
+| Ethereum Goerli             | 5          | 0x9c90eC23162C818A79B46C79Bb6EBC07C6733919 |
+| Ethereum Holesky            | 17000      | 0xbd9F6E783a2872f703953F0db1d6D60912F86af4 |
 | Ethereum Sepolia            | 11155111   | 0x8DE416ABd87307f966a5655701F2f78012585225 |
 | Fantom Testnet              | 4002       | 0xc1cbD0D235174aBC67D07387f9a61ABC34037541 |
 | Forest Testnet              | 377        | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
-| Frame Testnet               | 68840142   | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
-| Gauss Testnet               | 1452       | 0x6c83DC6C5128ff3E073E737523D2176aAeB08525 |
+| Frame Testnet               | 68840142   | 0x3413714B95c7A087517B7a8a791627F5a91A7712 |
+| Gauss Testnet               | 1452       | 0x320DdE5419eAbdd36daBF65882071dc3244a89fa |
 | Gelato OP Celestia Testnet  | 123420111  | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Gelato OP Testnet           | 42069      | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Gelato ZKatana Testnet      | 1261120    | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
-| Gnosis Testnet              | 10200      | 0x146449fb27e4A4B4721a9c5742f3baB1e34eb31f |
-| Harmony Testnet             | 1666700000 | 0xE0a5cBb1f15a84C4a4A0f7E98F9721997182deD6 |
+| Gnosis Testnet              | 10200      | 0xdd964bD479552aCaF85641339Ce07379c7dd274b |
+| Harmony Testnet             | 1666700000 | 0xc5a65430D5d24Cb5ADcC0F84F65EbA7C81dB09Ee |
 | Horizen Testnet             | 1663       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
+| Immutable Testnet           | 13473      | 0xDd5372B4C5cea430b7B920C999279f412b47Ad3b |
 | Katla Testnet               | 167008     | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
-| Kava Testnet                | 2221       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
+| Kava Testnet                | 2221       | 0x5f849d0f2E7ADea458Cf0a4a2Af99E6a3648933d |
 | Klaytn Testnet              | 1001       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
-| Kyoto Testnet               | 1998       | 0x289992562cba9EB7447C0579d626ABb7960802cb |
+| Kyoto Testnet               | 1998       | 0xeFaDc14c2DD95D0E6969d0B25EA6e4F830150493 |
 | Linea Testnet               | 59140      | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
-| Mainnetz Testnet            | 9768       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
-| Mantle Testnet              | 5001       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
-| Metis Testnet               | 599        | 0x4f313cB864BD7138Fdb35337182D5b0E78d9fB33 |
-| Oasis Emerald Testnet       | 42261      | 0x566B40Dd59A868c244E1353368e08ddaD1C1d74f |
-| Oasis Sapphire Testnet      | 23295      | 0x566B40Dd59A868c244E1353368e08ddaD1C1d74f |
-| OKEx Testnet                | 65         | 0xF1FBB3E9977dAcF3909Ab541792cB2Bba10FFD5E |
-| Onus Testnet                | 1945       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
+| Mainnetz Testnet            | 9768       | 0x79Ef331759b1C9277313EC5f4ABACC658Ef8F526 |
+| Mantle Testnet              | 5001       | 0x8cd2556e02f5A136167aE123e313a17481f51904 |
+| Metis Testnet               | 599        | 0x1EccC96748076c78E3bf8637d7445B993c0e78a6 |
+| Oasis Emerald Testnet       | 42261      | 0x717FAd91DE8FFB40741Aee31708a281a1B0e43A6 |
+| Oasis Sapphire Testnet      | 23295      | 0xeDCfb3038d4a262Aef3735CFa64146C35196CC51 |
+| OKEx Testnet                | 65         | 0xA048880E99C2816daDB6DbDb4836Ef589d52f662 |
+| Onus Testnet                | 1945       | 0x765d2951bF4d512a5FDbD6384C4b6aD5ab1b1873 |
 | opBNB Testnet               | 5611       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
-| Optimism Testnet            | 11155420   | 0xB4245BFEA4AfE63c7F7863D090166890e9FEf1b2 |
-| Polygon Testnet             | 80001      | 0x08A2d304547A4B93B254d906502A3fc778D78412 |
-| Polygon zkEVM Testnet       | 1442       | 0xcA877c797D599bE2Bf8C897a3B9eba6bA4113332 |
-| Pulse Testnet               | 943        | 0x4f313cB864BD7138Fdb35337182D5b0E78d9fB33 |
-| Redstone Testnet            | 17001      | 0x9d75f706b986F0075b3778a12153390273dE95eC |
+| Optimism Testnet            | 11155420   | 0x967ccdcdf974DCEAb42F20FB61Aafb00D64f0827 |
+| Polygon Testnet             | 80001      | 0x57204CF47e4FE167a03896DaE34B318E3C1632b8 |
+| Polygon zkEVM Testnet       | 1442       | 0x55567A4C485593FE0e1699876C108EC812280A92 |
+| Pulse Testnet               | 943        | 0x17ecBcDDA193eE2CbEa62D5e37B8B0D758B2c11C |
+| Redstone Testnet            | 17001      | 0xdCa897f920Df8015169838c428479D5e3d5Bf526 |
 | Rollux Testnet              | 57000      | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Scroll Testnet (Sepolia)    | 534351     | 0x23E2CE1fF48cF21239f8c5eb783CE89df02B6f35 |
 | Sonic Testnet               | 64165      | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Stratos Testnet             | 2047       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
-| Telos Testnet               | 41         | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
+| Telos Testnet               | 41         | 0x765d2951bF4d512a5FDbD6384C4b6aD5ab1b1873 |
 | X1 Testnet                  | 195        | 0x4f313cB864BD7138Fdb35337182D5b0E78d9fB33 |
 | XDC Testnet                 | 51         | 0x0EFafca24E5BbC1C01587B659226B9d600fd671f |
 | ZetaChain Testnet           | 7001       | 0xeFaDc14c2DD95D0E6969d0B25EA6e4F830150493 |
