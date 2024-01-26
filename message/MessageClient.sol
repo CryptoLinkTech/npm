@@ -4,7 +4,7 @@
 pragma solidity ^0.8.9;
 
 import "./IMessageV3.sol";
-import "./IERC20.sol";
+import "./IERC20cl.sol";
 
 /**
  * @title MessageV3 Client
@@ -12,7 +12,7 @@ import "./IERC20.sol";
  */
 abstract contract MessageClient {
     IMessageV3 public MESSAGEv3;
-    IERC20 public FEE_TOKEN;
+    IERC20cl public FEE_TOKEN;
 
     struct ChainData {
         address endpoint; // address of this contract on specified chain
@@ -116,7 +116,7 @@ abstract contract MessageClient {
         uint16[] calldata _confirmations // confirmations required on each chain before processing
     ) external onlyMessageOwner {
         MESSAGEv3 = IMessageV3(_messageV3);
-        FEE_TOKEN = IERC20(MESSAGEv3.feeToken());
+        FEE_TOKEN = IERC20cl(MESSAGEv3.feeToken());
 
         uint _chainsLength = _chains.length;
         for(uint x=0; x < _chainsLength; x++) {
@@ -131,7 +131,7 @@ abstract contract MessageClient {
 
         // approve bridge for destination gas fees (limited per transaction with setMaxgas)
         if(address(MESSAGEv3.weth()) != address(0)) {
-            IERC20(MESSAGEv3.weth()).approve(address(MESSAGEv3), type(uint).max);
+            IERC20cl(MESSAGEv3.weth()).approve(address(MESSAGEv3), type(uint).max);
         }
     }
 
@@ -156,7 +156,7 @@ abstract contract MessageClient {
     }
     
     function recoverGasToken(uint _amount) external onlyMessageOwner {
-        IERC20(MESSAGEv3.weth()).transfer(msg.sender, _amount);
+        IERC20cl(MESSAGEv3.weth()).transfer(msg.sender, _amount);
         emit RecoverGasToken(msg.sender, _amount);
     } 
 

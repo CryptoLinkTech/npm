@@ -3,7 +3,7 @@
 // security-contact: atlas@cryptolink.tech
 pragma solidity ^0.8.9;
 
-interface IERC20 {
+interface IERC20cl {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
 
