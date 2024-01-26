@@ -1,7 +1,7 @@
 {
   "name": "@cryptolink/contracts",
   "description": "Decentralized Cross-Chain Crypto Messaging System",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "files": [
     "message/**/*",
     "config/**/*"
