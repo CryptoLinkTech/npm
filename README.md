@@ -309,7 +309,7 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 | Ethereum Goerli             | 5          | 0x566B40Dd59A868c244E1353368e08ddaD1C1d74f |
 | Ethereum Holesky            | 17000      | 0x9d75f706b986F0075b3778a12153390273dE95eC |
 | Ethereum Sepolia            | 11155111   | 0x8DE416ABd87307f966a5655701F2f78012585225 |
-| Fantom Testnet              | 4002       | 0x7d474aA4DbDBc276b67abcc5f54262978b369cEC |
+| Fantom Testnet              | 4002       | 0xc1cbD0D235174aBC67D07387f9a61ABC34037541 |
 | Forest Testnet              | 377        | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Frame Testnet               | 68840142   | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Gauss Testnet               | 1452       | 0x6c83DC6C5128ff3E073E737523D2176aAeB08525 |
