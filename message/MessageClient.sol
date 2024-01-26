@@ -16,7 +16,9 @@ abstract contract MessageClient {
 
     struct ChainData {
         address endpoint; // address of this contract on specified chain
+        bytes endpointExtended; // address of this contract on non EVM
         uint16 confirmations; // source confirmations
+        bool extended; // are we using extended endpoint? (addresses larger than uint256)
     }
     mapping(uint => ChainData) public CHAINS;
     address public MESSAGE_OWNER;
@@ -67,6 +69,9 @@ abstract contract MessageClient {
     /** BRIDGE SENDER */
     function _sendMessage(uint _destinationChainId, bytes memory _data) internal returns (uint _txId) {
         ChainData memory _chain = CHAINS[_destinationChainId];
+        if(_chain.extended) { // non-evm addresses larger than uint256
+            _data = abi.encode(_data, _chain.endpointExtended);
+        }
         return IMessageV3(MESSAGEv3).sendMessage(
             _chain.endpoint,      // corresponding MessageClient contract address on destination chain
             _destinationChainId,  // id of the destination chain
@@ -78,6 +83,9 @@ abstract contract MessageClient {
 
     function _sendMessageExpress(uint _destinationChainId, bytes memory _data) internal returns (uint _txId) {
         ChainData memory _chain = CHAINS[_destinationChainId];
+        if(_chain.extended) { // non-evm addresses larger than uint256
+            _data = abi.encode(_data, _chain.endpointExtended);
+        }
         return IMessageV3(MESSAGEv3).sendMessage(
             _chain.endpoint,      // corresponding MessageV3Client contract address on destination chain
             _destinationChainId,  // id of the destination chain
@@ -88,6 +96,19 @@ abstract contract MessageClient {
     }
 
     /** OWNER */
+    function configureClientExtended(
+        uint[] calldata _chains, // list of chains to accept as valid destinations
+        bytes[] calldata _endpoints, // list of corresponding MessageV3Client addresses on each chain
+        uint16[] calldata _confirmations // confirmations required on each chain before processing
+    ) external onlyMessageOwner {
+        uint _chainsLength = _chains.length;
+        for(uint x=0; x < _chainsLength; x++) {
+            CHAINS[_chains[x]].confirmations = _confirmations[x];
+            CHAINS[_chains[x]].endpointExtended = _endpoints[x];
+            CHAINS[_chains[x]].extended = true;
+        }
+    }
+
     function configureClient(
         address _messageV3, // MessageV3 bridge address
         uint[] calldata _chains, // list of chains to accept as valid destinations

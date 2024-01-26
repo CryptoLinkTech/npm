@@ -143,7 +143,12 @@ const chainsConfig = {
       weth: "0x4200000000000000000000000000000000000006",
       rpc: "https://570.rpc.cryptolink.tech/"
     },
-
+    "99999999991": { // Solana Mainnet
+      message: "",
+      feeToken: "",
+      weth: "",
+      rpc: ""
+    },
 
     "421614": { // Arbitrum Testnet (Sepolia)
       message: "0x207CbCa48258591CD1e953739c663184A02bB320",
@@ -210,6 +215,12 @@ const chainsConfig = {
       feeToken: "0xa7fBeDA5DF050bC6c0518A13BE6A2e3A4A2c2175",
       weth: "",
       rpc: "https://338.rpc.cryptolink.tech/",
+    },
+    "282": { // CronosZK Testnet
+      message: "0xB0A4e1Cb4009292Bde2F3282A242FE0eF5C99f03",
+      feeToken: "0xf6799eCdeCD7F96EA13bc3259852a3a4C47d859E",
+      weth: "",
+      rpc: "https://282.rpc.cryptolink.tech/",
     },
     "5": { // Ethereum Goerli
       message: "0x566B40Dd59A868c244E1353368e08ddaD1C1d74f",
@@ -406,6 +417,12 @@ const chainsConfig = {
       feeToken: "0x08f0A528dC83f4Db2C7B05478ED3B098eCE94fCB",
       weth: "",
       rpc: "https://534351.rpc.cryptolink.tech/",
+    },
+    "19999999991": { // Solana Testnet
+      message: "",
+      feeToken: "",
+      weth: "",
+      rpc: ""
     },
     "64165": { // Sonic Testnet
       message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
