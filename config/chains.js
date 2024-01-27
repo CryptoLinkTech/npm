@@ -247,7 +247,7 @@ const chainsConfig = {
       rpc: "https://11155111.rpc.cryptolink.tech/",
     },
     "4002": { // Fantom Testnet
-      message: "0xc1cbD0D235174aBC67D07387f9a61ABC34037541",
+      message: "0xb138dCa2Fd36Eb31e530C4a98f998460f7031268",
       feeToken: "0xAC78952AD62A468ac21f43DfA8B14f2c8Be87582",
       weth: "",
       rpc: "https://4002.rpc.cryptolink.tech/",
@@ -395,7 +395,7 @@ const chainsConfig = {
       rpc: "https://11155420.rpc.cryptolink.tech/",
     },
     "80001": { // Polygon Testnet
-      message: "0x57204CF47e4FE167a03896DaE34B318E3C1632b8",
+      message: "0x53A2D21176a16aB4e4e4D4766802e87e327F39dd",
       feeToken: "0x489B21556865712b1AaCF04Df8197488d940aB18",
       weth: "",
       rpc: "https://80001.rpc.cryptolink.tech/",

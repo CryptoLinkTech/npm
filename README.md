@@ -310,7 +310,7 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 | Ethereum Goerli             | 5          | 0x9c90eC23162C818A79B46C79Bb6EBC07C6733919 |
 | Ethereum Holesky            | 17000      | 0xbd9F6E783a2872f703953F0db1d6D60912F86af4 |
 | Ethereum Sepolia            | 11155111   | 0x8DE416ABd87307f966a5655701F2f78012585225 |
-| Fantom Testnet              | 4002       | 0xc1cbD0D235174aBC67D07387f9a61ABC34037541 |
+| Fantom Testnet              | 4002       | 0xb138dCa2Fd36Eb31e530C4a98f998460f7031268 |
 | Forest Testnet              | 377        | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Frame Testnet               | 68840142   | 0x3413714B95c7A087517B7a8a791627F5a91A7712 |
 | Gauss Testnet               | 1452       | 0x320DdE5419eAbdd36daBF65882071dc3244a89fa |
@@ -335,7 +335,7 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 | Onus Testnet                | 1945       | 0x765d2951bF4d512a5FDbD6384C4b6aD5ab1b1873 |
 | opBNB Testnet               | 5611       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Optimism Testnet            | 11155420   | 0x967ccdcdf974DCEAb42F20FB61Aafb00D64f0827 |
-| Polygon Testnet             | 80001      | 0x57204CF47e4FE167a03896DaE34B318E3C1632b8 |
+| Polygon Testnet             | 80001      | 0x53A2D21176a16aB4e4e4D4766802e87e327F39dd |
 | Polygon zkEVM Testnet       | 1442       | 0x55567A4C485593FE0e1699876C108EC812280A92 |
 | Pulse Testnet               | 943        | 0x17ecBcDDA193eE2CbEa62D5e37B8B0D758B2c11C |
 | Redstone Testnet            | 17001      | 0xdCa897f920Df8015169838c428479D5e3d5Bf526 |
