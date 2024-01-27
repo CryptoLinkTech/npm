@@ -269,6 +269,7 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 
 | Chain Name              | Chain ID    | Contract Address                           |
 |-------------------------|-------------|--------------------------------------------|
+| Alveychain Mainnet      | 3797        | 0x15ac559da4951c796db6620fab286b96840d039a |
 | Arbitrum Mainnet        | 42161       | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
 | Avalanche Mainnet       | 43114       | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
 | Base Mainnet            | 8453        | 0xf8B8656Ce65Ecf334AcCe299e24E97fB5069c2C8 |

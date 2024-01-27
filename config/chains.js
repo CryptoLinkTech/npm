@@ -1,4 +1,10 @@
 const chainsConfig = {
+    "3797": { // Arbitrum Mainnet
+      message: "0x15ac559da4951c796db6620fab286b96840d039a",
+      feeToken: "0x7a0b5E86d2C1e873E005780419eeE16ba741808a",
+      weth: "0xCb3e9919C56efF1004E54175a01e39163a352129",
+      rpc: "https://3797.rpc.cryptolink.tech/"
+    },
     "42161": { // Arbitrum Mainnet
       message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
       feeToken: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
