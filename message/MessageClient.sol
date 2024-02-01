@@ -122,6 +122,7 @@ abstract contract MessageClient {
         for(uint x=0; x < _chainsLength; x++) {
             CHAINS[_chains[x]].confirmations = _confirmations[x];
             CHAINS[_chains[x]].endpoint = _endpoints[x];
+            CHAINS[_chains[x]].extended = false;
         }
 
         // approve bridge for source chain fees (limited per transaction with setMaxfee)
