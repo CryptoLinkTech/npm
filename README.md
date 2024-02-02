@@ -406,7 +406,7 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 #### 4. configureClient
 - **Purpose**: Configures the client with MessageV3 address and chain data.
 - **Visibility**: External
-- **Modifiers**: `onlyOwner`
+- **Modifiers**: `onlyMessageOwner`
 - **Parameters**:
   - `_messageV3` (address): MessageV3 address.
   - `_chains` (uint[]): List of chain IDs to accept as valid destinations.
@@ -417,7 +417,7 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 #### 5. setExsig
 - **Purpose**: Assigns an external signature for enhanced security.
 - **Visibility**: External
-- **Modifiers**: `onlyOwner`
+- **Modifiers**: `onlyMessageOwner`
 - **Parameters**:
   - `_signer` (address): Address of the signer.
 - **Returns**: None
@@ -425,7 +425,7 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 #### 6. setMaxgas
 - **Purpose**: Limits the gas usage for transactions.
 - **Visibility**: External
-- **Modifiers**: `onlyOwner`
+- **Modifiers**: `onlyMessageOwner`
 - **Parameters**:
   - `_maxGas` (uint): Maximum gas amount.
 - **Returns**: None
@@ -433,7 +433,7 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 #### 7. setMaxfee
 - **Purpose**: Caps the fee amount per transaction.
 - **Visibility**: External
-- **Modifiers**: `onlyOwner`
+- **Modifiers**: `onlyMessageOwner`
 - **Parameters**:
   - `_maxFee` (uint): Maximum fee amount.
 - **Returns**: None
@@ -441,7 +441,7 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 #### 8. recoverFeeToken
 - **Purpose**: Recovers Fee Tokens from the contract.
 - **Visibility**: External
-- **Modifiers**: `onlyOwner`
+- **Modifiers**: `onlyMessageOwner`
 - **Parameters**:
   - `_amount` (uint): Amount of tokens to recover.
 - **Returns**: None
@@ -449,7 +449,7 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 #### 9. recoverGasToken
 - **Purpose**: Recovers Gas Tokens (WETH) from the contract.
 - **Visibility**: External
-- **Modifiers**: `onlyOwner`
+- **Modifiers**: `onlyMessageOwner`
 - **Parameters**:
   - `_amount` (uint): Amount of tokens to recover.
 - **Returns**: None
@@ -468,7 +468,7 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 ### Functions based off OpenZeppelin's `Ownable`
 
 1. **renounceMessageOwnership()**
-   - **Purpose**: Leaves the contract without an owner, making it impossible to call `onlyOwner` functions.
+   - **Purpose**: Leaves the contract without an owner, making it impossible to call `onlyMessageOwner` functions.
    - **Visibility**: Public
    - **Important Note**: Use with caution as it removes any functionality only available to the owner.
 
@@ -480,7 +480,7 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 
 ### Event
 
-1. **OwnershipTransferred(previousOwner, newOwner)**
+1. **MessageOwnershipTransferred(previousOwner, newOwner)**
    - **Purpose**: Emitted when ownership of the contract is transferred.
    - **Parameters**:
      - `previousOwner` (address): Address of the previous owner.

@@ -39,7 +39,7 @@ abstract contract MessageClient {
         _;
     }
 
-    event OwnershipTransferred(address previousOwner, address newOwner);
+    event MessageOwnershipTransferred(address previousOwner, address newOwner);
     event RecoverFeeToken(address owner, uint amount);
     event RecoverGasToken(address owner, uint amount);
     event SetMaxgas(address owner, uint maxGas);
@@ -52,7 +52,7 @@ abstract contract MessageClient {
 
     function transferMessageOwnership(address _newMessageOwner) external onlyMessageOwner {
         MESSAGE_OWNER = _newMessageOwner;
-        emit OwnershipTransferred(msg.sender, _newMessageOwner);
+        emit MessageOwnershipTransferred(msg.sender, _newMessageOwner);
     }
 
     /** BRIDGE RECEIVER */
