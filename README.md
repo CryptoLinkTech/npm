@@ -39,7 +39,7 @@
     - [Modifiers](#modifiers)
       - [1. onlySelf](#1-onlyself)
       - [2. onlyActiveChain](#2-onlyactivechain)
-      - [3. onlyOwner](#3-onlyowner)
+      - [3. onlyMessageOwner](#3-onlymessageowner)
     - [Functions based off OpenZeppelin's `Ownable`](#functions-based-off-openzeppelins-ownable)
     - [Event](#event)
 
@@ -462,8 +462,8 @@ The fee management in cross-chain messaging involves two main types of fees: gas
 #### 2. onlyActiveChain
 - **Purpose**: Ensures that the destination chain is active before sending a message.
 
-#### 3. onlyOwner
-- **Purpose**: Restricts function access to the contract owner.
+#### 3. onlyMessageOwner
+- **Purpose**: Restricts function access to the set owner.
 
 ### Functions based off OpenZeppelin's `Ownable`
 
