@@ -264,7 +264,7 @@ Developers must ensure their contracts have sufficient funds in the wrapped nati
 Functions `setMaxgas` and `setMaxFee` allow developers to set limits on gas and message fees, offering protection against high or unexpected fees. 
 
 ## Recovering Fee and Gas Tokens
-Functions `recoverGasToken` and `recoverFeeToken` allow the contract owner to recover funds sent to it for fees.
+The `recoverToken` allows the contract owner to recover funds sent to the contract by mistake, either `ERC20` or `ETH`. If you do not wish to allow recovery, or you wish to limit the recovery of tokens to specific tokens, please override this function in your contract.
   
 
 ## Supported Chains

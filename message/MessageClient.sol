@@ -40,8 +40,7 @@ abstract contract MessageClient {
     }
 
     event MessageOwnershipTransferred(address previousOwner, address newOwner);
-    event RecoverFeeToken(address owner, uint amount);
-    event RecoverGasToken(address owner, uint amount);
+    event RecoverToken(address owner, address token, uint amount);
     event SetMaxgas(address owner, uint maxGas);
     event SetMaxfee(address owner, uint maxfee);
     event SetExsig(address owner, address exsig);
@@ -151,15 +150,14 @@ abstract contract MessageClient {
         emit SetMaxfee(msg.sender, _maxFee);
     }
 
-    function recoverFeeToken(uint _amount) external onlyMessageOwner {
-        FEE_TOKEN.transfer(msg.sender, _amount);
-        emit RecoverFeeToken(msg.sender, _amount);
+    function recoverToken(address _token, uint _amount) external onlyMessageOwner {
+        if(_token == address(0)) {
+            payable(msg.sender).transfer(_amount);
+        } else {
+            IERC20cl(_token).transfer(msg.sender, _amount);
+        }
+        emit RecoverToken(msg.sender, _token, _amount);
     }
-    
-    function recoverGasToken(uint _amount) external onlyMessageOwner {
-        IERC20cl(MESSAGEv3.weth()).transfer(msg.sender, _amount);
-        emit RecoverGasToken(msg.sender, _amount);
-    } 
 
     receive() external payable {}
     fallback() external payable {}
