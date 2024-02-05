@@ -298,7 +298,7 @@ The `recoverToken` allows the contract owner to recover funds sent to the contra
 | Pulse Mainnet           | 369         | 0x96C8b0297d1a07a31Ea402Bc750aA2BD59c873f8 |
 | Rollux Mainnet          | 570         | 0xFa00DdCcB23E86F1f75C0706DEC158679F392aB2 |
 | Scroll Mainnet          | 534352      | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
-
+| XDC Mainnet             | 50          |  |
 
 ### Testnets
 
@@ -354,6 +354,7 @@ The `recoverToken` allows the contract owner to recover funds sent to the contra
 | Stratos Testnet             | 2047       | 0x4a7B33299a21c518d77eb3fF00fd1DC39C452Cba |
 | Telos Testnet               | 41         | 0xF8d80d6E52b5B8484a7CD27a5C0F3D35695c57dF |
 | X1 Testnet                  | 195        | 0x8f554B1b239a57C840d5902D1d901dAFF04F22C2 |
+| XDC Testnet                 | 51         | 0x00CE686319d401E55c2E7784192EB3A2273Aa9Dc |
 | ZetaChain Testnet           | 7001       | 0x714c9202B3B5AF0C0Ad844c2a71803cebBFD3AF5 |
 | zkSync Testnet              | 280        | 0xCf421b3497a28b4215F09e5bAf862C3a2532d681 |
 

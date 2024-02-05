@@ -173,6 +173,12 @@ const chainsConfig = {
       weth: "0x5300000000000000000000000000000000000004",
       rpc: "https://534352.rpc.cryptolink.tech/"
     },
+    "50": { // XDC Mainnet
+      message: "0x00CE686319d401E55c2E7784192EB3A2273Aa9Dc",
+      feeToken: "0x49d3f7543335cf38Fa10889CCFF10207e22110B5",
+      weth: "0x951857744785E80e2De051c32EE7b25f9c458C42",
+      rpc: "https://50.rpc.cryptolink.tech/"
+    },    
     "99999999991": { // Solana Mainnet
       message: "",
       feeToken: "",
