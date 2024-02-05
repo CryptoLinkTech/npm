@@ -80,7 +80,7 @@ const chainsConfig = {
     "1777": { // Gauss Mainnet
       message: "0xFa00DdCcB23E86F1f75C0706DEC158679F392aB2",
       weth: "0xb45fC65405B1a28Bb24AF49fe2caa278525Fe977",
-      feeToken: "0x2baFd05252ADcA1143b77a88A72E1022B59ad379", // no stablecoin on network ..
+      feeToken: "0x2baFd05252ADcA1143b77a88A72E1022B59ad379",
       rpc: "https://1777.rpc.cryptolink.tech/",
     },
     "100": { // Gnosis Mainnet
@@ -131,11 +131,17 @@ const chainsConfig = {
       weth: "0x21C718C22D52d0F3a789b752D4c2fD5908a8A733",
       rpc: "https://42262.rpc.cryptolink.tech/"
     },
+    "23294": { // Oasis Sapphire Mainnet
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      feeToken: "0xE48151964556381B33f93E05E36381Fd53Ec053E", // ?
+      weth: "0x8Bc2B030b299964eEfb5e1e0b36991352E56D2D3",
+      rpc: "https://23294.rpc.cryptolink.tech/"
+    },
     "204": { // opBNB Mainnet 
       message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
       feeToken: "0x9e5AAC1Ba1a2e6aEd6b32689DFcF62A509Ca96f3",
       weth: "0x4200000000000000000000000000000000000006",
-      rpc: "https://rpc.cryptolink.tech/"
+      rpc: "https://240.rpc.cryptolink.tech/"
     },
     "137": { // Polygon Mainnet
       message: "0x6EeFCF3fdd03471dbb0dd984C90EA8f678c266Df",
@@ -160,6 +166,12 @@ const chainsConfig = {
       feeToken: "0x368433cac2a0b8d76e64681a9835502a1f2a8a30",
       weth: "0x4200000000000000000000000000000000000006",
       rpc: "https://570.rpc.cryptolink.tech/"
+    },
+    "534352": { // Scroll Mainnet
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      feeToken: "0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4",
+      weth: "0x5300000000000000000000000000000000000004",
+      rpc: "https://534352.rpc.cryptolink.tech/"
     },
     "99999999991": { // Solana Mainnet
       message: "",

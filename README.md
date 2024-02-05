@@ -291,11 +291,13 @@ The `recoverToken` allows the contract owner to recover funds sent to the contra
 | Mainnetz Mainnet        | 2016        | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
 | Metis Mainnet           | 1088        | 0x48bcCFb7924acf4F944450dCFef2682C72e9758C |
 | Oasis Emerald Mainnet   | 42262       | 0x48bcCFb7924acf4F944450dCFef2682C72e9758C |
+| Oasis Sapphire Mainnet  | 23294       | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
 | opBNB Mainnet           | 204         | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
 | Polygon Mainnet         | 137         | 0x6EeFCF3fdd03471dbb0dd984C90EA8f678c266Df |
 | PolygonZK Mainnet       | 1101        | 0x7b9E658bed47E58b70DB4229024908e7aA080Ce0 |
 | Pulse Mainnet           | 369         | 0x96C8b0297d1a07a31Ea402Bc750aA2BD59c873f8 |
 | Rollux Mainnet          | 570         | 0xFa00DdCcB23E86F1f75C0706DEC158679F392aB2 |
+| Scroll Mainnet          | 534352      | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
 
 
 ### Testnets
