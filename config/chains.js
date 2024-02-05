@@ -603,11 +603,11 @@ const chainsConfig = {
       rpc: "https://195.rpc.cryptolink.tech/",
     },
     "51": { // XDC Testnet
-      message: "",
+      message: "0x00CE686319d401E55c2E7784192EB3A2273Aa9Dc",
       feeToken: "0x743E00433c33fec5DCF6B9f2cF72d471cd0AB027",
-      paper: "",
-      faucet: "",
-      weth: "",
+      paper: "0x544668FA0f7A6006b31436C026d46AB1C751A00A",
+      faucet: "0xc21aAE8AF056ab0406B31f019709Bfeff1c74E2C",
+      weth: "0x49AADBE0f1D2ceb77C7f979b4bF35faEa22976B8",
       rpc: "https://51.rpc.cryptolink.tech/",
     },
     "7001": { // ZetaChain Testnet
