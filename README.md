@@ -273,31 +273,31 @@ The `recoverToken` allows the contract owner to recover funds sent to the contra
 
 | Chain Name              | Chain ID    | Contract Address                           |
 |-------------------------|-------------|--------------------------------------------|
-| Alveychain Mainnet      | 3797        | 0x75c0223A8f9f8f3baB3FbC6d151381C3C576Ba36 |
-| Arbitrum Mainnet        | 42161       | 0x39869675cCC8B39Eb8016C2Cb7a718B119442b56 |
-| Aurora Mainnet          | 1313161555  | 0xC5454DF90567f377E4ace9BE44931ccCAde7f157 |
-| Avalanche Mainnet       | 43114       | 0x7b67dF6728E294db2eb173ac7c738a4627Ae5e11 |
-| Base Mainnet            | 8453        | 0x48bcCFb7924acf4F944450dCFef2682C72e9758C |
-| Binance Mainnet         | 56          | 0xc6ff38E3dA2B10318E728ec5c097Bed97C1801D8 |
-| Celo Mainnet            | 42220       | 0x48bcCFb7924acf4F944450dCFef2682C72e9758C |
-| Cronos Mainnet          | 25          | 0x6046afbf10806a5dc6ba8c2cfaff19e61672751d | 
-| Ethereum Mainnet        | 1           | 0x949FF7206EfD63631DF2dCA2489F8a2A3e2F37Ab |
-| Fantom Mainnet          | 250         | 0xe3b3274bb685F37C7f17a604039c77a6A16Cfc2a |
-| Gauss Mainnet           | 1777        | 0xFa00DdCcB23E86F1f75C0706DEC158679F392aB2 |
-| Gnosis Mainnet          | 100         | 0xE1918E6F4058619e59a245e9eA4B3B8a7C9f51C7 |
-| Harmony Mainnet         | 1666600000  | 0x1274E183AA921972531414Df700E673dE1Be878D |
-| Kava Mainnet            | 2222        | 0xFa00DdCcB23E86F1f75C0706DEC158679F392aB2 |
-| Linea Mainnet           | 59144       | 0x4f3AD39a5dFE09Ef9D95CC546a60Ee5Ad2C75eEC |
-| Mainnetz Mainnet        | 2016        | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
-| Metis Mainnet           | 1088        | 0x48bcCFb7924acf4F944450dCFef2682C72e9758C |
-| Oasis Emerald Mainnet   | 42262       | 0x48bcCFb7924acf4F944450dCFef2682C72e9758C |
-| Oasis Sapphire Mainnet  | 23294       | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
-| opBNB Mainnet           | 204         | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
-| Polygon Mainnet         | 137         | 0x6EeFCF3fdd03471dbb0dd984C90EA8f678c266Df |
-| PolygonZK Mainnet       | 1101        | 0x7b9E658bed47E58b70DB4229024908e7aA080Ce0 |
-| Pulse Mainnet           | 369         | 0x96C8b0297d1a07a31Ea402Bc750aA2BD59c873f8 |
-| Rollux Mainnet          | 570         | 0xFa00DdCcB23E86F1f75C0706DEC158679F392aB2 |
-| Scroll Mainnet          | 534352      | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| Alveychain Mainnet      | 3797        | 0x65EEc58ef38882422E887B82f7085e9a9C35dCA1 |
+| Arbitrum Mainnet        | 42161       |  |
+| Aurora Mainnet          | 1313161555  | 0xf0861412E46E34DaF7A1fe3fe805e7f713cA3bD9 |
+| Avalanche Mainnet       | 43114       | 0x72E052Fa7f0788e668965d37B6c38C88703B7859 |
+| Base Mainnet            | 8453        | 0xe3b3274bb685F37C7f17a604039c77a6A16Cfc2a |
+| Binance Mainnet         | 56          | 0x7b67dF6728E294db2eb173ac7c738a4627Ae5e11 |
+| Celo Mainnet            | 42220       | 0xe3b3274bb685F37C7f17a604039c77a6A16Cfc2a |
+| Cronos Mainnet          | 25          | 0x2224ac62d65453a2317b995fc084e966e4bac2d5 | 
+| Ethereum Mainnet        | 1           |  |
+| Fantom Mainnet          | 250         | 0x72E052Fa7f0788e668965d37B6c38C88703B7859 |
+| Gauss Mainnet           | 1777        | 0xfDdE8946A0A1755b3a74afE7b3383dEe4fb5712f |
+| Gnosis Mainnet          | 100         | 0x75c0223A8f9f8f3baB3FbC6d151381C3C576Ba36 |
+| Harmony Mainnet         | 1666600000  | 0x440AA59AC28460a43537a2eA892d96Acd8eaBdb0 |
+| Kava Mainnet            | 2222        | 0x9E0f7B09576D1F0cBfF1f834A8e5bcc3Db1EF804 |
+| Linea Mainnet           | 59144       |  |
+| Mainnetz Mainnet        | 2016        | 0x1274E183AA921972531414Df700E673dE1Be878D |
+| Metis Mainnet           | 1088        | 0xA10953dEFac127d1b7A645f81045aB5127893124 |
+| Oasis Emerald Mainnet   | 42262       | 0xe3b3274bb685F37C7f17a604039c77a6A16Cfc2a |
+| Oasis Sapphire Mainnet  | 23294       | 0x5E9DBAC1d92b04E5Bd8Bd42845B315568b969Da0 |
+| opBNB Mainnet           | 204         | 0x1274E183AA921972531414Df700E673dE1Be878D |
+| Polygon Mainnet         | 137         | 0x1C5800eb5fECB7760D7F1978ad744feA652a7b27 |
+| PolygonZK Mainnet       | 1101        |  |
+| Pulse Mainnet           | 369         | 0xba01F2bA548e69bA26Fd06a3bdf1A7857eeAC435 |
+| Rollux Mainnet          | 570         | 0xf0861412E46E34DaF7A1fe3fe805e7f713cA3bD9 |
+| Scroll Mainnet          | 534352      |  |
 | XDC Mainnet             | 50          |  |
 
 ### Testnets
@@ -338,6 +338,7 @@ The `recoverToken` allows the contract owner to recover funds sent to the contra
 | Mainnetz Testnet            | 9768       | 0x714c9202B3B5AF0C0Ad844c2a71803cebBFD3AF5 |
 | Mantle Testnet              | 5001       | 0x02894D48c53Ad4AF56ab9624A07153C4fc379D9C |
 | Metis Testnet               | 599        | 0x8E872249C1D7c533bCDC04f5ac124eCa603E0b6D |
+| Nexis Testnet               | 2370       |  |
 | Oasis Emerald Testnet       | 42261      | 0x9Ca377D441B01A44fEab8D75B992ab2e4f710BA9 |
 | Oasis Sapphire Testnet      | 23295      | 0x9c90eC23162C818A79B46C79Bb6EBC07C6733919 |
 | OKEx Testnet                | 65         | 0x9744D38d26eF45C31c8D20783671506FebeDBAC4 |

@@ -1,36 +1,36 @@
 const chainsConfig = {
     "3797": { // AlveyChain Mainnet
-      message: "0x75c0223A8f9f8f3baB3FbC6d151381C3C576Ba36",
+      message: "0x65EEc58ef38882422E887B82f7085e9a9C35dCA1",
       feeToken: "0x7a0b5E86d2C1e873E005780419eeE16ba741808a",
       weth: "0xCb3e9919C56efF1004E54175a01e39163a352129",
       rpc: "https://3797.rpc.cryptolink.tech/"
     },
     "42161": { // Arbitrum Mainnet
-      message: "0x39869675cCC8B39Eb8016C2Cb7a718B119442b56",
+      message: "",
       feeToken: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
       weth: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
       rpc: "https://42161.rpc.cryptolink.tech/"
     },
     "1313161554": { // Aurora Mainnet
-      message: "0xC5454DF90567f377E4ace9BE44931ccCAde7f157",
+      message: "0xf0861412E46E34DaF7A1fe3fe805e7f713cA3bD9",
       feeToken: "0xB12BFcA5A55806AaF64E99521918A4bf0fC40802",
       weth: "0xC9BdeEd33CD01541e1eeD10f90519d2C06Fe3feB",
       rpc: "https://1313161554.rpc.cryptolink.tech/"
     },
     "43114": { // Avalanche Mainnet
-      message: "0x7b67dF6728E294db2eb173ac7c738a4627Ae5e11",
+      message: "0x72E052Fa7f0788e668965d37B6c38C88703B7859",
       feeToken: "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
       weth: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
       rpc: "https://43114.rpc.cryptolink.tech/"
     },
     "8453": { // Base Mainnet
-      message: "0x48bcCFb7924acf4F944450dCFef2682C72e9758C",
+      message: "0xe3b3274bb685F37C7f17a604039c77a6A16Cfc2a",
       feeToken: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
       weth: "0x4200000000000000000000000000000000000006",
       rpc: "https://8453.rpc.cryptolink.tech/"
     },
     "56": { // Binance Mainnet
-      message: "0xc6ff38E3dA2B10318E728ec5c097Bed97C1801D8",
+      message: "0x7b67dF6728E294db2eb173ac7c738a4627Ae5e11",
       feeToken: "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
       weth: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
       rpc: "https://56.rpc.cryptolink.tech/"      
@@ -48,25 +48,25 @@ const chainsConfig = {
       rpc: "https://7700.rpc.cryptolink.tech/"
     },
     "42220": { // Celo Mainnet
-      message: "0x48bcCFb7924acf4F944450dCFef2682C72e9758C",
+      message: "0xe3b3274bb685F37C7f17a604039c77a6A16Cfc2a",
       feeToken: "0x37f750B7cC259A2f741AF45294f6a16572CF5cAd",
       weth: "0x471EcE3750Da237f93B8E339c536989b8978a438",
       rpc: "https://42220.rpc.cryptolink.tech/"
     },
     "25": { // Cronos Mainnet
-      message: "0x6046afbf10806a5dc6ba8c2cfaff19e61672751d",
+      message: "0x2224ac62d65453a2317b995fc084e966e4bac2d5",
       feeToken: "0xc21223249CA28397B4B6541dfFaEcC539BfF0c59",
       weth: "0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23",
       rpc: "https://25.rpc.cryptolink.tech/"
     },
     "1": { // Ethereum Mainnet
-      message: "0x949FF7206EfD63631DF2dCA2489F8a2A3e2F37Ab",
+      message: "",
       feeToken: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
       weth: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
       rpc: "https://1.rpc.cryptolink.tech/"
     },
     "250": { // Fantom Mainnet
-      message: "0xe3b3274bb685F37C7f17a604039c77a6A16Cfc2a",
+      message: "0x72E052Fa7f0788e668965d37B6c38C88703B7859",
       feeToken: "0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf",
       weth: "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
       rpc: "https://250.rpc.cryptolink.tech/"
@@ -78,19 +78,19 @@ const chainsConfig = {
       rpc: "https://14.rpc.cryptolink.tech/"
     },
     "1777": { // Gauss Mainnet
-      message: "0xFa00DdCcB23E86F1f75C0706DEC158679F392aB2",
+      message: "0xfDdE8946A0A1755b3a74afE7b3383dEe4fb5712f",
       weth: "0xb45fC65405B1a28Bb24AF49fe2caa278525Fe977",
       feeToken: "0x2baFd05252ADcA1143b77a88A72E1022B59ad379",
       rpc: "https://1777.rpc.cryptolink.tech/",
     },
     "100": { // Gnosis Mainnet
-      message: "0xE1918E6F4058619e59a245e9eA4B3B8a7C9f51C7",
+      message: "0x75c0223A8f9f8f3baB3FbC6d151381C3C576Ba36",
       feeToken: "0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83",
       weth: "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d",
       rpc: "https://100.rpc.cryptolink.tech/",
     },    
     "1666600000": { // Harmony Mainnet
-      message: "0x1274E183AA921972531414Df700E673dE1Be878D",
+      message: "0x440AA59AC28460a43537a2eA892d96Acd8eaBdb0",
       feeToken: "0x985458E523dB3d53125813eD68c274899e9DfAb4",
       weth: "0xcF664087a5bB0237a0BAd6742852ec6c8d69A27a",
       rpc: "https://1666600000.rpc.cryptolink.tech/",
@@ -102,79 +102,79 @@ const chainsConfig = {
       rpc: "https://13371.rpc.cryptolink.tech/"
     },
     "2222": { // Kava Mainnet
-      message: "0xFa00DdCcB23E86F1f75C0706DEC158679F392aB2",
+      message: "0x9E0f7B09576D1F0cBfF1f834A8e5bcc3Db1EF804",
       feeToken: "0x919C1c267BC06a7039e03fcc2eF738525769109c",
       weth: "0xc86c7C0eFbd6A49B35E8714C5f59D99De09A225b",
       rpc: "https://2222.rpc.cryptolink.tech/"
     },
     "59144": { // Linea Mainnet
-      message: "0x4f3AD39a5dFE09Ef9D95CC546a60Ee5Ad2C75eEC",
+      message: "",
       feeToken: "0x176211869cA2b568f2A7D4EE941E073a821EE1ff",
       weth: "0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f",
       rpc: "https://59144.rpc.cryptolink.tech/"
     },
     "2016": { // Mainnetz Mainnet
-      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      message: "0x1274E183AA921972531414Df700E673dE1Be878D",
       feeToken: "0x0000000000000000000000000000000000000000",
       weth: "0x41c515fA7D541bCbDEfB44f0FE2B1629aec140b9",
       rpc: "https://59144.rpc.cryptolink.tech/"
     },    
     "1088": { // Metis Mainnet
-      message: "0x48bcCFb7924acf4F944450dCFef2682C72e9758C",
+      message: "0xA10953dEFac127d1b7A645f81045aB5127893124",
       feeToken: "0xEA32A96608495e54156Ae48931A7c20f0dcc1a21",
       weth: "0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000",
       rpc: "https://1088.rpc.cryptolink.tech/",
     },
     "42262": { // Oasis Emerald Mainnet
-      message: "0x48bcCFb7924acf4F944450dCFef2682C72e9758C",
+      message: "0xe3b3274bb685F37C7f17a604039c77a6A16Cfc2a",
       feeToken: "0xdC19A122e268128B5eE20366299fc7b5b199C8e3",
       weth: "0x21C718C22D52d0F3a789b752D4c2fD5908a8A733",
       rpc: "https://42262.rpc.cryptolink.tech/"
     },
     "23294": { // Oasis Sapphire Mainnet
-      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      message: "0x5E9DBAC1d92b04E5Bd8Bd42845B315568b969Da0",
       feeToken: "0xE48151964556381B33f93E05E36381Fd53Ec053E", // ?
       weth: "0x8Bc2B030b299964eEfb5e1e0b36991352E56D2D3",
       rpc: "https://23294.rpc.cryptolink.tech/"
     },
     "204": { // opBNB Mainnet 
-      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      message: "0x1274E183AA921972531414Df700E673dE1Be878D",
       feeToken: "0x9e5AAC1Ba1a2e6aEd6b32689DFcF62A509Ca96f3",
       weth: "0x4200000000000000000000000000000000000006",
       rpc: "https://240.rpc.cryptolink.tech/"
     },
     "137": { // Polygon Mainnet
-      message: "0x6EeFCF3fdd03471dbb0dd984C90EA8f678c266Df",
+      message: "0x1C5800eb5fECB7760D7F1978ad744feA652a7b27",
       feeToken: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
       weth: "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
       rpc: "https://137.rpc.cryptolink.tech/"
     },
     "1101": { // PolygonZK Mainnet
-      message: "0x7b9E658bed47E58b70DB4229024908e7aA080Ce0",
+      message: "",
       feeToken: "0xA8CE8aee21bC2A48a5EF670afCc9274C7bbbC035",
       weth: "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9",
       rpc: "https://1101.rpc.cryptolink.tech/"
     },
     "369": { // Pulse Mainnet
-      message: "0x96C8b0297d1a07a31Ea402Bc750aA2BD59c873f8",
+      message: "0xba01F2bA548e69bA26Fd06a3bdf1A7857eeAC435",
       feeToken: "0x15d38573d2feeb82e7ad5187ab8c1d52810b1f07",
       weth: "0xa1077a294dde1b09bb078844df40758a5d0f9a27",
       rpc: "https://369.rpc.cryptolink.tech/"
     },
     "570": { // Rollux Mainnet
-      message: "0xFa00DdCcB23E86F1f75C0706DEC158679F392aB2",
+      message: "0xf0861412E46E34DaF7A1fe3fe805e7f713cA3bD9",
       feeToken: "0x368433cac2a0b8d76e64681a9835502a1f2a8a30",
       weth: "0x4200000000000000000000000000000000000006",
       rpc: "https://570.rpc.cryptolink.tech/"
     },
     "534352": { // Scroll Mainnet
-      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      message: "",
       feeToken: "0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4",
       weth: "0x5300000000000000000000000000000000000004",
       rpc: "https://534352.rpc.cryptolink.tech/"
     },
     "50": { // XDC Mainnet
-      message: "0x00CE686319d401E55c2E7784192EB3A2273Aa9Dc",
+      message: "",
       feeToken: "0x49d3f7543335cf38Fa10889CCFF10207e22110B5",
       weth: "0x951857744785E80e2De051c32EE7b25f9c458C42",
       rpc: "https://50.rpc.cryptolink.tech/"
