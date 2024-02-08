@@ -105,6 +105,7 @@ abstract contract MessageClient {
             CHAINS[_chains[x]].confirmations = _confirmations[x];
             CHAINS[_chains[x]].endpointExtended = _endpoints[x];
             CHAINS[_chains[x]].extended = true;
+            CHAINS[_chains[x]].endpoint = address(1);
         }
     }
 
