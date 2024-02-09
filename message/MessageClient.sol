@@ -96,6 +96,7 @@ abstract contract MessageClient {
 
     /** OWNER */
     function configureClientExtended(
+        address _messageV3, // MessageV3 bridge address
         uint[] calldata _chains, // list of chains to accept as valid destinations
         bytes[] calldata _endpoints, // list of corresponding MessageV3Client addresses on each chain
         uint16[] calldata _confirmations // confirmations required on each chain before processing
@@ -107,6 +108,8 @@ abstract contract MessageClient {
             CHAINS[_chains[x]].extended = true;
             CHAINS[_chains[x]].endpoint = address(1);
         }
+
+        _configureMessageV3(_messageV3);
     }
 
     function configureClient(
@@ -114,16 +117,20 @@ abstract contract MessageClient {
         uint[] calldata _chains, // list of chains to accept as valid destinations
         address[] calldata _endpoints, // list of corresponding MessageV3Client addresses on each chain
         uint16[] calldata _confirmations // confirmations required on each chain before processing
-    ) external onlyMessageOwner {
-        MESSAGEv3 = IMessageV3(_messageV3);
-        FEE_TOKEN = IERC20cl(MESSAGEv3.feeToken());
-
+    ) public onlyMessageOwner {
         uint _chainsLength = _chains.length;
         for(uint x=0; x < _chainsLength; x++) {
             CHAINS[_chains[x]].confirmations = _confirmations[x];
             CHAINS[_chains[x]].endpoint = _endpoints[x];
             CHAINS[_chains[x]].extended = false;
         }
+
+        _configureMessageV3(_messageV3);
+    }
+
+    function _configureMessageV3(address _messageV3) internal {
+        MESSAGEv3 = IMessageV3(_messageV3);
+        FEE_TOKEN = IERC20cl(MESSAGEv3.feeToken());
 
         // approve bridge for source chain fees (limited per transaction with setMaxfee)
         if(address(FEE_TOKEN) != address(0)) {
