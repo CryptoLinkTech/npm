@@ -60,7 +60,7 @@ const chainsConfig = {
       rpc: "https://25.rpc.cryptolink.tech/"
     },
     "1": { // Ethereum Mainnet
-      message: "",
+      message: "0x7b67dF6728E294db2eb173ac7c738a4627Ae5e11",
       feeToken: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
       weth: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
       rpc: "https://1.rpc.cryptolink.tech/"
