@@ -6,7 +6,7 @@ const chainsConfig = {
       rpc: "https://3797.rpc.cryptolink.tech/"
     },
     "42161": { // Arbitrum Mainnet
-      message: "",
+      message: "0x65EEc58ef38882422E887B82f7085e9a9C35dCA1",
       feeToken: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
       weth: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
       rpc: "https://42161.rpc.cryptolink.tech/"
@@ -108,7 +108,7 @@ const chainsConfig = {
       rpc: "https://2222.rpc.cryptolink.tech/"
     },
     "59144": { // Linea Mainnet
-      message: "",
+      message: "0x6C5AD5e9763Ee118f6c6359e00EeF6ECfA84395b",
       feeToken: "0x176211869cA2b568f2A7D4EE941E073a821EE1ff",
       weth: "0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f",
       rpc: "https://59144.rpc.cryptolink.tech/"

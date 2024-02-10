@@ -274,20 +274,20 @@ The `recoverToken` allows the contract owner to recover funds sent to the contra
 | Chain Name              | Chain ID    | Contract Address                           |
 |-------------------------|-------------|--------------------------------------------|
 | Alveychain Mainnet      | 3797        | 0x65EEc58ef38882422E887B82f7085e9a9C35dCA1 |
-| Arbitrum Mainnet        | 42161       |  |
+| Arbitrum Mainnet        | 42161       | 0x65EEc58ef38882422E887B82f7085e9a9C35dCA1 |
 | Aurora Mainnet          | 1313161555  | 0xf0861412E46E34DaF7A1fe3fe805e7f713cA3bD9 |
 | Avalanche Mainnet       | 43114       | 0x72E052Fa7f0788e668965d37B6c38C88703B7859 |
 | Base Mainnet            | 8453        | 0xe3b3274bb685F37C7f17a604039c77a6A16Cfc2a |
 | Binance Mainnet         | 56          | 0x7b67dF6728E294db2eb173ac7c738a4627Ae5e11 |
 | Celo Mainnet            | 42220       | 0xe3b3274bb685F37C7f17a604039c77a6A16Cfc2a |
 | Cronos Mainnet          | 25          | 0x2224ac62d65453a2317b995fc084e966e4bac2d5 | 
-| Ethereum Mainnet        | 1           |  |
+| Ethereum Mainnet        | 1           | 0x7b67dF6728E294db2eb173ac7c738a4627Ae5e11 |
 | Fantom Mainnet          | 250         | 0x72E052Fa7f0788e668965d37B6c38C88703B7859 |
 | Gauss Mainnet           | 1777        | 0xfDdE8946A0A1755b3a74afE7b3383dEe4fb5712f |
 | Gnosis Mainnet          | 100         | 0x75c0223A8f9f8f3baB3FbC6d151381C3C576Ba36 |
 | Harmony Mainnet         | 1666600000  | 0x440AA59AC28460a43537a2eA892d96Acd8eaBdb0 |
 | Kava Mainnet            | 2222        | 0x9E0f7B09576D1F0cBfF1f834A8e5bcc3Db1EF804 |
-| Linea Mainnet           | 59144       |  |
+| Linea Mainnet           | 59144       | 0x6C5AD5e9763Ee118f6c6359e00EeF6ECfA84395b |
 | Mainnetz Mainnet        | 2016        | 0x1274E183AA921972531414Df700E673dE1Be878D |
 | Metis Mainnet           | 1088        | 0xA10953dEFac127d1b7A645f81045aB5127893124 |
 | Oasis Emerald Mainnet   | 42262       | 0xe3b3274bb685F37C7f17a604039c77a6A16Cfc2a |
