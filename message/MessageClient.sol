@@ -167,9 +167,13 @@ abstract contract MessageClient {
         emit RecoverToken(msg.sender, _token, _amount);
     }
 
-    function isSelf(address _sender, uint _sourceChainId) external view returns (bool) {
+    function isSelf(address _sender, uint _sourceChainId) public view returns (bool) {
         if(_sender == CHAINS[_sourceChainId].endpoint) return true;
         return false;
+    }
+
+    function isAuthorized(address _sender, uint _sourceChainId) external view returns (bool) {
+        return isSelf(_sender, _sourceChainId);
     }
 
     receive() external payable {}

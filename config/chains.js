@@ -118,7 +118,13 @@ const chainsConfig = {
       feeToken: "0x0000000000000000000000000000000000000000",
       weth: "0x41c515fA7D541bCbDEfB44f0FE2B1629aec140b9",
       rpc: "https://59144.rpc.cryptolink.tech/"
-    },    
+    },
+    "5000": { // Mantle Mainnet
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      feeToken: "",
+      weth: "",
+      rpc: "https://mantle.drpc.org"
+    },
     "1088": { // Metis Mainnet
       message: "0xA10953dEFac127d1b7A645f81045aB5127893124",
       feeToken: "0xEA32A96608495e54156Ae48931A7c20f0dcc1a21",
@@ -150,7 +156,7 @@ const chainsConfig = {
       rpc: "https://137.rpc.cryptolink.tech/"
     },
     "1101": { // PolygonZK Mainnet
-      message: "",
+      message: "0x39869675cCC8B39Eb8016C2Cb7a718B119442b56",
       feeToken: "0xA8CE8aee21bC2A48a5EF670afCc9274C7bbbC035",
       weth: "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9",
       rpc: "https://1101.rpc.cryptolink.tech/"

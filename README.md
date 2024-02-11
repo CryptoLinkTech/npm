@@ -269,6 +269,8 @@ The `recoverToken` allows the contract owner to recover funds sent to the contra
 
 ## Supported Chains
 
+It is manditory to to read and agree to the TERMS.md before utilizing our services!
+
 ### Mainnets
 
 | Chain Name              | Chain ID    | Contract Address                           |
@@ -289,16 +291,17 @@ The `recoverToken` allows the contract owner to recover funds sent to the contra
 | Kava Mainnet            | 2222        | 0x9E0f7B09576D1F0cBfF1f834A8e5bcc3Db1EF804 |
 | Linea Mainnet           | 59144       | 0x6C5AD5e9763Ee118f6c6359e00EeF6ECfA84395b |
 | Mainnetz Mainnet        | 2016        | 0x1274E183AA921972531414Df700E673dE1Be878D |
+| Mantle Mainnet          | 5000        | (pending) |
 | Metis Mainnet           | 1088        | 0xA10953dEFac127d1b7A645f81045aB5127893124 |
 | Oasis Emerald Mainnet   | 42262       | 0xe3b3274bb685F37C7f17a604039c77a6A16Cfc2a |
 | Oasis Sapphire Mainnet  | 23294       | 0x5E9DBAC1d92b04E5Bd8Bd42845B315568b969Da0 |
 | opBNB Mainnet           | 204         | 0x1274E183AA921972531414Df700E673dE1Be878D |
 | Polygon Mainnet         | 137         | 0x1C5800eb5fECB7760D7F1978ad744feA652a7b27 |
-| PolygonZK Mainnet       | 1101        |  |
+| PolygonZK Mainnet       | 1101        | 0x39869675cCC8B39Eb8016C2Cb7a718B119442b56 |
 | Pulse Mainnet           | 369         | 0xba01F2bA548e69bA26Fd06a3bdf1A7857eeAC435 |
 | Rollux Mainnet          | 570         | 0xf0861412E46E34DaF7A1fe3fe805e7f713cA3bD9 |
-| Scroll Mainnet          | 534352      |  |
-| XDC Mainnet             | 50          |  |
+| Scroll Mainnet          | 534352      | (pending) |
+| XDC Mainnet             | 50          | (pending) |
 
 ### Testnets
 
