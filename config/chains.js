@@ -174,13 +174,13 @@ const chainsConfig = {
       rpc: "https://570.rpc.cryptolink.tech/"
     },
     "534352": { // Scroll Mainnet
-      message: "",
+      message: "0x6C5AD5e9763Ee118f6c6359e00EeF6ECfA84395b",
       feeToken: "0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4",
       weth: "0x5300000000000000000000000000000000000004",
       rpc: "https://534352.rpc.cryptolink.tech/"
     },
     "50": { // XDC Mainnet
-      message: "",
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
       feeToken: "0x49d3f7543335cf38Fa10889CCFF10207e22110B5",
       weth: "0x951857744785E80e2De051c32EE7b25f9c458C42",
       rpc: "https://50.rpc.cryptolink.tech/"

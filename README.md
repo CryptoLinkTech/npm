@@ -300,8 +300,8 @@ It is manditory to to read and agree to the TERMS.md before utilizing our servic
 | PolygonZK Mainnet       | 1101        | 0x39869675cCC8B39Eb8016C2Cb7a718B119442b56 |
 | Pulse Mainnet           | 369         | 0xba01F2bA548e69bA26Fd06a3bdf1A7857eeAC435 |
 | Rollux Mainnet          | 570         | 0xf0861412E46E34DaF7A1fe3fe805e7f713cA3bD9 |
-| Scroll Mainnet          | 534352      | (pending) |
-| XDC Mainnet             | 50          | (pending) |
+| Scroll Mainnet          | 534352      | 0x6C5AD5e9763Ee118f6c6359e00EeF6ECfA84395b |
+| XDC Mainnet             | 50          | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
 
 ### Testnets
 
