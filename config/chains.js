@@ -131,6 +131,12 @@ const chainsConfig = {
       weth: "0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000",
       rpc: "https://1088.rpc.cryptolink.tech/",
     },
+    "245022934": { // Neon Mainnet 
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      feeToken: "0xEA6B04272f9f62F997F666F07D3a974134f7FFb9",
+      weth: "0x202C35e517Fa803B537565c40F0a6965D7204609",
+      rpc: "https://245022934.rpc.cryptolink.tech/"
+    },
     "42262": { // Oasis Emerald Mainnet
       message: "0xe3b3274bb685F37C7f17a604039c77a6A16Cfc2a",
       feeToken: "0xdC19A122e268128B5eE20366299fc7b5b199C8e3",
@@ -463,6 +469,14 @@ const chainsConfig = {
       faucet: "0x7B3978177f411737deb7bF57A73Cf079A2eD4De0",
       weth: "0xa13ad1Cf753f31e405a60eb3204A941fBb035bCf",
       rpc: "https://599.rpc.cryptolink.tech/",
+    },
+    "245022926": { // Neon Testnet
+      message: "0x566B40Dd59A868c244E1353368e08ddaD1C1d74f",
+      feeToken: "0x512E48836Cd42F3eB6f50CEd9ffD81E0a7F15103",
+      paper: "",
+      faucet: "",
+      weth: "0x11adC2d986E334137b9ad0a0F290771F31e9517F",
+      rpc: "https://245022926.rpc.cryptolink.tech/"
     },
     "42261": { // Oasis Emerald Testnet
       message: "0x9Ca377D441B01A44fEab8D75B992ab2e4f710BA9",

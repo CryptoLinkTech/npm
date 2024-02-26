@@ -293,6 +293,7 @@ It is manditory to to read and agree to the TERMS.md before utilizing our servic
 | Mainnetz Mainnet        | 2016        | 0x1274E183AA921972531414Df700E673dE1Be878D |
 | Mantle Mainnet          | 5000        | (pending) |
 | Metis Mainnet           | 1088        | 0xA10953dEFac127d1b7A645f81045aB5127893124 |
+| Neon Mainnet            | 245022934   | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
 | Oasis Emerald Mainnet   | 42262       | 0xe3b3274bb685F37C7f17a604039c77a6A16Cfc2a |
 | Oasis Sapphire Mainnet  | 23294       | 0x5E9DBAC1d92b04E5Bd8Bd42845B315568b969Da0 |
 | opBNB Mainnet           | 204         | 0x1274E183AA921972531414Df700E673dE1Be878D |
@@ -341,6 +342,7 @@ It is manditory to to read and agree to the TERMS.md before utilizing our servic
 | Mainnetz Testnet            | 9768       | 0x714c9202B3B5AF0C0Ad844c2a71803cebBFD3AF5 |
 | Mantle Testnet              | 5001       | 0x02894D48c53Ad4AF56ab9624A07153C4fc379D9C |
 | Metis Testnet               | 599        | 0x8E872249C1D7c533bCDC04f5ac124eCa603E0b6D |
+| Neon Testnet                | 245022926  | 0x566B40Dd59A868c244E1353368e08ddaD1C1d74f |
 | Nexis Testnet               | 2370       |  |
 | Oasis Emerald Testnet       | 42261      | 0x9Ca377D441B01A44fEab8D75B992ab2e4f710BA9 |
 | Oasis Sapphire Testnet      | 23295      | 0x9c90eC23162C818A79B46C79Bb6EBC07C6733919 |
