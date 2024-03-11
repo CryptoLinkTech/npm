@@ -100,6 +100,17 @@ const chainsConfig = {
       feeToken: "0x6de8aCC0D406837030CE4dd28e7c08C5a96a30d2",
       weth: "0x52A6c53869Ce09a731CD772f245b97A4401d3348",
       rpc: "https://13371.rpc.cryptolink.tech/"
+    },    "13371": { // Immutable zkEVM Mainnet
+      message: "",
+      feeToken: "0x6de8aCC0D406837030CE4dd28e7c08C5a96a30d2",
+      weth: "0x52A6c53869Ce09a731CD772f245b97A4401d3348",
+      rpc: "https://13371.rpc.cryptolink.tech/"
+    },
+    "4689": { // IoTeX Mainnet
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      feeToken: "0x6de8aCC0D406837030CE4dd28e7c08C5a96a30d2",
+      weth: "0x4fffe0168b04f039496ca5189f9596c22693A19c",
+      rpc: "https://4689.rpc.cryptolink.tech/"
     },
     "2222": { // Kava Mainnet
       message: "0x9E0f7B09576D1F0cBfF1f834A8e5bcc3Db1EF804",
@@ -405,6 +416,14 @@ const chainsConfig = {
       faucet: "0x5f6573007ace7b04f1E09A04E393349b80Bdf826",
       weth: "0xfA8d81973f29b2555933027Ac9751740B9fFa047",
       rpc: "https://13473.rpc.cryptolink.tech/",
+    },
+    "4690": { // IoTeX Testnet
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0x566B40Dd59A868c244E1353368e08ddaD1C1d74f",
+      paper: "0x9d75f706b986F0075b3778a12153390273dE95eC",
+      faucet: "0xc2e7eA22A69Fff2ac96EB9b306A562C9fb299b16",
+      weth: "0x0EFafca24E5BbC1C01587B659226B9d600fd671f",
+      rpc: "https://4690.rpc.cryptolink.tech/",
     },
     "167008": { // Katla Testnet
       message: "0xA95c0BC77Ab8a8EfA3dF00366FFAe5CB1A2cba15",

@@ -288,6 +288,7 @@ It is manditory to to read and agree to the TERMS.md before utilizing our servic
 | Gauss Mainnet           | 1777        | 0xfDdE8946A0A1755b3a74afE7b3383dEe4fb5712f |
 | Gnosis Mainnet          | 100         | 0x75c0223A8f9f8f3baB3FbC6d151381C3C576Ba36 |
 | Harmony Mainnet         | 1666600000  | 0x440AA59AC28460a43537a2eA892d96Acd8eaBdb0 |
+| IoTeX Mainnet           | 4689        | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
 | Kava Mainnet            | 2222        | 0x9E0f7B09576D1F0cBfF1f834A8e5bcc3Db1EF804 |
 | Linea Mainnet           | 59144       | 0x6C5AD5e9763Ee118f6c6359e00EeF6ECfA84395b |
 | Mainnetz Mainnet        | 2016        | 0x1274E183AA921972531414Df700E673dE1Be878D |
@@ -334,6 +335,7 @@ It is manditory to to read and agree to the TERMS.md before utilizing our servic
 | Harmony Testnet             | 1666700000 | 0x9cAa65b69Ad8118C3d1454393F5b96292FE3C0aB |
 | Horizen Testnet             | 1663       | 0xA95c0BC77Ab8a8EfA3dF00366FFAe5CB1A2cba15 |
 | Immutable Testnet           | 13473      | 0xC7E87B6614DAb7a4B3Feaa9e56a2cA29A84AD0a8 |
+| IoTeX Testnet               | 4690       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Katla Testnet               | 167008     | 0xA95c0BC77Ab8a8EfA3dF00366FFAe5CB1A2cba15 |
 | Kava Testnet                | 2221       | 0xd577fcBee5734c2da5e0063fF1df38845DaA7117 |
 | Klaytn Testnet              | 1001       | 0xdCa897f920Df8015169838c428479D5e3d5Bf526 |
