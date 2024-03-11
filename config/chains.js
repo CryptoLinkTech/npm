@@ -196,6 +196,12 @@ const chainsConfig = {
       weth: "0x5300000000000000000000000000000000000004",
       rpc: "https://534352.rpc.cryptolink.tech/"
     },
+    "1490": {
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      feeToken: "0x0000000000000000000000000000000000000000",
+      weth: "0xC0C0A38067Ba977676AB4aFD9834dB030901bE2d",
+      rpc: "https://1490.rpc.cryptolink.tech/"
+    },
     "50": { // XDC Mainnet
       message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
       feeToken: "0x49d3f7543335cf38Fa10889CCFF10207e22110B5",
@@ -632,6 +638,14 @@ const chainsConfig = {
       faucet: "0xeDCfb3038d4a262Aef3735CFa64146C35196CC51",
       weth: "0x02dA7eeEB722A126CCC53085d489ca0e1BAbc55E",
       rpc: "https://41.rpc.cryptolink.tech/",
+    },
+    "14333": { // Vitruveo Testnet
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0x566B40Dd59A868c244E1353368e08ddaD1C1d74f",
+      paper: "0x9d75f706b986F0075b3778a12153390273dE95eC",
+      faucet: "0xc2e7eA22A69Fff2ac96EB9b306A562C9fb299b16",
+      weth: "0x0EFafca24E5BbC1C01587B659226B9d600fd671f",
+      rpc: "https://14333.rpc.cryptolink.tech/"
     },
     "195": { // X1 Testnet
       message: "0x8f554B1b239a57C840d5902D1d901dAFF04F22C2",

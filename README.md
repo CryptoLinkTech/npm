@@ -303,6 +303,7 @@ It is manditory to to read and agree to the TERMS.md before utilizing our servic
 | Pulse Mainnet           | 369         | 0xba01F2bA548e69bA26Fd06a3bdf1A7857eeAC435 |
 | Rollux Mainnet          | 570         | 0xf0861412E46E34DaF7A1fe3fe805e7f713cA3bD9 |
 | Scroll Mainnet          | 534352      | 0x6C5AD5e9763Ee118f6c6359e00EeF6ECfA84395b |
+| Vitruveo Mainnet        | 1490        | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
 | XDC Mainnet             | 50          | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
 
 ### Testnets
@@ -361,6 +362,7 @@ It is manditory to to read and agree to the TERMS.md before utilizing our servic
 | Sonic Testnet               | 64165      | 0xeFaDc14c2DD95D0E6969d0B25EA6e4F830150493 |
 | Stratos Testnet             | 2047       | 0x4a7B33299a21c518d77eb3fF00fd1DC39C452Cba |
 | Telos Testnet               | 41         | 0xF8d80d6E52b5B8484a7CD27a5C0F3D35695c57dF |
+| Vitruveo Testnet            | 14333      | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | X1 Testnet                  | 195        | 0x8f554B1b239a57C840d5902D1d901dAFF04F22C2 |
 | XDC Testnet                 | 51         | 0x00CE686319d401E55c2E7784192EB3A2273Aa9Dc |
 | ZetaChain Testnet           | 7001       | 0x714c9202B3B5AF0C0Ad844c2a71803cebBFD3AF5 |
