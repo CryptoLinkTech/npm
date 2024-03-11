@@ -196,7 +196,7 @@ const chainsConfig = {
       weth: "0x5300000000000000000000000000000000000004",
       rpc: "https://534352.rpc.cryptolink.tech/"
     },
-    "1490": {
+    "1490": { // Vitruveo Mainnet
       message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
       feeToken: "0x0000000000000000000000000000000000000000",
       weth: "0xC0C0A38067Ba977676AB4aFD9834dB030901bE2d",
