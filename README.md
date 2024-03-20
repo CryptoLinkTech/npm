@@ -346,7 +346,7 @@ It is manditory to to read and agree to the TERMS.md before utilizing our servic
 | Mantle Testnet              | 5001       | 0x02894D48c53Ad4AF56ab9624A07153C4fc379D9C |
 | Metis Testnet               | 599        | 0x8E872249C1D7c533bCDC04f5ac124eCa603E0b6D |
 | Neon Testnet                | 245022926  | 0x566B40Dd59A868c244E1353368e08ddaD1C1d74f |
-| Nexis Testnet               | 2370       |  |
+| Nexis Testnet               | 2370       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Oasis Emerald Testnet       | 42261      | 0x9Ca377D441B01A44fEab8D75B992ab2e4f710BA9 |
 | Oasis Sapphire Testnet      | 23295      | 0x9c90eC23162C818A79B46C79Bb6EBC07C6733919 |
 | OKEx Testnet                | 65         | 0x9744D38d26eF45C31c8D20783671506FebeDBAC4 |

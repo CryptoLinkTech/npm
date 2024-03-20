@@ -503,6 +503,14 @@ const chainsConfig = {
       weth: "0x11adC2d986E334137b9ad0a0F290771F31e9517F",
       rpc: "https://245022926.rpc.cryptolink.tech/"
     },
+    "2370": { // Nexis Testnet
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      feeToken: "0x566B40Dd59A868c244E1353368e08ddaD1C1d74f",
+      paper: "0x9d75f706b986F0075b3778a12153390273dE95eC",
+      faucet: "0xc2e7eA22A69Fff2ac96EB9b306A562C9fb299b16",
+      weth: "0x0EFafca24E5BbC1C01587B659226B9d600fd671f",
+      rpc: "https://2370.rpc.cryptolink.tech/"
+    },
     "42261": { // Oasis Emerald Testnet
       message: "0x9Ca377D441B01A44fEab8D75B992ab2e4f710BA9",
       feeToken: "0x73Db0a9a3aB2098B57E6A0f1F8Ff497e4adaa412",
