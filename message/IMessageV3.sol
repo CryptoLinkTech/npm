@@ -36,4 +36,6 @@ interface IMessageV3 {
     function setExsig(address signer) external;
     function setMaxgas(uint maxgas) external;
     function setMaxfee(uint maxfee) external;
+
+    function getSourceFee(uint _destChainId, bool _express) external view returns (uint _fee);
 }
