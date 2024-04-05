@@ -1,4 +1,4 @@
-declare module '@cryptolink/contracts' {
+declare namespace ChainsConfig {
   interface ChainConfig {
     message: string;
     weth?: string;
@@ -9,7 +9,7 @@ declare module '@cryptolink/contracts' {
   interface ChainsConfig {
     [key: string]: ChainConfig;
   }
-
-  const chainsConfig: ChainsConfig;
-  export = chainsConfig;
 }
+
+declare const chainsConfig: ChainsConfig.ChainsConfig;
+export = chainsConfig;
