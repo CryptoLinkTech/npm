@@ -6,6 +6,10 @@ pragma solidity ^0.8.9;
 import "./IMessageV3.sol";
 import "./IERC20cl.sol";
 
+interface IFeature {
+    function getPayload(uint _txId) external view returns (bytes memory);
+}
+
 /**
  * @title MessageV3 Client
  * @author CryptoLink.Tech <atlas@cryptolink.tech>
@@ -13,6 +17,7 @@ import "./IERC20cl.sol";
 abstract contract MessageClient {
     IMessageV3 public MESSAGEv3;
     IERC20cl public FEE_TOKEN;
+    mapping(uint => mapping(bytes32 => ChainData)) public FEATURES;
 
     struct ChainData {
         address endpoint; // address of this contract on specified chain
@@ -44,6 +49,7 @@ abstract contract MessageClient {
     event SetMaxgas(address owner, uint maxGas);
     event SetMaxfee(address owner, uint maxfee);
     event SetExsig(address owner, address exsig);
+    event SendMessageWithFeature(uint txId, uint destinationChainId, bytes featureData);
 
     constructor() {
         MESSAGE_OWNER = msg.sender;
@@ -63,6 +69,22 @@ abstract contract MessageClient {
         uint _amount,        // (not used for messages, always 0)
         bytes calldata _data // encoded message from source chain
     ) external virtual onlySelf (_sender, _sourceChainId) {
+        (bytes memory _featureData, bytes memory _messageData) = abi.decode(_data, (bytes, bytes));
+
+        // call the implementing class to process the message
+        _processMessageWithFeature(_txId, _sourceChainId, _messageData, _featureData);
+    }
+
+    // if we are calling features, do not extend messageProcess(). instead, extend _processMessageWithFeature()
+    function _processMessageWithFeature(
+        uint _txId,          // transaction id
+        uint _sourceChainId, // source chain id
+        bytes memory _data,// encoded message from source chain
+        bytes memory _featureData // encoded feature data
+    ) internal virtual;
+
+    function _getFeatureData(bytes32 _featureName, uint _txId) internal view returns (bytes memory) {
+        return IFeature(FEATURES[block.chainid][_featureName].endpoint).getPayload(_txId);
     }
 
     /** BRIDGE SENDER */
@@ -92,6 +114,27 @@ abstract contract MessageClient {
             _chain.confirmations, // amount of required transaction confirmations
             true                  // send express mode on destination
         );
+    }
+
+    function _sendMessageWithFeature(uint _destinationChainId, bytes memory _data, bytes memory _featureData) internal returns (uint _txId) {
+        // wrap feature data into message data so it can be signed
+        _data = abi.encode(_data, _featureData);
+
+        ChainData memory _chain = CHAINS[_destinationChainId];
+        if(_chain.extended) { // non-evm addresses larger than uint256
+            _data = abi.encode(_data, _chain.endpointExtended);
+        }
+
+        _txId = IMessageV3(MESSAGEv3).sendMessage(
+            _chain.endpoint,      // corresponding MessageV3Client contract address on destination chain
+            _destinationChainId,  // id of the destination chain
+            _data,                // arbitrary data package to send
+            _chain.confirmations, // amount of required transaction confirmations
+            false                 // send express mode on destination
+        );
+
+        // signal we have feature data included with the message data
+        emit SendMessageWithFeature(_txId, _destinationChainId, _featureData);
     }
 
     /** OWNER */
@@ -126,6 +169,17 @@ abstract contract MessageClient {
         }
 
         _configureMessageV3(_messageV3);
+    }
+
+    function configureFeature(
+        uint[] calldata _featureChains,
+        address[] calldata _featureEndpoints,
+        bytes32[] calldata _featureNames
+    ) public onlyMessageOwner {
+        uint _chainsLength = _featureChains.length;
+        for(uint x=0; x < _chainsLength; x++) {
+            FEATURES[_featureChains[x]][_featureNames[x]].endpoint = _featureEndpoints[x];
+        }
     }
 
     function _configureMessageV3(address _messageV3) internal {
