@@ -5,7 +5,11 @@ pragma solidity ^0.8.9;
 import "../message/MessageClient.sol";
 
 abstract contract FeatureQRND is MessageClient {
-    function getRandom(bytes memory _data)  public {
+    function _getRandom() internal {
+        _getRandom('');
+    }
+
+    function _getRandom(bytes memory _data) internal {
         _sendMessageWithFeature(block.chainid, _data, abi.encode(bytes32("QRND")));
     }
 }
