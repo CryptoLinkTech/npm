@@ -10,6 +10,14 @@ interface IFeature {
     function getPayload(uint _txId) external view returns (bytes memory);
 }
 
+interface IFeatureGateway {
+    function isFeatureEnabled(uint32) external view returns (bool);
+    function featureAddresses(uint32) external view returns (address);
+    function messageV3() external view returns (IMessageV3);
+    function processForward(uint _txId, uint _sourceChainId, uint _destChainId, address _sender, address _recipient, uint _gas, bytes[] calldata _data) external;
+    function process(uint txId, uint sourceChainId, uint destChainId, address sender, address recipient, uint gas, uint32 featureId, bytes calldata featureReply, bytes[] calldata data) external;
+}
+
 /**
  * @title MessageV3 Client
  * @author CryptoLink.Tech <atlas@cryptolink.tech>
@@ -17,7 +25,8 @@ interface IFeature {
 abstract contract MessageClient {
     IMessageV3 public MESSAGEv3;
     IERC20cl public FEE_TOKEN;
-    mapping(uint => mapping(bytes32 => ChainData)) public FEATURES;
+    IFeatureGateway public FEATURE_GATEWAY;
+    mapping(uint => mapping(uint32 => ChainData)) public FEATURES;
 
     struct ChainData {
         address endpoint; // address of this contract on specified chain
@@ -49,7 +58,7 @@ abstract contract MessageClient {
     event SetMaxgas(address owner, uint maxGas);
     event SetMaxfee(address owner, uint maxfee);
     event SetExsig(address owner, address exsig);
-    event SendMessageWithFeature(uint txId, uint destinationChainId, bytes featureData);
+    event SendMessageWithFeature(uint txId, uint destinationChainId, uint32 featureId, bytes featureData);
 
     constructor() {
         MESSAGE_OWNER = msg.sender;
@@ -61,32 +70,44 @@ abstract contract MessageClient {
     }
 
     /** BRIDGE RECEIVER */
+    // @dev depricated, not compatible with features
     function messageProcess(
         uint _txId,          // transaction id
         uint _sourceChainId, // source chain id
         address _sender,     // corresponding MessageClient address on source chain
-        address _reference,  // (optional source reference address)
-        uint _amount,        // (not used for messages, always 0)
+        address,
+        uint,
         bytes calldata _data // encoded message from source chain
     ) external virtual onlySelf (_sender, _sourceChainId) {
-        (bytes memory _featureData, bytes memory _messageData) = abi.decode(_data, (bytes, bytes));
-
-        // call the implementing class to process the message
-        _processMessageWithFeature(_txId, _sourceChainId, _messageData, _featureData);
+        _processMessage(_txId, _sourceChainId, _data);
     }
 
-    // if we are calling features, do not extend messageProcess(). instead, extend _processMessageWithFeature()
+    // @dev PREFERRED if no Features used
+    // this is extended by the implementing class if not using Features
+    function _processMessage(uint _txId, uint _sourceChainId, bytes calldata _data) internal virtual {
+        (uint32 _featureId, bytes memory _featureData, bytes memory _messageData) = abi.decode(_data, (uint32, bytes, bytes));
+        
+        // call the implementing class to process the message
+        _processMessageWithFeature(_txId, _sourceChainId, _messageData, _featureId, _featureData, _getFeatureResponse(_featureId, _txId));
+    }
+
+    // @dev REQUIRED if using Features
+    // this is extended by the implementing class if using Features
     function _processMessageWithFeature(
         uint _txId,          // transaction id
         uint _sourceChainId, // source chain id
         bytes memory _data,// encoded message from source chain
-        bytes memory _featureData // encoded feature data
-    ) internal virtual;
-
-    function _getFeatureData(bytes32 _featureName, uint _txId) internal view returns (bytes memory) {
-        return IFeature(FEATURES[block.chainid][_featureName].endpoint).getPayload(_txId);
+        uint32 _featureId, // feature id
+        bytes memory _featureData, // encoded feature data
+        bytes memory _featureResponse // reply from feature processing off-chain
+    ) internal virtual {
+        revert("MessageClient: _processMessage or _processMessageWithFeature not implemented");
     }
 
+    function _getFeatureResponse(uint32 _featureId, uint _txId) internal view returns (bytes memory) {
+        return IFeature(FEATURE_GATEWAY.featureAddresses(_featureId)).getPayload(_txId);
+    }
+    
     /** BRIDGE SENDER */
     function _sendMessage(uint _destinationChainId, bytes memory _data) internal returns (uint _txId) {
         ChainData memory _chain = CHAINS[_destinationChainId];
@@ -116,9 +137,11 @@ abstract contract MessageClient {
         );
     }
 
-    function _sendMessageWithFeature(uint _destinationChainId, bytes memory _data, bytes memory _featureData) internal returns (uint _txId) {
+    function _sendMessageWithFeature(uint _destinationChainId, bytes memory _messageData, uint32 _featureId, bytes memory _featureData) internal returns (uint _txId) {
+        require(FEATURE_GATEWAY.isFeatureEnabled(_featureId), "MessageClient: feature not enabled");
+
         // wrap feature data into message data so it can be signed
-        _data = abi.encode(_data, _featureData);
+        bytes memory _data = abi.encode(_featureId, _featureData, _messageData);
 
         ChainData memory _chain = CHAINS[_destinationChainId];
         if(_chain.extended) { // non-evm addresses larger than uint256
@@ -134,7 +157,7 @@ abstract contract MessageClient {
         );
 
         // signal we have feature data included with the message data
-        emit SendMessageWithFeature(_txId, _destinationChainId, _featureData);
+        emit SendMessageWithFeature(_txId, _destinationChainId, _featureId, _featureData);
     }
 
     /** OWNER */
@@ -171,15 +194,8 @@ abstract contract MessageClient {
         _configureMessageV3(_messageV3);
     }
 
-    function configureFeature(
-        uint[] calldata _featureChains,
-        address[] calldata _featureEndpoints,
-        bytes32[] calldata _featureNames
-    ) public onlyMessageOwner {
-        uint _chainsLength = _featureChains.length;
-        for(uint x=0; x < _chainsLength; x++) {
-            FEATURES[_featureChains[x]][_featureNames[x]].endpoint = _featureEndpoints[x];
-        }
+    function configureFeatureGateway(address _featureGateway) external onlyMessageOwner {
+        FEATURE_GATEWAY = IFeatureGateway(_featureGateway);
     }
 
     function _configureMessageV3(address _messageV3) internal {

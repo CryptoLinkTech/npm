@@ -1,6 +1,8 @@
 declare namespace ChainsConfig {
   interface ChainConfig {
     message: string;
+    featureGateway?: string;
+    usdc?: string;
     weth?: string;
     stable?: string;
     feeToken?: string;
