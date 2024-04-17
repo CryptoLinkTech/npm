@@ -7,6 +7,8 @@ declare namespace ChainsConfig {
     weth?: string;
     stable?: string;
     feeToken?: string;
+    network?: string;
+    type?: string;
   }
 
   interface ChainsConfig {
