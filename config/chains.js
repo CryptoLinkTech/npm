@@ -112,6 +112,17 @@ const chainsConfig = {
       usdc: "0xcebA9300f2b948710d2653dD7B07f33A8B32118C",
       rpc: "https://42220.rpc.cryptolink.tech/"
     },
+    "1030": {
+      name: "Conflux eSpace Mainnet",
+      network: "mainnet",
+      type: "evm",
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      featureGateway: "",
+      feeToken: "0x8f0fb159380176d324542b3a7933f0c2fd0e2d5f",
+      weth: "0x14b2d3bc65e74dae1030eafd8ac30c533c976a9b",
+      usdc: "0xfe97e85d13abd9c1c33384e796f10b73905637ce",
+      rpc: "https://1030.rpc.cryptolink.tech/"
+    },
     "25": { // Cronos Mainnet
       name: "Cronos Mainnet",
       network: "mainnet",
@@ -539,6 +550,19 @@ const chainsConfig = {
       weth: "0x3BC1695644Ad2c60f1500cea16A9536AF5DDd38e",
       usdc: "0x2F25deB3848C207fc8E0c34035B3Ba7fC157602B",
       rpc: "https://44787.rpc.cryptolink.tech/",
+    },
+    "71": {
+      name: "Conflux eSpace Testnet",
+      network: "testnet",
+      type: "evm",
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      featureGateway: "",
+      feeToken: "0x566B40Dd59A868c244E1353368e08ddaD1C1d74f",
+      paper: "0x9d75f706b986F0075b3778a12153390273dE95eC",
+      faucet: "",
+      weth: "0x0EFafca24E5BbC1C01587B659226B9d600fd671f",
+      usdc: "",
+      rpc: "https://71.rpc.cryptolink.tech/",
     },
     "338": { // Cronos Testnet
       name: "Cronos Testnet",
