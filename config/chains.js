@@ -479,6 +479,18 @@ const chainsConfig = {
       weth: "0x768A6c94771EE391C9a996Ff6c30F27190dd0B34",
       rpc: "https://97.rpc.cryptolink.tech/",
     },
+    "7771": {
+      name: "BitRock Testnet",
+      network: "testnet",
+      type: "evm",
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      featureGateway: "",
+      feeToken: "0x566B40Dd59A868c244E1353368e08ddaD1C1d74f",
+      paper: "0x9d75f706b986F0075b3778a12153390273dE95eC",
+      faucet: "",
+      weth: "0x0EFafca24E5BbC1C01587B659226B9d600fd671f",
+      rpc: "https://7771.rpc.cryptolink.tech/",
+    },
     "168587773": { // Blast Testnet
       name: "Blast Testnet",
       network: "testnet",
