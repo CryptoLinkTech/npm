@@ -71,6 +71,16 @@ const chainsConfig = {
       weth: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
       rpc: "https://56.rpc.cryptolink.tech/"      
     },
+    "7171": {
+      name: "BitRock Mainnet",
+      network: "mainnet",
+      type: "evm",
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      featureGateway: "",
+      feeToken: "0xD647a6E1F898c39bA594443c19De0872EA935310",
+      weth: "0x413f0E3A440abA7A15137F4278121450416882d5",
+      rpc: "https://7171.rpc.cryptolink.tech/"
+    },
     "288": { // Boba Mainnet
       name: "Boba Mainnet",
       network: "mainnet",
@@ -351,6 +361,16 @@ const chainsConfig = {
       weth: "0xC0C0A38067Ba977676AB4aFD9834dB030901bE2d",
       rpc: "https://1490.rpc.cryptolink.tech/"
     },
+    "196": {
+      name: "X-Layer Mainnet",
+      network: "mainnet",
+      type: "evm",
+      message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
+      featureGateway: "",
+      feeToken: "0xA8CE8aee21bC2A48a5EF670afCc9274C7bbbC035",
+      weth: "0xe538905cf8410324e03a5a23c1c177a474d59b2b",
+      rpc: "https://196.rpc.cryptolink.tech/"
+    },
     "50": { // XDC Mainnet
       name: "XDC Mainnet",
       network: "mainnet",
@@ -584,6 +604,18 @@ const chainsConfig = {
       faucet: "0xD596d64592227693c933b0E1EEbb64100417d78a",
       weth: "0x9364b2FC6f07c123dB5a398aE655DFCf7F445d54",
       rpc: "https://4002.rpc.cryptolink.tech/",
+    },
+    "701": {
+      name: "FOMO Testnet",
+      network: "testnet",
+      type: "evm",
+      message: "0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F",
+      featureGateway: "",
+      feeToken: "0x9d75f706b986F0075b3778a12153390273dE95eC",
+      paper: "0x0EFafca24E5BbC1C01587B659226B9d600fd671f",
+      faucet: "",
+      weth: "0x566B40Dd59A868c244E1353368e08ddaD1C1d74f",
+      rpc: "https://701.rpc.cryptolink.tech/",
     },
     "68840142": { // Frame Testnet
       name: "Frame Testnet",
