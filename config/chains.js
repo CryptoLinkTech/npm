@@ -254,9 +254,9 @@ const chainsConfig = {
       type: "evm",
       message: "0x15AC559DA4951c796DB6620fAb286B96840D039A",
       featureGateway: "",
-      feeToken: "",
+      feeToken: "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9",
       weth: "",
-      rpc: "https://mantle.drpc.org"
+      rpc: "https://5000.rpc.cryptolink.tech/"
     },
     "1088": { // Metis Mainnet
       name: "Metis Mainnet",
@@ -433,17 +433,17 @@ const chainsConfig = {
       weth: "",
       rpc: "https://1313161555.rpc.cryptolink.tech/",      
     },
-    "65010001": { // Autonity Testnet
+    "65010002": { // Autonity Testnet
       name: "Autonity Testnet",
       network: "testnet",
       type: "evm",
-      message: "0xA95c0BC77Ab8a8EfA3dF00366FFAe5CB1A2cba15",
+      message: "",
       featureGateway: "",
-      feeToken: "0x17C84459367f9787356b01d7f624Ef0e7E6cA11F",
-      paper: "0xAF1f0C79cc043AD4a263dfe7715ca657F9bDeced",
-      faucet: "0x71311899492757cD512a11855C150EA219bB3A42",
-      weth: "0x765d2951bF4d512a5FDbD6384C4b6aD5ab1b1873",
-      rpc: "https://65010001.rpc.cryptolink.tech/",
+      feeToken: "",
+      paper: "",
+      faucet: "",
+      weth: "",
+      rpc: "https://65010002.rpc.cryptolink.tech/",
     },
     "43113": { // Avalanche Testnet
       name: "Avalanche Testnet",

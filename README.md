@@ -281,7 +281,9 @@ It is manditory to to read and agree to the TERMS.md before utilizing our servic
 | Avalanche Mainnet       | 43114       | 0x72E052Fa7f0788e668965d37B6c38C88703B7859 |
 | Base Mainnet            | 8453        | 0xe3b3274bb685F37C7f17a604039c77a6A16Cfc2a |
 | Binance Mainnet         | 56          | 0x7b67dF6728E294db2eb173ac7c738a4627Ae5e11 |
+| BitRock Mainnet         | 7171        | 0x15AC559DA4951c796DB6620fAb286B96840D039A | 
 | Celo Mainnet            | 42220       | 0xe3b3274bb685F37C7f17a604039c77a6A16Cfc2a |
+| Conflux Mainnet         | 1030        | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
 | Cronos Mainnet          | 25          | 0x2224ac62d65453a2317b995fc084e966e4bac2d5 | 
 | Ethereum Mainnet        | 1           | 0x7b67dF6728E294db2eb173ac7c738a4627Ae5e11 |
 | Fantom Mainnet          | 250         | 0x72E052Fa7f0788e668965d37B6c38C88703B7859 |
@@ -292,7 +294,7 @@ It is manditory to to read and agree to the TERMS.md before utilizing our servic
 | Kava Mainnet            | 2222        | 0x9E0f7B09576D1F0cBfF1f834A8e5bcc3Db1EF804 |
 | Linea Mainnet           | 59144       | 0x6C5AD5e9763Ee118f6c6359e00EeF6ECfA84395b |
 | Mainnetz Mainnet        | 2016        | 0x1274E183AA921972531414Df700E673dE1Be878D |
-| Mantle Mainnet          | 5000        | (pending) |
+| Mantle Mainnet          | 5000        | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
 | Metis Mainnet           | 1088        | 0xA10953dEFac127d1b7A645f81045aB5127893124 |
 | Neon Mainnet            | 245022934   | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
 | Oasis Emerald Mainnet   | 42262       | 0xe3b3274bb685F37C7f17a604039c77a6A16Cfc2a |
@@ -304,6 +306,7 @@ It is manditory to to read and agree to the TERMS.md before utilizing our servic
 | Rollux Mainnet          | 570         | 0xf0861412E46E34DaF7A1fe3fe805e7f713cA3bD9 |
 | Scroll Mainnet          | 534352      | 0x6C5AD5e9763Ee118f6c6359e00EeF6ECfA84395b |
 | Vitruveo Mainnet        | 1490        | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
+| X-Layer Mainnet         | 196         | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
 | XDC Mainnet             | 50          | 0x15AC559DA4951c796DB6620fAb286B96840D039A |
 
 ### Testnets
@@ -312,21 +315,21 @@ It is manditory to to read and agree to the TERMS.md before utilizing our servic
 |-----------------------------|------------|--------------------------------------------|
 | Arbitrum Testnet (Sepolia)  | 421614     | 0x0D7e59B0390e47E6C3a29cCdF68e43f3e50e2119 |
 | Aurora Testnet              | 1313161555 | 0x52e1CFE18BD55bb8d885d463DC26D9C365cd316B |
-| Autonity Testnet            | 65010001   | 0xA95c0BC77Ab8a8EfA3dF00366FFAe5CB1A2cba15 |
 | Avalanche Testnet           | 43113      | 0x8f92F60ffFB05d8c64E755e54A216090D8D6Eaf9 |
 | Base Testnet (Sepolia)      | 84532      | 0xE700Ee5d8B7dEc62987849356821731591c048cF |
 | Binance Testnet             | 97         | 0x8eF8870CD5583891bDDcf2555e7833bD087392a3 |
-| Blast Testnet (Sepolia)     | 168587773  | 0xA95c0BC77Ab8a8EfA3dF00366FFAe5CB1A2cba15 | 
+| Blast Testnet (Sepolia)     | 168587773  | 0xA95c0BC77Ab8a8EfA3dF00366FFAe5CB1A2cba15 |
+| BitRock Testnet             | 7771       | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F | 
 | Boba Testnet                | 2888       | 0x1Ec7Dfbc9e310768A17145f03f3451f562cEc773 |
 | Canto Testnet               | 7701       | 0x09FC1B8e1651A0D35258Ab919035d3087245F8f3 |
 | Celo Testnet                | 44787      | 0xc959284fae7Cc3F41367dA2Df595b7267597094C |
+| Conflux Testnet             | 71         | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Cronos Testnet              | 338        | 0x8f92F60ffFB05d8c64E755e54A216090D8D6Eaf9 |
 | CronosZK Testnet            | 282        | 0xCf421b3497a28b4215F09e5bAf862C3a2532d681 |
-| Ethereum Goerli             | 5          | 0xae65E2211c4119cf92ee85D1a8c4ec20AdaE8aFE |
 | Ethereum Holesky            | 17000      | 0x668de98389d5d6C9064E40Cfda2FC6471EDDE7ff |
 | Ethereum Sepolia            | 11155111   | 0xF2AA17F92d4D9Be1c0b0D2A3235A06143A2D729f |
 | Fantom Testnet              | 4002       | 0x48964a49B5826DB6Cb8d8ed0dAf93eEeD734b923 |
-| Forest Testnet              | 377        | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
+| Fomo Testnet                | 701        | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
 | Frame Testnet               | 68840142   | 0xCb69924aDf996315aDcd9051ccE2B572dD9450a9 |
 | Gauss Testnet               | 1452       | 0xcbC2d50FA324c187adcf4a186fCb7EcC092E0758 |
 | Gelato OP Celestia Testnet  | 123420111  | 0xAede7a77D49Eb88Cb129896d69f0E66ee51D44AC |
@@ -363,7 +366,7 @@ It is manditory to to read and agree to the TERMS.md before utilizing our servic
 | Stratos Testnet             | 2047       | 0x4a7B33299a21c518d77eb3fF00fd1DC39C452Cba |
 | Telos Testnet               | 41         | 0xF8d80d6E52b5B8484a7CD27a5C0F3D35695c57dF |
 | Vitruveo Testnet            | 14333      | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F |
-| X1 Testnet                  | 195        | 0x8f554B1b239a57C840d5902D1d901dAFF04F22C2 |
+| X-Layer Testnet             | 195        | 0x8f554B1b239a57C840d5902D1d901dAFF04F22C2 |
 | XDC Testnet                 | 51         | 0x00CE686319d401E55c2E7784192EB3A2273Aa9Dc |
 | ZetaChain Testnet           | 7001       | 0x714c9202B3B5AF0C0Ad844c2a71803cebBFD3AF5 |
 | zkSync Testnet              | 280        | 0xCf421b3497a28b4215F09e5bAf862C3a2532d681 |
