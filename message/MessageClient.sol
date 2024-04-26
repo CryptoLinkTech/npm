@@ -213,22 +213,22 @@ abstract contract MessageClient {
         }
     }
 
-    function setExsig(address _signer) external onlyMessageOwner {
+    function setExsig(address _signer) public onlyMessageOwner {
         MESSAGEv3.setExsig(_signer);
         emit SetExsig(msg.sender, _signer);
     }
 
-    function setMaxgas(uint _maxGas) external onlyMessageOwner {
+    function setMaxgas(uint _maxGas) public onlyMessageOwner {
         MESSAGEv3.setMaxgas(_maxGas);
         emit SetMaxgas(msg.sender, _maxGas);
     }
 
-    function setMaxfee(uint _maxFee) external onlyMessageOwner {
+    function setMaxfee(uint _maxFee) public onlyMessageOwner {
         MESSAGEv3.setMaxfee(_maxFee);
         emit SetMaxfee(msg.sender, _maxFee);
     }
 
-    function recoverToken(address _token, uint _amount) external onlyMessageOwner {
+    function recoverToken(address _token, uint _amount) public onlyMessageOwner {
         if(_token == address(0)) {
             payable(msg.sender).transfer(_amount);
         } else {
@@ -242,7 +242,7 @@ abstract contract MessageClient {
         return false;
     }
 
-    function isAuthorized(address _sender, uint _sourceChainId) external view returns (bool) {
+    function isAuthorized(address _sender, uint _sourceChainId) public view returns (bool) {
         return isSelf(_sender, _sourceChainId);
     }
 
