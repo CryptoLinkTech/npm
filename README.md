@@ -315,6 +315,7 @@ It is manditory to to read and agree to the TERMS.md before utilizing our servic
 |-----------------------------|------------|--------------------------------------------|
 | Arbitrum Testnet (Sepolia)  | 421614     | 0x0D7e59B0390e47E6C3a29cCdF68e43f3e50e2119 |
 | Aurora Testnet              | 1313161555 | 0x52e1CFE18BD55bb8d885d463DC26D9C365cd316B |
+| Autonity Testnet            | 65100002   | 0x3B5b764229b2EdE0162220aF51ab6bf7f8527a4F | 
 | Avalanche Testnet           | 43113      | 0x8f92F60ffFB05d8c64E755e54A216090D8D6Eaf9 |
 | Base Testnet (Sepolia)      | 84532      | 0xE700Ee5d8B7dEc62987849356821731591c048cF |
 | Binance Testnet             | 97         | 0x8eF8870CD5583891bDDcf2555e7833bD087392a3 |
