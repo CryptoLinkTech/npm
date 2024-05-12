@@ -8,6 +8,7 @@ const chainsConfig = {
       feeToken: "0x7a0b5E86d2C1e873E005780419eeE16ba741808a",
       weth: "0xCb3e9919C56efF1004E54175a01e39163a352129",
       rpc: "https://3797.rpc.cryptolink.tech/",
+      explorer: "https://alveyscan.com/"
     },
     "42161": { // Arbitrum Mainnet
       name: "Arbitrum Mainnet",
@@ -21,7 +22,8 @@ const chainsConfig = {
       feeToken: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
       weth: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
       usdc: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
-      rpc: "https://42161.rpc.cryptolink.tech/"
+      rpc: "https://42161.rpc.cryptolink.tech/",
+      explorer: "https://arbiscan.io/"
     },
     "1313161554": { // Aurora Mainnet
       name: "Aurora Mainnet",
@@ -30,7 +32,8 @@ const chainsConfig = {
       message: "0xf0861412E46E34DaF7A1fe3fe805e7f713cA3bD9",
       feeToken: "0xB12BFcA5A55806AaF64E99521918A4bf0fC40802",
       weth: "0xC9BdeEd33CD01541e1eeD10f90519d2C06Fe3feB",
-      rpc: "https://1313161554.rpc.cryptolink.tech/"
+      rpc: "https://1313161554.rpc.cryptolink.tech/",
+      explorer: "https://explorer.aurora.dev/"
     },
     "43114": { // Avalanche Mainnet
       name: "Avalanche Mainnet",
@@ -45,7 +48,8 @@ const chainsConfig = {
       weth: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
       usdc: "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
       eurc: "0xc891eb4cbdeff6e073e859e987815ed1505c2acd",
-      rpc: "https://43114.rpc.cryptolink.tech/"
+      rpc: "https://43114.rpc.cryptolink.tech/",
+      explorer: "https://snowtrace.io/"
     },
     "8453": { // Base Mainnet
       name: "Base Mainnet",
@@ -59,7 +63,8 @@ const chainsConfig = {
       feeToken: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
       weth: "0x4200000000000000000000000000000000000006",
       usdc: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-      rpc: "https://8453.rpc.cryptolink.tech/"
+      rpc: "https://8453.rpc.cryptolink.tech/",
+      explorer: "https://basescan.org/"
     },
     "56": { // Binance Mainnet
       name: "Binance Mainnet",
@@ -69,7 +74,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
       weth: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
-      rpc: "https://56.rpc.cryptolink.tech/"      
+      rpc: "https://56.rpc.cryptolink.tech/",
+      explorer: "https://bscscan.com/"
     },
     "7171": {
       name: "BitRock Mainnet",
@@ -79,7 +85,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0xD647a6E1F898c39bA594443c19De0872EA935310",
       weth: "0x413f0E3A440abA7A15137F4278121450416882d5",
-      rpc: "https://7171.rpc.cryptolink.tech/"
+      rpc: "https://7171.rpc.cryptolink.tech/",
+      explorer: "https://explorer.bit-rock.io/"
     },
     "288": { // Boba Mainnet
       name: "Boba Mainnet",
@@ -89,7 +96,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0x66a2A913e447d6b4BF33EFbec43aAeF87890FBbc",
       weth: "0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000",
-      rpc: "https://288.rpc.cryptolink.tech/"
+      rpc: "https://288.rpc.cryptolink.tech/",
+      explorer: "https://bobascan.com/"
     },
     "7700": { // Canto Mainnet
       name: "Canto Mainnet",
@@ -99,7 +107,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0x80b5a32E4F032B2a058b4F29EC95EEfEEB87aDcd",
       weth: "0x826551890Dc65655a0Aceca109aB11AbDbD7a07B",
-      rpc: "https://7700.rpc.cryptolink.tech/"
+      rpc: "https://7700.rpc.cryptolink.tech/",
+      explorer: "https://cantoscan.com/"
     },
     "42220": { // Celo Mainnet
       name: "Celo Mainnet",
@@ -110,7 +119,8 @@ const chainsConfig = {
       feeToken: "0x37f750B7cC259A2f741AF45294f6a16572CF5cAd",
       weth: "0x471EcE3750Da237f93B8E339c536989b8978a438",
       usdc: "0xcebA9300f2b948710d2653dD7B07f33A8B32118C",
-      rpc: "https://42220.rpc.cryptolink.tech/"
+      rpc: "https://42220.rpc.cryptolink.tech/",
+      explorer: "https://explorer.celo.org/mainnet/"
     },
     "1030": {
       name: "Conflux eSpace Mainnet",
@@ -121,7 +131,8 @@ const chainsConfig = {
       feeToken: "0x8f0fb159380176d324542b3a7933f0c2fd0e2d5f",
       weth: "0x14b2d3bc65e74dae1030eafd8ac30c533c976a9b",
       usdc: "0xfe97e85d13abd9c1c33384e796f10b73905637ce",
-      rpc: "https://1030.rpc.cryptolink.tech/"
+      rpc: "https://1030.rpc.cryptolink.tech/",
+      explorer: "https://evm.confluxscan.net/"
     },
     "25": { // Cronos Mainnet
       name: "Cronos Mainnet",
@@ -131,7 +142,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0xc21223249CA28397B4B6541dfFaEcC539BfF0c59",
       weth: "0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23",
-      rpc: "https://25.rpc.cryptolink.tech/"
+      rpc: "https://25.rpc.cryptolink.tech/",
+      explorer: "https://cronos.org/explorer/"
     },
     "1": { // Ethereum Mainnet
       name: "Ethereum Mainnet",
@@ -146,7 +158,8 @@ const chainsConfig = {
       weth: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
       usdc: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
       eurc: "0x1aBaEA1f7C830bD89Acc67eC4af516284b1bC33c",
-      rpc: "https://1.rpc.cryptolink.tech/"
+      rpc: "https://1.rpc.cryptolink.tech/",
+      explorer: "https://etherscan.io/"
     },
     "250": { // Fantom Mainnet
       name: "Fantom Mainnet",
@@ -156,7 +169,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf",
       weth: "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
-      rpc: "https://250.rpc.cryptolink.tech/"
+      rpc: "https://250.rpc.cryptolink.tech/",
+      explorer: "https://ftmscan.com/"
     },
     "14": { // Flare Mainnet
       name: "Flare Mainnet", 
@@ -166,7 +180,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0x96B41289D90444B8adD57e6F265DB5aE8651DF29",
       weth: "0x1D80c49BbBCd1C0911346656B529DF9E5c2F783d",
-      rpc: "https://14.rpc.cryptolink.tech/"
+      rpc: "https://14.rpc.cryptolink.tech/",
+      explorer: "https://flare-explorer.flare.network/"
     },
     "1777": { // Gauss Mainnet
       name: "Gauss Mainnet",
@@ -177,6 +192,7 @@ const chainsConfig = {
       weth: "0xb45fC65405B1a28Bb24AF49fe2caa278525Fe977",
       feeToken: "0x2baFd05252ADcA1143b77a88A72E1022B59ad379",
       rpc: "https://1777.rpc.cryptolink.tech/",
+      explorer: "https://www.explorer.gaussgang.com/"
     },
     "100": { // Gnosis Mainnet
       name: "Gnosis Mainnet",
@@ -187,6 +203,7 @@ const chainsConfig = {
       feeToken: "0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83",
       weth: "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d",
       rpc: "https://100.rpc.cryptolink.tech/",
+      explorer: "https://gnosisscan.io/"
     },    
     "1666600000": { // Harmony Mainnet
       name: "Harmony Mainnet",
@@ -197,6 +214,7 @@ const chainsConfig = {
       feeToken: "0x985458E523dB3d53125813eD68c274899e9DfAb4",
       weth: "0xcF664087a5bB0237a0BAd6742852ec6c8d69A27a",
       rpc: "https://1666600000.rpc.cryptolink.tech/",
+      explorer: "https://explorer.harmony.one/"
     },
     "13371": { // Immutable zkEVM Mainnet
       name: "Immutable zkEVM Mainnet",
@@ -216,7 +234,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0x6de8aCC0D406837030CE4dd28e7c08C5a96a30d2",
       weth: "0x4fffe0168b04f039496ca5189f9596c22693A19c",
-      rpc: "https://4689.rpc.cryptolink.tech/"
+      rpc: "https://4689.rpc.cryptolink.tech/",
+      explorer: "https://iotexscan.io/"
     },
     "2222": { // Kava Mainnet
       name: "Kava Mainnet",
@@ -226,7 +245,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0x919C1c267BC06a7039e03fcc2eF738525769109c",
       weth: "0xc86c7C0eFbd6A49B35E8714C5f59D99De09A225b",
-      rpc: "https://2222.rpc.cryptolink.tech/"
+      rpc: "https://2222.rpc.cryptolink.tech/",
+      explorer: "https://atomscan.com/kava/"
     },
     "59144": { // Linea Mainnet
       name: "Linea Mainnet",
@@ -236,7 +256,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0x176211869cA2b568f2A7D4EE941E073a821EE1ff",
       weth: "0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f",
-      rpc: "https://59144.rpc.cryptolink.tech/"
+      rpc: "https://59144.rpc.cryptolink.tech/",
+      explorer: "https://lineascan.build/"
     },
     "2016": { // Mainnetz Mainnet
       name: "Mainnetz Mainnet",
@@ -246,7 +267,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0x0000000000000000000000000000000000000000",
       weth: "0x41c515fA7D541bCbDEfB44f0FE2B1629aec140b9",
-      rpc: "https://59144.rpc.cryptolink.tech/"
+      rpc: "https://59144.rpc.cryptolink.tech/",
+      explorer: "https://explorer.mainnetz.io/"
     },
     "5000": { // Mantle Mainnet
       name: "Mantle Mainnet",
@@ -256,7 +278,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9",
       weth: "",
-      rpc: "https://5000.rpc.cryptolink.tech/"
+      rpc: "https://5000.rpc.cryptolink.tech/",
+      explorer: "https://mantlescan.xyz/"
     },
     "1088": { // Metis Mainnet
       name: "Metis Mainnet",
@@ -267,6 +290,7 @@ const chainsConfig = {
       feeToken: "0xEA32A96608495e54156Ae48931A7c20f0dcc1a21",
       weth: "0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000",
       rpc: "https://1088.rpc.cryptolink.tech/",
+      explorer: "https://explorer.metis.io/"
     },
     "245022934": { // Neon Mainnet 
       name: "Neon Mainnet",
@@ -276,7 +300,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0xEA6B04272f9f62F997F666F07D3a974134f7FFb9",
       weth: "0x202C35e517Fa803B537565c40F0a6965D7204609",
-      rpc: "https://245022934.rpc.cryptolink.tech/"
+      rpc: "https://245022934.rpc.cryptolink.tech/",
+      explorer: "https://neon.blockscout.com/"
     },
     "42262": { // Oasis Emerald Mainnet
       name: "Oasis Emerald Mainnet",
@@ -286,7 +311,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0xdC19A122e268128B5eE20366299fc7b5b199C8e3",
       weth: "0x21C718C22D52d0F3a789b752D4c2fD5908a8A733",
-      rpc: "https://42262.rpc.cryptolink.tech/"
+      rpc: "https://42262.rpc.cryptolink.tech/",
+      explorer: "https://www.oasisscan.com/"
     },
     "23294": { // Oasis Sapphire Mainnet
       name: "Oasis Sapphire Mainnet",
@@ -296,7 +322,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0xE48151964556381B33f93E05E36381Fd53Ec053E", // ?
       weth: "0x8Bc2B030b299964eEfb5e1e0b36991352E56D2D3",
-      rpc: "https://23294.rpc.cryptolink.tech/"
+      rpc: "https://23294.rpc.cryptolink.tech/",
+      explorer: "https://www.oasisscan.com/"
     },
     "204": { // opBNB Mainnet 
       name: "opBNB Mainnet",
@@ -306,7 +333,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0x9e5AAC1Ba1a2e6aEd6b32689DFcF62A509Ca96f3",
       weth: "0x4200000000000000000000000000000000000006",
-      rpc: "https://240.rpc.cryptolink.tech/"
+      rpc: "https://240.rpc.cryptolink.tech/",
+      explorer: "https://opbnbscan.com/"
     },
     "137": { // Polygon Mainnet
       name: "Polygon Mainnet",
@@ -320,7 +348,8 @@ const chainsConfig = {
       feeToken: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
       weth: "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
       usdc: "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359",
-      rpc: "https://137.rpc.cryptolink.tech/"
+      rpc: "https://137.rpc.cryptolink.tech/",
+      explorer: "https://polygonscan.com/"
     },
     "1101": { // PolygonZK Mainnet
       name: "PolygonZK Mainnet",
@@ -330,7 +359,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0xA8CE8aee21bC2A48a5EF670afCc9274C7bbbC035",
       weth: "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9",
-      rpc: "https://1101.rpc.cryptolink.tech/"
+      rpc: "https://1101.rpc.cryptolink.tech/",
+      explorer: "https://www.polygonzkscan.com/"
     },
     "369": { // Pulse Mainnet
       name: "Pulse Mainnet",
@@ -340,7 +370,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0x15d38573d2feeb82e7ad5187ab8c1d52810b1f07",
       weth: "0xa1077a294dde1b09bb078844df40758a5d0f9a27",
-      rpc: "https://369.rpc.cryptolink.tech/"
+      rpc: "https://369.rpc.cryptolink.tech/",
+      explorer: "https://scan.mypinata.cloud/ipfs/bafybeih3olry3is4e4lzm7rus5l3h6zrphcal5a7ayfkhzm5oivjro2cp4/#/"
     },
     "570": { // Rollux Mainnet
       name: "Rollux Mainnet",
@@ -350,7 +381,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0x368433cac2a0b8d76e64681a9835502a1f2a8a30",
       weth: "0x4200000000000000000000000000000000000006",
-      rpc: "https://570.rpc.cryptolink.tech/"
+      rpc: "https://570.rpc.cryptolink.tech/",
+      explorer: "https://explorer.rollux.com/"
     },
     "534352": { // Scroll Mainnet
       name: "Scroll Mainnet",
@@ -360,7 +392,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4",
       weth: "0x5300000000000000000000000000000000000004",
-      rpc: "https://534352.rpc.cryptolink.tech/"
+      rpc: "https://534352.rpc.cryptolink.tech/",
+      explorer: "https://scrollscan.com/"
     },
     "1490": { // Vitruveo Mainnet
       name: "Vitruveo Mainnet",
@@ -370,7 +403,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0x0000000000000000000000000000000000000000",
       weth: "0xC0C0A38067Ba977676AB4aFD9834dB030901bE2d",
-      rpc: "https://1490.rpc.cryptolink.tech/"
+      rpc: "https://1490.rpc.cryptolink.tech/",
+      explorer: "https://explorer.vitruveo.xyz/"
     },
     "196": {
       name: "X-Layer Mainnet",
@@ -380,7 +414,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0xA8CE8aee21bC2A48a5EF670afCc9274C7bbbC035",
       weth: "0xe538905cf8410324e03a5a23c1c177a474d59b2b",
-      rpc: "https://196.rpc.cryptolink.tech/"
+      rpc: "https://196.rpc.cryptolink.tech/",
+      explorer: "https://www.okx.com/web3/explorer/xlayer"
     },
     "50": { // XDC Mainnet
       name: "XDC Mainnet",
@@ -390,7 +425,8 @@ const chainsConfig = {
       featureGateway: "",
       feeToken: "0x49d3f7543335cf38Fa10889CCFF10207e22110B5",
       weth: "0x951857744785E80e2De051c32EE7b25f9c458C42",
-      rpc: "https://50.rpc.cryptolink.tech/"
+      rpc: "https://50.rpc.cryptolink.tech/",
+      explorer: "https://explorer.xinfin.network/"
     },    
     "99999999991": { // Solana Mainnet
       name: "Solana Mainnet",
@@ -402,7 +438,8 @@ const chainsConfig = {
       weth: "",
       usdc: "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
       eurc: "HzwqbKZw8HxMN6bF2yFZNrht3c2iXXzpKcFu7uBEDKtr",
-      rpc: ""
+      rpc: "",
+      explorer: "https://explorer.solana.com/"
     },
 
     "421614": { // Arbitrum Testnet (Sepolia)
@@ -420,6 +457,7 @@ const chainsConfig = {
       weth: "0x47963cB18B1aef899efcdC5EF7341B5167e5d4E0",
       usdc: "0x75faf114eafb1BDbe2F0316DF893fd58CE46AA4d",
       rpc: "https://421614.rpc.cryptolink.tech/",
+      explorer: "https://sepolia.arbiscan.io/"
     },
     "1313161555": { // Aurora Testnet
       name: "Aurora Testnet",
@@ -432,6 +470,7 @@ const chainsConfig = {
       faucet: "0xCb69924aDf996315aDcd9051ccE2B572dD9450a9",
       weth: "",
       rpc: "https://1313161555.rpc.cryptolink.tech/",      
+      explorer: "https://explorer.testnet.aurora.dev/"
     },
     "65100002": { // Autonity Testnet
       name: "Autonity Testnet",
@@ -444,6 +483,7 @@ const chainsConfig = {
       faucet: "0x78CC50562941f385c3d0c5204385c3CA686d85b8",
       weth: "0xc2e7eA22A69Fff2ac96EB9b306A562C9fb299b16",
       rpc: "https://65100002.rpc.cryptolink.tech/",
+      explorer: "https://bakerloo.autonity.org/",
     },
     "43113": { // Avalanche Testnet
       name: "Avalanche Testnet",
@@ -461,6 +501,7 @@ const chainsConfig = {
       usdc: "0x5425890298aed601595a70ab815c96711a31bc65",
       eurc: "0x5e44db7996c682e92a960b65ac713a54ad815c6b",
       rpc: "https://43113.rpc.cryptolink.tech/",
+      explorer: "https://testnet.snowtrace.io/",
     },
     "84532": { // Base Testnet (Sepolia)
       name: "Base Testnet",
@@ -477,6 +518,7 @@ const chainsConfig = {
       weth: "0x32D9c1DA01F221aa0eab4A0771Aaa8E2344ECd35",
       usdc: "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
       rpc: "https://84532.rpc.cryptolink.tech/",
+      explorer: "https://sepolia.basescan.org/",
     },
     "97": { // Binance Testnet
       name: "Binance Testnet",
@@ -489,6 +531,7 @@ const chainsConfig = {
       faucet: "0xbb85A2662Cc4c33401c61520FB9Ef8A5346Bc4e1",
       weth: "0x768A6c94771EE391C9a996Ff6c30F27190dd0B34",
       rpc: "https://97.rpc.cryptolink.tech/",
+      explorer: "https://testnet.bscscan.com/",
     },
     "7771": {
       name: "BitRock Testnet",
@@ -501,6 +544,7 @@ const chainsConfig = {
       faucet: "",
       weth: "0x0EFafca24E5BbC1C01587B659226B9d600fd671f",
       rpc: "https://7771.rpc.cryptolink.tech/",
+      explorer: "https://testnetscan.bit-rock.io/",
     },
     "168587773": { // Blast Testnet
       name: "Blast Testnet",
@@ -513,6 +557,7 @@ const chainsConfig = {
       faucet: "0x71311899492757cD512a11855C150EA219bB3A42",
       weth: "0x765d2951bF4d512a5FDbD6384C4b6aD5ab1b1873",
       rpc: "https://168587773.rpc.cryptolink.tech/",
+      explorer: "https://testnet.blastscan.io/",
     },
     "2888": { // Boba Testnet
       name: "Boba Testnet",
@@ -525,6 +570,7 @@ const chainsConfig = {
       faucet: "0xeDCfb3038d4a262Aef3735CFa64146C35196CC51",
       weth: "0x02dA7eeEB722A126CCC53085d489ca0e1BAbc55E",
       rpc: "https://2888.rpc.cryptolink.tech/",
+      explorer: "https://testnet.bobascan.com/",
     },
     "7701": { // Canto Testnet
       name: "Canto Testnet",
@@ -537,6 +583,7 @@ const chainsConfig = {
       faucet: "0xeDCfb3038d4a262Aef3735CFa64146C35196CC51",
       weth: "0x95e86440E6B240fc5d476dE44FB56b763B585B2B",
       rpc: "https://7701.rpc.cryptolink.tech/",
+      explorer: "https://canto-test.dex.guru/",
     },
     "44787": { // Celo Testnet
       name: "Celo Testnet",
@@ -550,6 +597,7 @@ const chainsConfig = {
       weth: "0x3BC1695644Ad2c60f1500cea16A9536AF5DDd38e",
       usdc: "0x2F25deB3848C207fc8E0c34035B3Ba7fC157602B",
       rpc: "https://44787.rpc.cryptolink.tech/",
+      explorer: "https://alfajores.celoscan.io/",
     },
     "71": {
       name: "Conflux eSpace Testnet",
@@ -563,6 +611,7 @@ const chainsConfig = {
       weth: "0x0EFafca24E5BbC1C01587B659226B9d600fd671f",
       usdc: "",
       rpc: "https://71.rpc.cryptolink.tech/",
+      explorer: "https://testnet.confluxscan.net/",
     },
     "338": { // Cronos Testnet
       name: "Cronos Testnet",
@@ -575,6 +624,7 @@ const chainsConfig = {
       faucet: "",
       weth: "",
       rpc: "https://338.rpc.cryptolink.tech/",
+      explorer: "https://explorer.cronos.org/testnet",
     },
     "282": { // CronosZK Testnet
       name: "CronosZK Testnet",
@@ -587,6 +637,7 @@ const chainsConfig = {
       faucet: "",
       weth: "",
       rpc: "https://282.rpc.cryptolink.tech/",
+      explorer: "https://zkevm-t0.cronos.org/explorer",
     },
     "5": { // Ethereum Goerli
       name: "Ethereum Goerli",
@@ -599,6 +650,7 @@ const chainsConfig = {
       faucet: "0xDbFb13702aC35Edc2DF5E7094E122835337e2bF9",
       weth: "0x95e86440E6B240fc5d476dE44FB56b763B585B2B",
       rpc: "https://5.rpc.cryptolink.tech/",
+      explorer: "https://goerli.etherscan.io/",
     },
     "17000": { // Ethereum Holesky
       name: "Ethereum Holesky",
@@ -611,6 +663,7 @@ const chainsConfig = {
       faucet: "0xae65E2211c4119cf92ee85D1a8c4ec20AdaE8aFE",
       weth: "0xB09780607F0cbCC3c7B95f17d42417269ED53a1D",
       rpc: "https://17000.rpc.cryptolink.tech/",
+      explorer: "https://holesky.etherscan.io/",
     },
     "11155111": { // Ethereum Sepolia
       name: "Ethereum Sepolia",
@@ -628,6 +681,7 @@ const chainsConfig = {
       usdc: "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238",
       eurc: "0x08210F9170F89Ab7658F0B5E3fF39b0E03C594D4",
       rpc: "https://11155111.rpc.cryptolink.tech/",
+      explorer: "https://sepolia.etherscan.io/",
     },
     "4002": { // Fantom Testnet
       name: "Fantom Testnet",
@@ -640,6 +694,7 @@ const chainsConfig = {
       faucet: "0xD596d64592227693c933b0E1EEbb64100417d78a",
       weth: "0x9364b2FC6f07c123dB5a398aE655DFCf7F445d54",
       rpc: "https://4002.rpc.cryptolink.tech/",
+      explorer: "https://testnet.ftmscan.com/",
     },
     "701": {
       name: "FOMO Testnet",
@@ -652,6 +707,7 @@ const chainsConfig = {
       faucet: "",
       weth: "0x566B40Dd59A868c244E1353368e08ddaD1C1d74f",
       rpc: "https://701.rpc.cryptolink.tech/",
+      explorer: "https://testnet.evm.fomoscan.io/",
     },
     "68840142": { // Frame Testnet
       name: "Frame Testnet",
@@ -664,6 +720,7 @@ const chainsConfig = {
       faucet: "0x2227BDDeb66F438F88B9E4B494C7b794239c78f6",
       weth: "0xf25D6E21554a5503DEA695acdad7586778a89C39",
       rpc: "https://68840142.rpc.cryptolink.tech/",
+      explorer: "https://explorer.testnet.frame.xyz/",
     },
     "1452": { // Gauss Testnet
       name: "Gauss Testnet",
@@ -676,6 +733,7 @@ const chainsConfig = {
       faucet: "0x9cAa65b69Ad8118C3d1454393F5b96292FE3C0aB",
       weth: "",
       rpc: "https://1452.rpc.cryptolink.tech/",
+      explorer: "https://explorer.giltestnet.com/",
     },
     "123420111": { // Gelato OP Celestia Testnet
       name: "Gelato OP Celestia Testnet",
@@ -688,6 +746,7 @@ const chainsConfig = {
       faucet: "0x71311899492757cD512a11855C150EA219bB3A42",
       weth: "0x765d2951bF4d512a5FDbD6384C4b6aD5ab1b1873",
       rpc: "https://123420111.rpc.cryptolink.tech/",
+      explorer: "",
     },
     "42069": { // Gelato OP Testnet 
       name: "Gelato OP Testnet",
@@ -700,6 +759,7 @@ const chainsConfig = {
       faucet: "0x71311899492757cD512a11855C150EA219bB3A42",
       weth: "0x765d2951bF4d512a5FDbD6384C4b6aD5ab1b1873",
       rpc: "https://42069.rpc.cryptolink.tech/",
+      explorer: "",
     },
     "1261120": { // Gelato ZKatana Testnet
       name: "Gelato ZKatana Testnet",
@@ -712,6 +772,7 @@ const chainsConfig = {
       faucet: "0x71311899492757cD512a11855C150EA219bB3A42",
       weth: "0x765d2951bF4d512a5FDbD6384C4b6aD5ab1b1873",
       rpc: "https://1261120.rpc.cryptolink.tech/",
+      explorer: "",
     },
     "10200": { // Gnosis Testnet
       name: "Gnosis Testnet",
@@ -724,6 +785,7 @@ const chainsConfig = {
       faucet: "0xE700Ee5d8B7dEc62987849356821731591c048cF",
       weth: "0x291BcefF63A9A2726160391928EFCEe34014d58A",
       rpc: "https://10200.rpc.cryptolink.tech/",
+      explorer: "https://gnosis-chiado.blockscout.com/",
     },
     "1666700000": { // Harmony Testnet
       name: "Harmony Testnet",
@@ -736,6 +798,7 @@ const chainsConfig = {
       faucet: "0x3574311D950E04A48289DA64759016c26725B180",
       weth: "0xbF1Bb50a9607d2191aB4e5925B48f44306000A05",
       rpc: "https://1666700000.rpc.cryptolink.tech/",
+      explorer: "https://explorer.testnet.harmony.one/",
     },
     "1663": { // Horizen Testnet
       name: "Horizen Testnet",
@@ -748,6 +811,7 @@ const chainsConfig = {
       faucet: "0xbb5BA99D63bF3514c8866e65e22027c5761b5e97",
       weth: "0x291BcefF63A9A2726160391928EFCEe34014d58A",
       rpc: "https://1663.rpc.cryptolink.tech/",
+      explorer: "https://explorer-testnet.horizen.io/",
     },
     "13473": { // Immutable Testnet
       name: "Immutable Testnet",
@@ -760,6 +824,7 @@ const chainsConfig = {
       faucet: "0x5f6573007ace7b04f1E09A04E393349b80Bdf826",
       weth: "0xfA8d81973f29b2555933027Ac9751740B9fFa047",
       rpc: "https://13473.rpc.cryptolink.tech/",
+      explorer: "https://explorer.testnet.immutable.com/",
     },
     "4690": { // IoTeX Testnet
       name: "IoTeX Testnet",
@@ -772,6 +837,7 @@ const chainsConfig = {
       faucet: "0xc2e7eA22A69Fff2ac96EB9b306A562C9fb299b16",
       weth: "0x0EFafca24E5BbC1C01587B659226B9d600fd671f",
       rpc: "https://4690.rpc.cryptolink.tech/",
+      explorer: "https://testnet.iotexscan.io/",
     },
     "167008": { // Katla Testnet
       name: "Katla Testnet",
@@ -784,6 +850,7 @@ const chainsConfig = {
       faucet: "0xbb5BA99D63bF3514c8866e65e22027c5761b5e97",
       weth: "0x291BcefF63A9A2726160391928EFCEe34014d58A",
       rpc: "https://167008.rpc.cryptolink.tech/",
+      explorer: "https://katla.taikoscan.network/",
     },
     "2221": { // Kava Testnet
       name: "Kava Testnet",
@@ -796,6 +863,7 @@ const chainsConfig = {
       faucet: "0xB09780607F0cbCC3c7B95f17d42417269ED53a1D",
       weth: "0xc5f8fbE61aF2b5f0DB8A51e10133062e54F77947",
       rpc: "https://2221.rpc.cryptolink.tech/",
+      explorer: "https://testnet.kavascan.com/",
     },
     "1001": { // Klaytn Testnet
       name: "Klaytn Testnet",
@@ -808,6 +876,7 @@ const chainsConfig = {
       faucet: "0x6900384BA33f8C635DeE2C3BD7d46A0626FfB096",
       weth: "0x3413714B95c7A087517B7a8a791627F5a91A7712",
       rpc: "https://1001.rpc.cryptolink.tech/",
+      explorer: "",
     },
     "1998": { // Kyoto Testnet
       name: "Kyoto Testnet",
@@ -820,6 +889,7 @@ const chainsConfig = {
       faucet: "0xefbdB4f11b61AEb417AAC34504E9535f5218A8f2",
       weth: "0x73Db0a9a3aB2098B57E6A0f1F8Ff497e4adaa412",
       rpc: "https://1998.rpc.cryptolink.tech/",
+      explorer: "https://testnet.kyotoscan.io/",
     },        
     "59140": { // Linea Testnet
       name: "Linea Testnet",
@@ -832,6 +902,7 @@ const chainsConfig = {
       faucet: "0x1Ec7Dfbc9e310768A17145f03f3451f562cEc773",
       weth: "0x167Be5395286327da2E376f3DF2bF46ED42209B0",
       rpc: "https://59140.rpc.cryptolink.tech/",
+      explorer: "https://goerli.lineascan.build/",
     },
     "9768": { // Mainnetz Testnet
       name: "Mainnetz Testnet",
@@ -844,6 +915,7 @@ const chainsConfig = {
       faucet: "0x02af00154C30A5B0bF96EA87161CbD92C768a84A",
       weth: "0xCdc7D21D3F75809ec8CC3030AB8018A98AD0b296",
       rpc: "https://9768.rpc.cryptolink.tech/",
+      explorer: "https://testnet.mainnetz.io/",
     },
     "5001": { // Mantle Testnet
       name: "Mantle Testnet",
@@ -856,6 +928,7 @@ const chainsConfig = {
       faucet: "0x1Ec7Dfbc9e310768A17145f03f3451f562cEc773",
       weth: "0x67E320b239f6c99eB938Dd993F1c0fE61edcc9D8",
       rpc: "https://5001.rpc.cryptolink.tech/",
+      explorer: "https://explorer.mantle.xyz/",
     },
     "599": { // Metis Testnet
       name: "Metis Testnet",
@@ -868,6 +941,7 @@ const chainsConfig = {
       faucet: "0x7B3978177f411737deb7bF57A73Cf079A2eD4De0",
       weth: "0xa13ad1Cf753f31e405a60eb3204A941fBb035bCf",
       rpc: "https://599.rpc.cryptolink.tech/",
+      explorer: "https://andromeda-explorer.metis.io/",
     },
     "245022926": { // Neon Testnet
       name: "Neon Testnet",
@@ -879,7 +953,8 @@ const chainsConfig = {
       paper: "",
       faucet: "",
       weth: "0x11adC2d986E334137b9ad0a0F290771F31e9517F",
-      rpc: "https://245022926.rpc.cryptolink.tech/"
+      rpc: "https://245022926.rpc.cryptolink.tech/",
+      explorer: "",
     },
     "2370": { // Nexis Testnet
       name: "Nexis Testnet",
@@ -891,7 +966,8 @@ const chainsConfig = {
       paper: "0x9d75f706b986F0075b3778a12153390273dE95eC",
       faucet: "0xc2e7eA22A69Fff2ac96EB9b306A562C9fb299b16",
       weth: "0x0EFafca24E5BbC1C01587B659226B9d600fd671f",
-      rpc: "https://2370.rpc.cryptolink.tech/"
+      rpc: "https://2370.rpc.cryptolink.tech/",
+      explorer: "https://evm-testnet.nexscan.io/",
     },
     "42261": { // Oasis Emerald Testnet
       name: "Oasis Emerald Testnet",
@@ -904,6 +980,7 @@ const chainsConfig = {
       faucet: "0x38DE8d52544D60adA3d5FEFD548528FdeeccF334",
       weth: "",
       rpc: "https://42261.rpc.cryptolink.tech/",
+      explorer: "https://explorer.oasis.io/testnet/emerald",
     },
     "23295": { // Oasis Sapphire Testnet
       name: "Oasis Sapphire Testnet",
@@ -916,6 +993,7 @@ const chainsConfig = {
       faucet: "0x1D28Ee66d48C04BdD92969f5EA0795c7d052C9F2",
       weth: "0xc9cd1956655B8085b9e53dA7F5813B75B95F69d3",
       rpc: "https://23295.rpc.cryptolink.tech/",
+      explorer: "https://explorer.oasis.io/testnet/sapphire",
     },
     "65": { // OKEx Testnet
       name: "OKEx Testnet",
@@ -928,6 +1006,7 @@ const chainsConfig = {
       faucet: "0x6F29c68aD1986C770DCE1CAF2E2066b5fAaEa54a",
       weth: "0x967ccdcdf974DCEAb42F20FB61Aafb00D64f0827",
       rpc: "https://65.rpc.cryptolink.tech/",
+      explorer: "https://www.okx.com/web3/explorer/xlayer-test",
     },
     "1945": { // Onus Testnet
       name: "Onus Testnet",
@@ -940,6 +1019,7 @@ const chainsConfig = {
       faucet: "0xeDCfb3038d4a262Aef3735CFa64146C35196CC51",
       weth: "0x02dA7eeEB722A126CCC53085d489ca0e1BAbc55E",
       rpc: "https://1945.rpc.cryptolink.tech/",
+      explorer: "https://explorer-testnet.onuschain.io/",
     },
     "5611": { // opBNB Testnet
       name: "opBNB Testnet",
@@ -952,6 +1032,7 @@ const chainsConfig = {
       faucet: "0x79Ef331759b1C9277313EC5f4ABACC658Ef8F526",
       weth: "0x6134465958b5FBF8812fE743534C66D833Fa9046",
       rpc: "https://5611.rpc.cryptolink.tech/",
+      explorer: "https://opbnb-testnet.bscscan.com/",
     },
     "11155420": { // Optimism Testnet
       name: "Optimism Testnet",
@@ -965,6 +1046,7 @@ const chainsConfig = {
       weth: "0x3574311D950E04A48289DA64759016c26725B180",
       usdc: "0x5fd84259d66Cd46123540766Be93DFE6D43130D7",
       rpc: "https://11155420.rpc.cryptolink.tech/",
+      explorer: "https://goerli-optimism.etherscan.io/",
     },
     "80001": { // Polygon Testnet
       name: "Polygon Testnet",
@@ -980,6 +1062,7 @@ const chainsConfig = {
       faucet: "0xcCE54b6426aB14d50dc79640b288F9123c5A9e1e",
       weth: "0xceaDda135AfB9c841Fd1feE951C111dFbfa3f242",
       rpc: "https://80001.rpc.cryptolink.tech/",
+      explorer: "https://mumbai.polygonscan.com/",
     },
     "1442": { // Polygon zkEVM Testnet
       name: "Polygon zkEVM Testnet",
@@ -992,6 +1075,7 @@ const chainsConfig = {
       faucet: "0x7962F1E9d7373997013Fd72838a45F9aC11E6b9C",
       weth: "0x32D9c1DA01F221aa0eab4A0771Aaa8E2344ECd35",
       rpc: "https://1442.rpc.cryptolink.tech/",
+      explorer: "https://testnet-zkevm.polygonscan.com/",
     },
     "943": { // Pulse Testnet
       name: "Pulse Testnet",
@@ -1004,6 +1088,7 @@ const chainsConfig = {
       faucet: "0x166Cd569CCAB1c48CB45dbf9ea4EA8779c3F13b7",
       weth: "0xBDc1fCaC4c4615b4FbBE8C401BEd6e29D900fDB0",
       rpc: "https://943.rpc.cryptolink.tech/",
+      explorer: "https://scan.v4.testnet.pulsechain.com/#/",
     },
     "17001": { // Redstone Testnet
       name: "Redstone Testnet",
@@ -1016,6 +1101,7 @@ const chainsConfig = {
       faucet: "0x5Ee191F469caaf709a9Dcbd14E386b3BA4C0118E",
       weth: "0x167Be5395286327da2E376f3DF2bF46ED42209B0",
       rpc: "https://17001.rpc.cryptolink.tech/",
+      explorer: "",
     },
     "57000": { // Rollux Testnet
       name: "Rollux Testnet",
@@ -1028,6 +1114,7 @@ const chainsConfig = {
       faucet: "0x79Ef331759b1C9277313EC5f4ABACC658Ef8F526",
       weth: "0x6134465958b5FBF8812fE743534C66D833Fa9046",
       rpc: "https://57000.rpc.cryptolink.tech/",
+      explorer: "https://rollux.tanenbaum.io/",
     },
     "534351": { // Scroll Testnet (Sepolia)
       name: "Scroll Testnet",
@@ -1040,6 +1127,7 @@ const chainsConfig = {
       faucet: "0xca17C2c4D8673ba8c97320c5C48113F1B51325e2",
       weth: "0xD27f1d1093162560A7e17b7fd3A7711Caf6cE666",
       rpc: "https://534351.rpc.cryptolink.tech/",
+      explorer: "https://sepolia.scrollscan.dev/",
     },
     "19999999991": { // Solana Testnet
       name: "Solana Testnet",
@@ -1053,7 +1141,8 @@ const chainsConfig = {
       weth: "",
       usdc: "4zMMC9srt5Ri5X14GAgXhaHii3GnPAEERYPJgZJDncDU",
       eurc: "HzwqbKZw8HxMN6bF2yFZNrht3c2iXXzpKcFu7uBEDKtr",
-      rpc: ""
+      rpc: "",
+      explorer: "",
     },
     "64165": { // Sonic Testnet
       name: "Sonic Testnet",
@@ -1066,6 +1155,7 @@ const chainsConfig = {
       faucet: "0xb439031a82c75810B266613A9fb6B8D7733B0056",
       weth: "0xdCa897f920Df8015169838c428479D5e3d5Bf526",
       rpc: "https://64165.rpc.cryptolink.tech/",
+      explorer: "https://sonicscan.io/",
     },      
     "2047": { // Stratos Testnet
       name: "Stratos Testnet",
@@ -1078,6 +1168,7 @@ const chainsConfig = {
       faucet: "0x7bB78097d7e672D65cD6596Ee9b4097CE16AC391",
       weth: "0x6134465958b5FBF8812fE743534C66D833Fa9046",
       rpc: "https://2047.rpc.cryptolink.tech/",
+      explorer: "https://web3-explorer-mesos.thestratos.org/",
     },    
     "41": { // Telos Testnet
       name: "Telos Testnet",
@@ -1090,6 +1181,7 @@ const chainsConfig = {
       faucet: "0xeDCfb3038d4a262Aef3735CFa64146C35196CC51",
       weth: "0x02dA7eeEB722A126CCC53085d489ca0e1BAbc55E",
       rpc: "https://41.rpc.cryptolink.tech/",
+      explorer: "https://explorer-test.telos.net/network",
     },
     "14333": { // Vitruveo Testnet
       name: "Vitruveo Testnet",
@@ -1101,7 +1193,8 @@ const chainsConfig = {
       paper: "0x9d75f706b986F0075b3778a12153390273dE95eC",
       faucet: "0xc2e7eA22A69Fff2ac96EB9b306A562C9fb299b16",
       weth: "0x0EFafca24E5BbC1C01587B659226B9d600fd671f",
-      rpc: "https://14333.rpc.cryptolink.tech/"
+      rpc: "https://14333.rpc.cryptolink.tech/",
+      explorer: "https://test-explorer.vitruveo.xyz/",
     },
     "51": { // XDC Testnet
       name: "XDC Testnet",
@@ -1114,6 +1207,7 @@ const chainsConfig = {
       faucet: "0xc21aAE8AF056ab0406B31f019709Bfeff1c74E2C",
       weth: "0x49AADBE0f1D2ceb77C7f979b4bF35faEa22976B8",
       rpc: "https://51.rpc.cryptolink.tech/",
+      explorer: "https://apothem.network/",
     },    
     "195": { // X-Layer Testnet
       name: "X-Layer Testnet",
@@ -1126,6 +1220,7 @@ const chainsConfig = {
       faucet: "0xBDc1fCaC4c4615b4FbBE8C401BEd6e29D900fDB0",
       weth: "0xDb52110E8f15a72Ccf3ce205c30C27bdB846057D",
       rpc: "https://195.rpc.cryptolink.tech/",
+      explorer: "https://www.okx.com/web3/explorer/xlayer-test",
     },
     "7001": { // ZetaChain Testnet
       name: "ZetaChain Testnet",
@@ -1138,6 +1233,7 @@ const chainsConfig = {
       faucet: "0x02af00154C30A5B0bF96EA87161CbD92C768a84A",
       weth: "0xbd9F6E783a2872f703953F0db1d6D60912F86af4",
       rpc: "https://7001.rpc.cryptolink.tech/",
+      explorer: "https://zeta-testnet.dex.guru/",
     },    
     "280": { // zkSync Testnet
       name: "zkSync Testnet",
@@ -1151,6 +1247,7 @@ const chainsConfig = {
       weth: "0x19a41FE14a5931eEd7CAD91d033e14c47e9EFff9",
       usdc: "0xAe045DE5638162fa134807Cb558E15A3F5A7F853",
       rpc: "https://280.rpc.cryptolink.tech/",
+      explorer: "https://sepolia.explorer.zksync.io/",
     }
   };
   

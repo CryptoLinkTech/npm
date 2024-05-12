@@ -8,6 +8,7 @@ declare namespace ChainsConfig {
     stable?: string;
     feeToken?: string;
     network?: string;
+    explorer?: string;
     type?: string;
   }
 
