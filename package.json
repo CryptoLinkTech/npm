@@ -37,8 +37,6 @@
     "url": "https://github.com/CryptoLinkTech/npm/issues"
   },
   "homepage": "https://docs.cryptolink.tech/",
-  "dependencies": {
-  },
   "main": "index.js",
   "devDependencies": {
     "@types/node": "^20.11.5",
