@@ -70,7 +70,7 @@ abstract contract MessageClient {
     }
 
     /** BRIDGE RECEIVER */
-    // @dev depricated, not compatible with features
+    // @dev DEPRICATED kept for backwards compatibility
     function messageProcess(
         uint _txId,          // transaction id
         uint _sourceChainId, // source chain id
@@ -94,12 +94,12 @@ abstract contract MessageClient {
     // @dev REQUIRED if using Features
     // this is extended by the implementing class if using Features
     function _processMessageWithFeature(
-        uint _txId,          // transaction id
-        uint _sourceChainId, // source chain id
-        bytes memory _data,// encoded message from source chain
-        uint32 _featureId, // feature id
-        bytes memory _featureData, // encoded feature data
-        bytes memory _featureResponse // reply from feature processing off-chain
+        uint,         // transaction id
+        uint,         // source chain id
+        bytes memory, // encoded message from source chain
+        uint32,       // feature id
+        bytes memory, // encoded feature data
+        bytes memory  // reply from feature processing off-chain
     ) internal virtual {
         revert("MessageClient: _processMessage or _processMessageWithFeature not implemented");
     }
